@@ -59,7 +59,6 @@ import app.judo.shaded.exoplayer2.trackselection.TrackSelectionArray;
 import app.judo.shaded.exoplayer2.util.Assertions;
 import app.judo.shaded.exoplayer2.util.RepeatModeUtil;
 import app.judo.shaded.exoplayer2.util.Util;
-import com.google.android.exoplayer2.ui.R;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;

@@ -40,7 +40,6 @@ import androidx.annotation.RequiresApi;
 import app.judo.shaded.exoplayer2.C;
 import app.judo.shaded.exoplayer2.util.Assertions;
 import app.judo.shaded.exoplayer2.util.Util;
-import com.google.android.exoplayer2.ui.R;
 import java.util.Collections;
 import java.util.Formatter;
 import java.util.Locale;

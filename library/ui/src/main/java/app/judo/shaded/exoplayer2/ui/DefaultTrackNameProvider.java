@@ -22,7 +22,6 @@ import app.judo.shaded.exoplayer2.Format;
 import app.judo.shaded.exoplayer2.util.Assertions;
 import app.judo.shaded.exoplayer2.util.MimeTypes;
 import app.judo.shaded.exoplayer2.util.Util;
-import com.google.android.exoplayer2.ui.R;
 import java.util.Locale;
 
 /** A default {@link TrackNameProvider}. */

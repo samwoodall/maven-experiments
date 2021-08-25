@@ -24,7 +24,6 @@ import androidx.annotation.StringRes;
 import androidx.core.app.NotificationCompat;
 import app.judo.shaded.exoplayer2.C;
 import app.judo.shaded.exoplayer2.offline.Download;
-import com.google.android.exoplayer2.ui.R;
 import java.util.List;
 
 /** Helper for creating download notifications. */

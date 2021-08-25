@@ -59,7 +59,6 @@ import app.judo.shaded.exoplayer2.text.Cue;
 import app.judo.shaded.exoplayer2.text.TextOutput;
 import app.judo.shaded.exoplayer2.trackselection.TrackSelection;
 import app.judo.shaded.exoplayer2.trackselection.TrackSelectionArray;
-import com.google.android.exoplayer2.ui.R;
 import app.judo.shaded.exoplayer2.ui.spherical.SingleTapListener;
 import app.judo.shaded.exoplayer2.ui.spherical.SphericalGLSurfaceView;
 import app.judo.shaded.exoplayer2.util.Assertions;

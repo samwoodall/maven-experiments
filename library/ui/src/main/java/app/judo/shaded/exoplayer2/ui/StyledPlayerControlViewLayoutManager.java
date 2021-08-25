@@ -27,7 +27,6 @@ import android.view.ViewGroup;
 import android.view.ViewGroup.MarginLayoutParams;
 import android.view.animation.LinearInterpolator;
 import androidx.annotation.Nullable;
-import com.google.android.exoplayer2.ui.R;
 import java.util.ArrayList;
 import java.util.List;
 

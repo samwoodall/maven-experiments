@@ -346,7 +346,7 @@ public abstract class BaseRenderer implements Renderer, RendererCapabilities {
       // Prevent recursive re-entry from subclass supportsFormat implementations.
       throwRendererExceptionIsExecuting = true;
       try {
-        formatSupport = getFormatSupport(supportsFormat(format));
+        formatSupport = RendererCapabilities.getFormatSupport(supportsFormat(format));
       } catch (ExoPlaybackException e) {
         // Ignore, we are already failing.
       } finally {

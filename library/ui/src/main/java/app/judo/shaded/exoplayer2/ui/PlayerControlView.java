@@ -43,7 +43,6 @@ import app.judo.shaded.exoplayer2.Timeline;
 import app.judo.shaded.exoplayer2.util.Assertions;
 import app.judo.shaded.exoplayer2.util.RepeatModeUtil;
 import app.judo.shaded.exoplayer2.util.Util;
-import com.google.android.exoplayer2.ui.R;
 import java.util.Arrays;
 import java.util.Formatter;
 import java.util.Locale;

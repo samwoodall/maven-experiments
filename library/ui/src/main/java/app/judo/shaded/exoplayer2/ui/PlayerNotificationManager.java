@@ -45,7 +45,6 @@ import app.judo.shaded.exoplayer2.Timeline;
 import app.judo.shaded.exoplayer2.util.Assertions;
 import app.judo.shaded.exoplayer2.util.NotificationUtil;
 import app.judo.shaded.exoplayer2.util.Util;
-import com.google.android.exoplayer2.ui.R;
 import java.lang.annotation.Documented;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

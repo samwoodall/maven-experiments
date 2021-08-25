@@ -30,7 +30,6 @@ import app.judo.shaded.exoplayer2.trackselection.DefaultTrackSelector;
 import app.judo.shaded.exoplayer2.trackselection.DefaultTrackSelector.SelectionOverride;
 import app.judo.shaded.exoplayer2.trackselection.MappingTrackSelector.MappedTrackInfo;
 import app.judo.shaded.exoplayer2.trackselection.TrackSelectionUtil;
-import com.google.android.exoplayer2.ui.R;
 import java.lang.reflect.Constructor;
 import java.util.Collections;
 import java.util.List;

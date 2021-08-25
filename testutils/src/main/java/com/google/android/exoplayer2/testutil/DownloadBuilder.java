@@ -17,11 +17,11 @@ package com.google.android.exoplayer2.testutil;
 
 import android.net.Uri;
 import androidx.annotation.Nullable;
-import com.google.android.exoplayer2.C;
-import com.google.android.exoplayer2.offline.Download;
-import com.google.android.exoplayer2.offline.DownloadProgress;
-import com.google.android.exoplayer2.offline.DownloadRequest;
-import com.google.android.exoplayer2.offline.StreamKey;
+import app.judo.shaded.exoplayer2.C;
+import app.judo.shaded.exoplayer2.offline.Download;
+import app.judo.shaded.exoplayer2.offline.DownloadProgress;
+import app.judo.shaded.exoplayer2.offline.DownloadRequest;
+import app.judo.shaded.exoplayer2.offline.StreamKey;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;

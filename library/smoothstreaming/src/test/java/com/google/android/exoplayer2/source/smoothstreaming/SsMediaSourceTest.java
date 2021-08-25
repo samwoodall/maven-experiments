@@ -15,14 +15,15 @@
  */
 package com.google.android.exoplayer2.source.smoothstreaming;
 
-import static com.google.android.exoplayer2.util.Util.castNonNull;
+import static app.judo.shaded.exoplayer2.util.Util.castNonNull;
 import static com.google.common.truth.Truth.assertThat;
 
 import androidx.annotation.Nullable;
 import androidx.test.ext.junit.runners.AndroidJUnit4;
-import com.google.android.exoplayer2.MediaItem;
-import com.google.android.exoplayer2.offline.StreamKey;
-import com.google.android.exoplayer2.upstream.FileDataSource;
+import app.judo.shaded.exoplayer2.source.smoothstreaming.SsMediaSource;
+import app.judo.shaded.exoplayer2.MediaItem;
+import app.judo.shaded.exoplayer2.offline.StreamKey;
+import app.judo.shaded.exoplayer2.upstream.FileDataSource;
 import java.util.Collections;
 import org.junit.Test;
 import org.junit.runner.RunWith;

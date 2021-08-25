@@ -18,7 +18,8 @@ package com.google.android.exoplayer2.drm;
 import static com.google.common.truth.Truth.assertThat;
 
 import androidx.test.ext.junit.runners.AndroidJUnit4;
-import com.google.android.exoplayer2.util.Util;
+import app.judo.shaded.exoplayer2.drm.ClearKeyUtil;
+import app.judo.shaded.exoplayer2.util.Util;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.robolectric.annotation.Config;

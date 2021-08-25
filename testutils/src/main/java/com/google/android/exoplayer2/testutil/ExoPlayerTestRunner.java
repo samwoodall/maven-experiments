@@ -23,25 +23,26 @@ import android.content.Context;
 import android.os.HandlerThread;
 import android.os.Looper;
 import androidx.annotation.Nullable;
-import com.google.android.exoplayer2.C;
-import com.google.android.exoplayer2.ExoPlaybackException;
-import com.google.android.exoplayer2.Format;
-import com.google.android.exoplayer2.LoadControl;
-import com.google.android.exoplayer2.MediaItem;
-import com.google.android.exoplayer2.Player;
-import com.google.android.exoplayer2.Renderer;
-import com.google.android.exoplayer2.RenderersFactory;
-import com.google.android.exoplayer2.SimpleExoPlayer;
-import com.google.android.exoplayer2.Timeline;
-import com.google.android.exoplayer2.analytics.AnalyticsListener;
-import com.google.android.exoplayer2.source.MediaSource;
-import com.google.android.exoplayer2.source.TrackGroupArray;
-import com.google.android.exoplayer2.trackselection.DefaultTrackSelector;
-import com.google.android.exoplayer2.trackselection.TrackSelectionArray;
-import com.google.android.exoplayer2.upstream.BandwidthMeter;
-import com.google.android.exoplayer2.util.Clock;
-import com.google.android.exoplayer2.util.HandlerWrapper;
-import com.google.android.exoplayer2.util.MimeTypes;
+import app.judo.shaded.exoplayer2.ExoPlayer;
+import app.judo.shaded.exoplayer2.C;
+import app.judo.shaded.exoplayer2.ExoPlaybackException;
+import app.judo.shaded.exoplayer2.Format;
+import app.judo.shaded.exoplayer2.LoadControl;
+import app.judo.shaded.exoplayer2.MediaItem;
+import app.judo.shaded.exoplayer2.Player;
+import app.judo.shaded.exoplayer2.Renderer;
+import app.judo.shaded.exoplayer2.RenderersFactory;
+import app.judo.shaded.exoplayer2.SimpleExoPlayer;
+import app.judo.shaded.exoplayer2.Timeline;
+import app.judo.shaded.exoplayer2.analytics.AnalyticsListener;
+import app.judo.shaded.exoplayer2.source.MediaSource;
+import app.judo.shaded.exoplayer2.source.TrackGroupArray;
+import app.judo.shaded.exoplayer2.trackselection.DefaultTrackSelector;
+import app.judo.shaded.exoplayer2.trackselection.TrackSelectionArray;
+import app.judo.shaded.exoplayer2.upstream.BandwidthMeter;
+import app.judo.shaded.exoplayer2.util.Clock;
+import app.judo.shaded.exoplayer2.util.HandlerWrapper;
+import app.judo.shaded.exoplayer2.util.MimeTypes;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -175,7 +176,7 @@ public final class ExoPlayerTestRunner implements Player.EventListener, ActionSc
     }
 
     /**
-     * Skips calling {@link com.google.android.exoplayer2.ExoPlayer#setMediaSources(List)} before
+     * Skips calling {@link ExoPlayer#setMediaSources(List)} before
      * preparing. Calling this method is not allowed after calls to {@link
      * #setMediaSources(MediaSource...)}, {@link #setTimeline(Timeline)} and/or {@link
      * #setManifest(Object)}.

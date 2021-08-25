@@ -24,6 +24,7 @@ import android.graphics.Color;
 import android.text.Layout;
 import android.text.SpannedString;
 import androidx.test.ext.junit.runners.AndroidJUnit4;
+import app.judo.shaded.exoplayer2.text.Cue;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 

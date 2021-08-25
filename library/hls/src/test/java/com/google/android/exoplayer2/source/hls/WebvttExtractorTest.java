@@ -19,12 +19,13 @@ import static com.google.common.truth.Truth.assertThat;
 
 import androidx.test.core.app.ApplicationProvider;
 import androidx.test.ext.junit.runners.AndroidJUnit4;
-import com.google.android.exoplayer2.extractor.ExtractorInput;
+import app.judo.shaded.exoplayer2.source.hls.WebvttExtractor;
+import app.judo.shaded.exoplayer2.extractor.ExtractorInput;
 import com.google.android.exoplayer2.testutil.DumpFileAsserts;
 import com.google.android.exoplayer2.testutil.FakeExtractorInput;
 import com.google.android.exoplayer2.testutil.FakeExtractorOutput;
 import com.google.android.exoplayer2.testutil.TestUtil;
-import com.google.android.exoplayer2.util.TimestampAdjuster;
+import app.judo.shaded.exoplayer2.util.TimestampAdjuster;
 import java.io.EOFException;
 import java.io.IOException;
 import org.junit.Test;

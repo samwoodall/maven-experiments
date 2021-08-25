@@ -19,9 +19,9 @@ import static com.google.common.truth.Truth.assertThat;
 
 import android.util.SparseArray;
 import androidx.annotation.Nullable;
-import com.google.android.exoplayer2.C;
-import com.google.android.exoplayer2.extractor.ExtractorOutput;
-import com.google.android.exoplayer2.extractor.SeekMap;
+import app.judo.shaded.exoplayer2.C;
+import app.judo.shaded.exoplayer2.extractor.ExtractorOutput;
+import app.judo.shaded.exoplayer2.extractor.SeekMap;
 import org.checkerframework.checker.nullness.qual.MonotonicNonNull;
 
 /** A fake {@link ExtractorOutput}. */

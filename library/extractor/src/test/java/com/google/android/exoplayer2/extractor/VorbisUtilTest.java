@@ -15,16 +15,17 @@
  */
 package com.google.android.exoplayer2.extractor;
 
-import static com.google.android.exoplayer2.extractor.VorbisUtil.iLog;
-import static com.google.android.exoplayer2.extractor.VorbisUtil.verifyVorbisHeaderCapturePattern;
+import static app.judo.shaded.exoplayer2.extractor.VorbisUtil.iLog;
+import static app.judo.shaded.exoplayer2.extractor.VorbisUtil.verifyVorbisHeaderCapturePattern;
 import static com.google.common.truth.Truth.assertThat;
 import static org.junit.Assert.fail;
 
 import androidx.test.core.app.ApplicationProvider;
 import androidx.test.ext.junit.runners.AndroidJUnit4;
-import com.google.android.exoplayer2.ParserException;
+import app.judo.shaded.exoplayer2.extractor.VorbisUtil;
+import app.judo.shaded.exoplayer2.ParserException;
 import com.google.android.exoplayer2.testutil.TestUtil;
-import com.google.android.exoplayer2.util.ParsableByteArray;
+import app.judo.shaded.exoplayer2.util.ParsableByteArray;
 import java.io.IOException;
 import org.junit.Test;
 import org.junit.runner.RunWith;

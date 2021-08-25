@@ -17,20 +17,20 @@ package com.google.android.exoplayer2.testutil;
 
 import android.os.Looper;
 import androidx.annotation.Nullable;
-import com.google.android.exoplayer2.BasePlayer;
-import com.google.android.exoplayer2.ExoPlaybackException;
-import com.google.android.exoplayer2.ExoPlayer;
-import com.google.android.exoplayer2.MediaItem;
-import com.google.android.exoplayer2.PlaybackParameters;
-import com.google.android.exoplayer2.Player;
-import com.google.android.exoplayer2.PlayerMessage;
-import com.google.android.exoplayer2.SeekParameters;
-import com.google.android.exoplayer2.Timeline;
-import com.google.android.exoplayer2.source.MediaSource;
-import com.google.android.exoplayer2.source.ShuffleOrder;
-import com.google.android.exoplayer2.source.TrackGroupArray;
-import com.google.android.exoplayer2.trackselection.TrackSelectionArray;
-import com.google.android.exoplayer2.trackselection.TrackSelector;
+import app.judo.shaded.exoplayer2.BasePlayer;
+import app.judo.shaded.exoplayer2.ExoPlaybackException;
+import app.judo.shaded.exoplayer2.ExoPlayer;
+import app.judo.shaded.exoplayer2.MediaItem;
+import app.judo.shaded.exoplayer2.PlaybackParameters;
+import app.judo.shaded.exoplayer2.Player;
+import app.judo.shaded.exoplayer2.PlayerMessage;
+import app.judo.shaded.exoplayer2.SeekParameters;
+import app.judo.shaded.exoplayer2.Timeline;
+import app.judo.shaded.exoplayer2.source.MediaSource;
+import app.judo.shaded.exoplayer2.source.ShuffleOrder;
+import app.judo.shaded.exoplayer2.source.TrackGroupArray;
+import app.judo.shaded.exoplayer2.trackselection.TrackSelectionArray;
+import app.judo.shaded.exoplayer2.trackselection.TrackSelector;
 import java.util.List;
 
 /**

@@ -16,21 +16,22 @@
  */
 package com.google.android.exoplayer2.extractor.amr;
 
-import static com.google.android.exoplayer2.extractor.amr.AmrExtractor.amrSignatureNb;
-import static com.google.android.exoplayer2.extractor.amr.AmrExtractor.amrSignatureWb;
-import static com.google.android.exoplayer2.extractor.amr.AmrExtractor.frameSizeBytesByTypeNb;
-import static com.google.android.exoplayer2.extractor.amr.AmrExtractor.frameSizeBytesByTypeWb;
+import static app.judo.shaded.exoplayer2.extractor.amr.AmrExtractor.amrSignatureNb;
+import static app.judo.shaded.exoplayer2.extractor.amr.AmrExtractor.amrSignatureWb;
+import static app.judo.shaded.exoplayer2.extractor.amr.AmrExtractor.frameSizeBytesByTypeNb;
+import static app.judo.shaded.exoplayer2.extractor.amr.AmrExtractor.frameSizeBytesByTypeWb;
 import static com.google.common.truth.Truth.assertThat;
 import static junit.framework.Assert.fail;
 
 import androidx.test.ext.junit.runners.AndroidJUnit4;
-import com.google.android.exoplayer2.ParserException;
-import com.google.android.exoplayer2.extractor.Extractor;
-import com.google.android.exoplayer2.extractor.PositionHolder;
+import app.judo.shaded.exoplayer2.extractor.amr.AmrExtractor;
+import app.judo.shaded.exoplayer2.ParserException;
+import app.judo.shaded.exoplayer2.extractor.Extractor;
+import app.judo.shaded.exoplayer2.extractor.PositionHolder;
 import com.google.android.exoplayer2.testutil.ExtractorAsserts;
 import com.google.android.exoplayer2.testutil.FakeExtractorInput;
 import com.google.android.exoplayer2.testutil.FakeExtractorOutput;
-import com.google.android.exoplayer2.util.Util;
+import app.judo.shaded.exoplayer2.util.Util;
 import java.io.IOException;
 import java.util.Random;
 import org.junit.Test;

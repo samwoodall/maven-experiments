@@ -16,4 +16,4 @@
 @NonNullApi
 package com.google.android.exoplayer2.ext.leanback;
 
-import com.google.android.exoplayer2.util.NonNullApi;
+import app.judo.shaded.exoplayer2.util.NonNullApi;

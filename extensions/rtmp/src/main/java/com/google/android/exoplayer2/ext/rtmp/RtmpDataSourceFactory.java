@@ -16,9 +16,9 @@
 package com.google.android.exoplayer2.ext.rtmp;
 
 import androidx.annotation.Nullable;
-import com.google.android.exoplayer2.upstream.DataSource;
-import com.google.android.exoplayer2.upstream.HttpDataSource.Factory;
-import com.google.android.exoplayer2.upstream.TransferListener;
+import app.judo.shaded.exoplayer2.upstream.DataSource;
+import app.judo.shaded.exoplayer2.upstream.HttpDataSource.Factory;
+import app.judo.shaded.exoplayer2.upstream.TransferListener;
 
 /**
  * A {@link Factory} that produces {@link RtmpDataSource}.

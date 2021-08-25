@@ -15,6 +15,7 @@
  */
 package com.google.android.exoplayer2.extractor.wav;
 
+import app.judo.shaded.exoplayer2.extractor.wav.WavExtractor;
 import com.google.android.exoplayer2.testutil.ExtractorAsserts;
 import com.google.android.exoplayer2.testutil.ExtractorAsserts.AssertionConfig;
 import java.util.List;

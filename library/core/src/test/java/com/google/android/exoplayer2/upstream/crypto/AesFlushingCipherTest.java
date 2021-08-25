@@ -19,8 +19,9 @@ import static com.google.common.truth.Truth.assertThat;
 import static java.lang.Math.min;
 
 import androidx.test.ext.junit.runners.AndroidJUnit4;
+import app.judo.shaded.exoplayer2.upstream.crypto.AesFlushingCipher;
 import com.google.android.exoplayer2.testutil.TestUtil;
-import com.google.android.exoplayer2.util.Util;
+import app.judo.shaded.exoplayer2.util.Util;
 import java.util.Random;
 import javax.crypto.Cipher;
 import org.junit.After;

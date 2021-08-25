@@ -15,11 +15,11 @@
  */
 package com.google.android.exoplayer2.offline;
 
-import static com.google.android.exoplayer2.offline.Download.FAILURE_REASON_NONE;
-import static com.google.android.exoplayer2.offline.Download.FAILURE_REASON_UNKNOWN;
-import static com.google.android.exoplayer2.offline.Download.STATE_DOWNLOADING;
-import static com.google.android.exoplayer2.offline.Download.STATE_STOPPED;
-import static com.google.android.exoplayer2.offline.Download.STOP_REASON_NONE;
+import static app.judo.shaded.exoplayer2.offline.Download.FAILURE_REASON_NONE;
+import static app.judo.shaded.exoplayer2.offline.Download.FAILURE_REASON_UNKNOWN;
+import static app.judo.shaded.exoplayer2.offline.Download.STATE_DOWNLOADING;
+import static app.judo.shaded.exoplayer2.offline.Download.STATE_STOPPED;
+import static app.judo.shaded.exoplayer2.offline.Download.STOP_REASON_NONE;
 import static com.google.common.truth.Truth.assertThat;
 
 import android.content.Context;
@@ -28,12 +28,17 @@ import android.net.Uri;
 import androidx.annotation.Nullable;
 import androidx.test.core.app.ApplicationProvider;
 import androidx.test.ext.junit.runners.AndroidJUnit4;
-import com.google.android.exoplayer2.database.DatabaseIOException;
-import com.google.android.exoplayer2.database.ExoDatabaseProvider;
-import com.google.android.exoplayer2.database.VersionTable;
+import app.judo.shaded.exoplayer2.offline.StreamKey;
+import app.judo.shaded.exoplayer2.database.DatabaseIOException;
+import app.judo.shaded.exoplayer2.database.ExoDatabaseProvider;
+import app.judo.shaded.exoplayer2.database.VersionTable;
+import app.judo.shaded.exoplayer2.offline.DefaultDownloadIndex;
+import app.judo.shaded.exoplayer2.offline.Download;
+import app.judo.shaded.exoplayer2.offline.DownloadCursor;
+import app.judo.shaded.exoplayer2.offline.DownloadRequest;
 import com.google.android.exoplayer2.testutil.DownloadBuilder;
 import com.google.android.exoplayer2.testutil.TestUtil;
-import com.google.android.exoplayer2.util.MimeTypes;
+import app.judo.shaded.exoplayer2.util.MimeTypes;
 import com.google.common.collect.ImmutableList;
 import java.io.File;
 import java.io.FileOutputStream;

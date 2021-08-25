@@ -15,7 +15,7 @@
  */
 package com.google.android.exoplayer2.ext.vp9;
 
-import com.google.android.exoplayer2.decoder.DecoderException;
+import app.judo.shaded.exoplayer2.decoder.DecoderException;
 
 /** Thrown when a libvpx decoder error occurs. */
 public final class VpxDecoderException extends DecoderException {

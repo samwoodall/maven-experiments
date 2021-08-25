@@ -19,9 +19,9 @@ import android.net.Uri;
 import android.util.SparseArray;
 import android.util.SparseIntArray;
 import androidx.annotation.Nullable;
-import com.google.android.exoplayer2.C;
-import com.google.android.exoplayer2.MediaItem;
-import com.google.android.exoplayer2.Timeline;
+import app.judo.shaded.exoplayer2.C;
+import app.judo.shaded.exoplayer2.MediaItem;
+import app.judo.shaded.exoplayer2.Timeline;
 import java.util.Arrays;
 
 /**

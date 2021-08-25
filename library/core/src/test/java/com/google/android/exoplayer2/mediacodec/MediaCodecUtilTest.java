@@ -21,10 +21,11 @@ import android.media.MediaCodecInfo;
 import android.util.Pair;
 import androidx.annotation.Nullable;
 import androidx.test.ext.junit.runners.AndroidJUnit4;
-import com.google.android.exoplayer2.C;
-import com.google.android.exoplayer2.Format;
-import com.google.android.exoplayer2.util.MimeTypes;
-import com.google.android.exoplayer2.video.ColorInfo;
+import app.judo.shaded.exoplayer2.mediacodec.MediaCodecUtil;
+import app.judo.shaded.exoplayer2.C;
+import app.judo.shaded.exoplayer2.Format;
+import app.judo.shaded.exoplayer2.util.MimeTypes;
+import app.judo.shaded.exoplayer2.video.ColorInfo;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 

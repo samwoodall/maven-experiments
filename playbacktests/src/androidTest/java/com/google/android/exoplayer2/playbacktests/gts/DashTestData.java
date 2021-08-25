@@ -15,7 +15,7 @@
  */
 package com.google.android.exoplayer2.playbacktests.gts;
 
-import com.google.android.exoplayer2.util.Util;
+import app.judo.shaded.exoplayer2.util.Util;
 
 /** Test data for DASH tests. */
 /* package */ final class DashTestData {

@@ -15,8 +15,8 @@
  */
 package com.google.android.exoplayer2.testutil;
 
-import com.google.android.exoplayer2.Timeline;
-import com.google.android.exoplayer2.source.ForwardingTimeline;
+import app.judo.shaded.exoplayer2.Timeline;
+import app.judo.shaded.exoplayer2.source.ForwardingTimeline;
 
 /**
  * A timeline which wraps another timeline and overrides all window and period uids to 0. This is

@@ -19,9 +19,10 @@ import static com.google.common.truth.Truth.assertThat;
 import static org.junit.Assert.fail;
 
 import androidx.test.ext.junit.runners.AndroidJUnit4;
-import com.google.android.exoplayer2.C;
-import com.google.android.exoplayer2.audio.AudioProcessor.AudioFormat;
-import com.google.android.exoplayer2.audio.AudioProcessor.UnhandledAudioFormatException;
+import app.judo.shaded.exoplayer2.audio.SonicAudioProcessor;
+import app.judo.shaded.exoplayer2.C;
+import app.judo.shaded.exoplayer2.audio.AudioProcessor.AudioFormat;
+import app.judo.shaded.exoplayer2.audio.AudioProcessor.UnhandledAudioFormatException;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;

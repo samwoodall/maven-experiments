@@ -19,6 +19,7 @@ import static com.google.common.truth.Truth.assertThat;
 
 import android.util.Pair;
 import androidx.test.ext.junit.runners.AndroidJUnit4;
+import app.judo.shaded.exoplayer2.util.CodecSpecificDataUtil;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 

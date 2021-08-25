@@ -15,7 +15,7 @@
  */
 package com.google.android.exoplayer2.ext.media2;
 
-import com.google.android.exoplayer2.MediaItem;
+import app.judo.shaded.exoplayer2.MediaItem;
 
 /**
  * Converts between {@link androidx.media2.common.MediaItem Media2 MediaItem} and {@link MediaItem

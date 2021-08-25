@@ -19,11 +19,11 @@ import static com.google.android.exoplayer2.playbacktests.gts.GtsTestUtil.should
 
 import androidx.test.ext.junit.runners.AndroidJUnit4;
 import androidx.test.rule.ActivityTestRule;
-import com.google.android.exoplayer2.Player;
+import app.judo.shaded.exoplayer2.Player;
 import com.google.android.exoplayer2.testutil.ActionSchedule;
 import com.google.android.exoplayer2.testutil.HostActivity;
-import com.google.android.exoplayer2.util.MimeTypes;
-import com.google.android.exoplayer2.util.Util;
+import app.judo.shaded.exoplayer2.util.MimeTypes;
+import app.judo.shaded.exoplayer2.util.Util;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Rule;

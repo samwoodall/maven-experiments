@@ -16,11 +16,11 @@
 package com.google.android.exoplayer2.ext.ima;
 
 import android.os.Looper;
-import com.google.android.exoplayer2.C;
-import com.google.android.exoplayer2.Player;
-import com.google.android.exoplayer2.Timeline;
+import app.judo.shaded.exoplayer2.C;
+import app.judo.shaded.exoplayer2.Player;
+import app.judo.shaded.exoplayer2.Timeline;
 import com.google.android.exoplayer2.testutil.StubExoPlayer;
-import com.google.android.exoplayer2.trackselection.TrackSelectionArray;
+import app.judo.shaded.exoplayer2.trackselection.TrackSelectionArray;
 import java.util.ArrayList;
 
 /** A fake player for testing content/ad playback. */

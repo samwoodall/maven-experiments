@@ -17,7 +17,7 @@ package com.google.android.exoplayer2.e2etest.util;
 
 import android.media.MediaCodecInfo;
 import android.media.MediaFormat;
-import com.google.android.exoplayer2.util.MimeTypes;
+import app.judo.shaded.exoplayer2.util.MimeTypes;
 import com.google.common.collect.ImmutableList;
 import com.google.common.collect.ImmutableMap;
 import com.google.common.primitives.Ints;

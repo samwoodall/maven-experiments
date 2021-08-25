@@ -20,6 +20,7 @@ import static java.nio.charset.Charset.forName;
 import static org.junit.Assert.fail;
 
 import androidx.test.ext.junit.runners.AndroidJUnit4;
+import app.judo.shaded.exoplayer2.util.ParsableByteArray;
 import java.nio.ByteBuffer;
 import java.util.Arrays;
 import org.junit.Test;

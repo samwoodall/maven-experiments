@@ -15,8 +15,8 @@
  */
 package com.google.android.exoplayer2.testutil;
 
-import com.google.android.exoplayer2.Renderer;
-import com.google.android.exoplayer2.util.MediaClock;
+import app.judo.shaded.exoplayer2.Renderer;
+import app.judo.shaded.exoplayer2.util.MediaClock;
 
 /** Fake abstract {@link Renderer} which is also a {@link MediaClock}. */
 public abstract class FakeMediaClockRenderer extends FakeRenderer implements MediaClock {

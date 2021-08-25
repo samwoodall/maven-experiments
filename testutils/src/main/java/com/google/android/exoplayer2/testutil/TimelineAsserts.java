@@ -17,14 +17,14 @@ package com.google.android.exoplayer2.testutil;
 
 import static com.google.common.truth.Truth.assertThat;
 
-import com.google.android.exoplayer2.C;
-import com.google.android.exoplayer2.MediaItem;
-import com.google.android.exoplayer2.Player;
-import com.google.android.exoplayer2.Timeline;
-import com.google.android.exoplayer2.Timeline.Period;
-import com.google.android.exoplayer2.Timeline.Window;
-import com.google.android.exoplayer2.util.Assertions;
-import com.google.android.exoplayer2.util.Util;
+import app.judo.shaded.exoplayer2.C;
+import app.judo.shaded.exoplayer2.MediaItem;
+import app.judo.shaded.exoplayer2.Player;
+import app.judo.shaded.exoplayer2.Timeline;
+import app.judo.shaded.exoplayer2.Timeline.Period;
+import app.judo.shaded.exoplayer2.Timeline.Window;
+import app.judo.shaded.exoplayer2.util.Assertions;
+import app.judo.shaded.exoplayer2.util.Util;
 import org.checkerframework.checker.nullness.compatqual.NullableType;
 
 /** Unit test for {@link Timeline}. */

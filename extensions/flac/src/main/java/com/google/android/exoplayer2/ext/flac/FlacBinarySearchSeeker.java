@@ -17,12 +17,12 @@ package com.google.android.exoplayer2.ext.flac;
 
 import static java.lang.Math.max;
 
-import com.google.android.exoplayer2.extractor.BinarySearchSeeker;
-import com.google.android.exoplayer2.extractor.ExtractorInput;
-import com.google.android.exoplayer2.extractor.FlacStreamMetadata;
-import com.google.android.exoplayer2.extractor.SeekMap;
-import com.google.android.exoplayer2.util.Assertions;
-import com.google.android.exoplayer2.util.FlacConstants;
+import app.judo.shaded.exoplayer2.extractor.BinarySearchSeeker;
+import app.judo.shaded.exoplayer2.extractor.ExtractorInput;
+import app.judo.shaded.exoplayer2.extractor.FlacStreamMetadata;
+import app.judo.shaded.exoplayer2.extractor.SeekMap;
+import app.judo.shaded.exoplayer2.util.Assertions;
+import app.judo.shaded.exoplayer2.util.FlacConstants;
 import java.io.IOException;
 import java.nio.ByteBuffer;
 

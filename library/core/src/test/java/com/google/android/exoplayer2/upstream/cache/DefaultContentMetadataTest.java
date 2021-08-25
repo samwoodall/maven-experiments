@@ -18,6 +18,8 @@ package com.google.android.exoplayer2.upstream.cache;
 import static com.google.common.truth.Truth.assertThat;
 
 import androidx.test.ext.junit.runners.AndroidJUnit4;
+import app.judo.shaded.exoplayer2.upstream.cache.ContentMetadataMutations;
+import app.judo.shaded.exoplayer2.upstream.cache.DefaultContentMetadata;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;

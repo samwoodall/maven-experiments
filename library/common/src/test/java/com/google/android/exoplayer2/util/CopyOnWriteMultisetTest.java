@@ -20,6 +20,7 @@ import static com.google.common.truth.Truth.assertThat;
 import static org.junit.Assert.assertThrows;
 
 import androidx.test.ext.junit.runners.AndroidJUnit4;
+import app.judo.shaded.exoplayer2.util.CopyOnWriteMultiset;
 import java.util.Iterator;
 import java.util.Set;
 import org.junit.Test;

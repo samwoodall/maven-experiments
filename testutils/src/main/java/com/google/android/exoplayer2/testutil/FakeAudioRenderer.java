@@ -18,11 +18,11 @@ package com.google.android.exoplayer2.testutil;
 
 import android.os.Handler;
 import android.os.SystemClock;
-import com.google.android.exoplayer2.C;
-import com.google.android.exoplayer2.ExoPlaybackException;
-import com.google.android.exoplayer2.Format;
-import com.google.android.exoplayer2.audio.AudioRendererEventListener;
-import com.google.android.exoplayer2.decoder.DecoderCounters;
+import app.judo.shaded.exoplayer2.C;
+import app.judo.shaded.exoplayer2.ExoPlaybackException;
+import app.judo.shaded.exoplayer2.Format;
+import app.judo.shaded.exoplayer2.audio.AudioRendererEventListener;
+import app.judo.shaded.exoplayer2.decoder.DecoderCounters;
 
 /** A {@link FakeRenderer} that supports {@link C#TRACK_TYPE_AUDIO}. */
 public class FakeAudioRenderer extends FakeRenderer {

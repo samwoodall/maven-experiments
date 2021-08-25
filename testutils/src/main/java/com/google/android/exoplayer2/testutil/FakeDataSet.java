@@ -17,9 +17,9 @@ package com.google.android.exoplayer2.testutil;
 
 import android.net.Uri;
 import androidx.annotation.Nullable;
-import com.google.android.exoplayer2.C;
-import com.google.android.exoplayer2.upstream.DataSpec;
-import com.google.android.exoplayer2.util.Assertions;
+import app.judo.shaded.exoplayer2.C;
+import app.judo.shaded.exoplayer2.upstream.DataSpec;
+import app.judo.shaded.exoplayer2.util.Assertions;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.util.ArrayList;

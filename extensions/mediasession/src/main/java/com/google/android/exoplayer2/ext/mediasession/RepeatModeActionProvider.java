@@ -19,9 +19,9 @@ import android.content.Context;
 import android.os.Bundle;
 import android.support.v4.media.session.PlaybackStateCompat;
 import androidx.annotation.Nullable;
-import com.google.android.exoplayer2.ControlDispatcher;
-import com.google.android.exoplayer2.Player;
-import com.google.android.exoplayer2.util.RepeatModeUtil;
+import app.judo.shaded.exoplayer2.ControlDispatcher;
+import app.judo.shaded.exoplayer2.Player;
+import app.judo.shaded.exoplayer2.util.RepeatModeUtil;
 
 /** Provides a custom action for toggling repeat modes. */
 public final class RepeatModeActionProvider implements MediaSessionConnector.CustomActionProvider {

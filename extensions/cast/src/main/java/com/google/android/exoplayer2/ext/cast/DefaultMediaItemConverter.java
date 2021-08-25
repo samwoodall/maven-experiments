@@ -17,9 +17,9 @@ package com.google.android.exoplayer2.ext.cast;
 
 import android.net.Uri;
 import androidx.annotation.Nullable;
-import com.google.android.exoplayer2.C;
-import com.google.android.exoplayer2.MediaItem;
-import com.google.android.exoplayer2.util.Assertions;
+import app.judo.shaded.exoplayer2.C;
+import app.judo.shaded.exoplayer2.MediaItem;
+import app.judo.shaded.exoplayer2.util.Assertions;
 import com.google.android.gms.cast.MediaInfo;
 import com.google.android.gms.cast.MediaMetadata;
 import com.google.android.gms.cast.MediaQueueItem;
@@ -76,8 +76,8 @@ public final class DefaultMediaItemConverter implements MediaItemConverter {
       MediaItem.Builder builder = new MediaItem.Builder();
       builder.setUri(Uri.parse(mediaItemJson.getString(KEY_URI)));
       if (mediaItemJson.has(KEY_TITLE)) {
-        com.google.android.exoplayer2.MediaMetadata mediaMetadata =
-            new com.google.android.exoplayer2.MediaMetadata.Builder()
+        app.judo.shaded.exoplayer2.MediaMetadata mediaMetadata =
+            new app.judo.shaded.exoplayer2.MediaMetadata.Builder()
                 .setTitle(mediaItemJson.getString(KEY_TITLE))
                 .build();
         builder.setMediaMetadata(mediaMetadata);

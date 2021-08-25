@@ -15,7 +15,7 @@
  */
 package com.google.android.exoplayer2.playbacktests.gts;
 
-import com.google.android.exoplayer2.util.Log;
+import app.judo.shaded.exoplayer2.util.Log;
 
 /** Implementation of {@link MetricsLogger} that prints the metrics to logcat. */
 /* package */ final class LogcatMetricsLogger implements MetricsLogger {

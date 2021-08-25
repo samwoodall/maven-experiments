@@ -21,6 +21,7 @@ import android.annotation.SuppressLint;
 import android.media.AudioFormat;
 import android.media.MediaCodec;
 import androidx.test.ext.junit.runners.AndroidJUnit4;
+import app.judo.shaded.exoplayer2.C;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 

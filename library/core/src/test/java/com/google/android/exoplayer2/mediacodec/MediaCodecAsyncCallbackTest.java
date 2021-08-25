@@ -22,6 +22,7 @@ import static org.junit.Assert.fail;
 import android.media.MediaCodec;
 import android.media.MediaFormat;
 import androidx.test.ext.junit.runners.AndroidJUnit4;
+import app.judo.shaded.exoplayer2.mediacodec.MediaCodecAsyncCallback;
 import java.io.IOException;
 import org.junit.Before;
 import org.junit.Test;

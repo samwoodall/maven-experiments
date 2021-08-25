@@ -15,24 +15,24 @@
  */
 package com.google.android.exoplayer2.ext.cronet;
 
-import static com.google.android.exoplayer2.util.Util.castNonNull;
+import static app.judo.shaded.exoplayer2.util.Util.castNonNull;
 import static java.lang.Math.max;
 import static java.lang.Math.min;
 
 import android.net.Uri;
 import android.text.TextUtils;
 import androidx.annotation.Nullable;
-import com.google.android.exoplayer2.C;
-import com.google.android.exoplayer2.ExoPlayerLibraryInfo;
-import com.google.android.exoplayer2.upstream.BaseDataSource;
-import com.google.android.exoplayer2.upstream.DataSourceException;
-import com.google.android.exoplayer2.upstream.DataSpec;
-import com.google.android.exoplayer2.upstream.HttpDataSource;
-import com.google.android.exoplayer2.util.Assertions;
-import com.google.android.exoplayer2.util.Clock;
-import com.google.android.exoplayer2.util.ConditionVariable;
-import com.google.android.exoplayer2.util.Log;
-import com.google.android.exoplayer2.util.Util;
+import app.judo.shaded.exoplayer2.C;
+import app.judo.shaded.exoplayer2.ExoPlayerLibraryInfo;
+import app.judo.shaded.exoplayer2.upstream.BaseDataSource;
+import app.judo.shaded.exoplayer2.upstream.DataSourceException;
+import app.judo.shaded.exoplayer2.upstream.DataSpec;
+import app.judo.shaded.exoplayer2.upstream.HttpDataSource;
+import app.judo.shaded.exoplayer2.util.Assertions;
+import app.judo.shaded.exoplayer2.util.Clock;
+import app.judo.shaded.exoplayer2.util.ConditionVariable;
+import app.judo.shaded.exoplayer2.util.Log;
+import app.judo.shaded.exoplayer2.util.Util;
 import com.google.common.base.Predicate;
 import java.io.IOException;
 import java.io.InterruptedIOException;

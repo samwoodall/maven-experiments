@@ -15,6 +15,7 @@
  */
 package com.google.android.exoplayer2.extractor.flv;
 
+import app.judo.shaded.exoplayer2.extractor.flv.FlvExtractor;
 import com.google.android.exoplayer2.testutil.ExtractorAsserts;
 import java.util.List;
 import org.junit.Test;

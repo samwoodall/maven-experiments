@@ -19,9 +19,11 @@ import static com.google.common.truth.Truth.assertThat;
 import static org.junit.Assert.fail;
 
 import androidx.test.ext.junit.runners.AndroidJUnit4;
-import com.google.android.exoplayer2.text.Cue;
-import com.google.android.exoplayer2.text.Subtitle;
-import com.google.android.exoplayer2.text.SubtitleDecoderException;
+import app.judo.shaded.exoplayer2.text.Cue;
+import app.judo.shaded.exoplayer2.text.Subtitle;
+import app.judo.shaded.exoplayer2.text.SubtitleDecoderException;
+import app.judo.shaded.exoplayer2.text.webvtt.Mp4WebvttDecoder;
+import app.judo.shaded.exoplayer2.text.webvtt.WebvttCueParser;
 import com.google.common.truth.Expect;
 import java.util.List;
 import org.junit.Rule;

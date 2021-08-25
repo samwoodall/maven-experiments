@@ -15,10 +15,10 @@
  */
 package com.google.android.exoplayer2.e2etest.util;
 
-import com.google.android.exoplayer2.SimpleExoPlayer;
-import com.google.android.exoplayer2.metadata.Metadata;
+import app.judo.shaded.exoplayer2.SimpleExoPlayer;
+import app.judo.shaded.exoplayer2.metadata.Metadata;
 import com.google.android.exoplayer2.testutil.Dumper;
-import com.google.android.exoplayer2.util.Assertions;
+import app.judo.shaded.exoplayer2.util.Assertions;
 import com.google.common.collect.ImmutableList;
 import com.google.common.collect.ImmutableMap;
 import java.util.ArrayList;

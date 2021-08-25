@@ -15,7 +15,7 @@
  */
 package com.google.android.exoplayer2.ext.opus;
 
-import com.google.android.exoplayer2.decoder.DecoderException;
+import app.judo.shaded.exoplayer2.decoder.DecoderException;
 
 /** Thrown when an Opus decoder error occurs. */
 public final class OpusDecoderException extends DecoderException {

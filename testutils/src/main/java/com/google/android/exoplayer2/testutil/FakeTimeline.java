@@ -19,12 +19,12 @@ import static java.lang.Math.min;
 
 import android.net.Uri;
 import android.util.Pair;
-import com.google.android.exoplayer2.C;
-import com.google.android.exoplayer2.MediaItem;
-import com.google.android.exoplayer2.Timeline;
-import com.google.android.exoplayer2.source.ads.AdPlaybackState;
-import com.google.android.exoplayer2.util.Assertions;
-import com.google.android.exoplayer2.util.Util;
+import app.judo.shaded.exoplayer2.C;
+import app.judo.shaded.exoplayer2.MediaItem;
+import app.judo.shaded.exoplayer2.Timeline;
+import app.judo.shaded.exoplayer2.source.ads.AdPlaybackState;
+import app.judo.shaded.exoplayer2.util.Assertions;
+import app.judo.shaded.exoplayer2.util.Util;
 import java.util.Arrays;
 
 /** Fake {@link Timeline} which can be setup to return custom {@link TimelineWindowDefinition}s. */

@@ -21,6 +21,7 @@ import android.content.Context;
 import android.view.MotionEvent;
 import androidx.test.core.app.ApplicationProvider;
 import androidx.test.ext.junit.runners.AndroidJUnit4;
+import app.judo.shaded.exoplayer2.ui.spherical.TouchTracker;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;

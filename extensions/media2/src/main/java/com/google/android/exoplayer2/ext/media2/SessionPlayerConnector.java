@@ -15,7 +15,7 @@
  */
 package com.google.android.exoplayer2.ext.media2;
 
-import static com.google.android.exoplayer2.util.Util.postOrRun;
+import static app.judo.shaded.exoplayer2.util.Util.postOrRun;
 
 import android.os.Handler;
 import androidx.annotation.FloatRange;
@@ -30,12 +30,12 @@ import androidx.media2.common.FileMediaItem;
 import androidx.media2.common.MediaItem;
 import androidx.media2.common.MediaMetadata;
 import androidx.media2.common.SessionPlayer;
-import com.google.android.exoplayer2.ControlDispatcher;
-import com.google.android.exoplayer2.DefaultControlDispatcher;
-import com.google.android.exoplayer2.ExoPlayerLibraryInfo;
-import com.google.android.exoplayer2.Player;
-import com.google.android.exoplayer2.util.Assertions;
-import com.google.android.exoplayer2.util.Log;
+import app.judo.shaded.exoplayer2.ControlDispatcher;
+import app.judo.shaded.exoplayer2.DefaultControlDispatcher;
+import app.judo.shaded.exoplayer2.ExoPlayerLibraryInfo;
+import app.judo.shaded.exoplayer2.Player;
+import app.judo.shaded.exoplayer2.util.Assertions;
+import app.judo.shaded.exoplayer2.util.Log;
 import com.google.common.util.concurrent.ListenableFuture;
 import com.google.common.util.concurrent.SettableFuture;
 import java.util.HashMap;

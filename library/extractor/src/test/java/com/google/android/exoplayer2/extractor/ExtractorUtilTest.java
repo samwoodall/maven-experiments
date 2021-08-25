@@ -19,9 +19,12 @@ import static com.google.common.truth.Truth.assertThat;
 
 import android.net.Uri;
 import androidx.test.ext.junit.runners.AndroidJUnit4;
-import com.google.android.exoplayer2.C;
+import app.judo.shaded.exoplayer2.extractor.DefaultExtractorInput;
+import app.judo.shaded.exoplayer2.extractor.ExtractorInput;
+import app.judo.shaded.exoplayer2.extractor.ExtractorUtil;
+import app.judo.shaded.exoplayer2.C;
 import com.google.android.exoplayer2.testutil.FakeDataSource;
-import com.google.android.exoplayer2.upstream.DataSpec;
+import app.judo.shaded.exoplayer2.upstream.DataSpec;
 import java.util.Arrays;
 import org.junit.Test;
 import org.junit.runner.RunWith;

@@ -15,21 +15,21 @@
  */
 package com.google.android.exoplayer2.testutil;
 
-import static com.google.android.exoplayer2.util.Assertions.checkState;
+import static app.judo.shaded.exoplayer2.util.Assertions.checkState;
 import static com.google.common.truth.Truth.assertThat;
 
 import android.content.Context;
 import androidx.annotation.Nullable;
 import androidx.test.core.app.ApplicationProvider;
-import com.google.android.exoplayer2.C;
-import com.google.android.exoplayer2.extractor.Extractor;
-import com.google.android.exoplayer2.extractor.ExtractorInput;
-import com.google.android.exoplayer2.extractor.ExtractorOutput;
-import com.google.android.exoplayer2.extractor.PositionHolder;
-import com.google.android.exoplayer2.extractor.SeekMap;
+import app.judo.shaded.exoplayer2.C;
+import app.judo.shaded.exoplayer2.extractor.Extractor;
+import app.judo.shaded.exoplayer2.extractor.ExtractorInput;
+import app.judo.shaded.exoplayer2.extractor.ExtractorOutput;
+import app.judo.shaded.exoplayer2.extractor.PositionHolder;
+import app.judo.shaded.exoplayer2.extractor.SeekMap;
 import com.google.android.exoplayer2.testutil.FakeExtractorInput.SimulatedIOException;
-import com.google.android.exoplayer2.util.Assertions;
-import com.google.android.exoplayer2.util.Util;
+import app.judo.shaded.exoplayer2.util.Assertions;
+import app.judo.shaded.exoplayer2.util.Util;
 import com.google.common.base.Joiner;
 import java.io.IOException;
 import java.util.Arrays;

@@ -20,8 +20,8 @@ import android.os.Looper;
 import android.os.Message;
 import androidx.annotation.GuardedBy;
 import androidx.annotation.Nullable;
-import com.google.android.exoplayer2.util.Clock;
-import com.google.android.exoplayer2.util.HandlerWrapper;
+import app.judo.shaded.exoplayer2.util.Clock;
+import app.judo.shaded.exoplayer2.util.HandlerWrapper;
 import java.util.ArrayList;
 import java.util.List;
 

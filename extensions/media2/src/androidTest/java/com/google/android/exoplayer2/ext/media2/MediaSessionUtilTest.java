@@ -29,7 +29,7 @@ import androidx.test.core.app.ApplicationProvider;
 import androidx.test.ext.junit.runners.AndroidJUnit4;
 import androidx.test.platform.app.InstrumentationRegistry;
 import com.google.android.exoplayer2.ext.media2.test.R;
-import com.google.android.exoplayer2.util.Assertions;
+import app.judo.shaded.exoplayer2.util.Assertions;
 import com.google.common.util.concurrent.ListenableFuture;
 import java.util.concurrent.CountDownLatch;
 import org.junit.Rule;

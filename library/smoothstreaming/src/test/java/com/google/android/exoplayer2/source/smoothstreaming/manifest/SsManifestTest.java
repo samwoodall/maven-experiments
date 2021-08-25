@@ -19,12 +19,13 @@ import static com.google.android.exoplayer2.source.smoothstreaming.SsTestUtils.c
 import static com.google.common.truth.Truth.assertThat;
 
 import androidx.test.ext.junit.runners.AndroidJUnit4;
-import com.google.android.exoplayer2.C;
-import com.google.android.exoplayer2.Format;
-import com.google.android.exoplayer2.offline.StreamKey;
+import app.judo.shaded.exoplayer2.source.smoothstreaming.manifest.SsManifest;
+import app.judo.shaded.exoplayer2.C;
+import app.judo.shaded.exoplayer2.Format;
+import app.judo.shaded.exoplayer2.offline.StreamKey;
 import com.google.android.exoplayer2.source.smoothstreaming.SsTestUtils;
-import com.google.android.exoplayer2.source.smoothstreaming.manifest.SsManifest.StreamElement;
-import com.google.android.exoplayer2.util.MimeTypes;
+import app.judo.shaded.exoplayer2.source.smoothstreaming.manifest.SsManifest.StreamElement;
+import app.judo.shaded.exoplayer2.util.MimeTypes;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;

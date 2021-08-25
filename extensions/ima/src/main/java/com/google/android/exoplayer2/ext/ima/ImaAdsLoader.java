@@ -15,10 +15,10 @@
  */
 package com.google.android.exoplayer2.ext.ima;
 
-import static com.google.android.exoplayer2.util.Assertions.checkArgument;
-import static com.google.android.exoplayer2.util.Assertions.checkNotNull;
-import static com.google.android.exoplayer2.util.Assertions.checkState;
-import static com.google.android.exoplayer2.util.Util.castNonNull;
+import static app.judo.shaded.exoplayer2.util.Assertions.checkArgument;
+import static app.judo.shaded.exoplayer2.util.Assertions.checkNotNull;
+import static app.judo.shaded.exoplayer2.util.Assertions.checkState;
+import static app.judo.shaded.exoplayer2.util.Util.castNonNull;
 import static java.lang.Math.max;
 
 import android.content.Context;
@@ -31,6 +31,7 @@ import android.view.ViewGroup;
 import androidx.annotation.IntDef;
 import androidx.annotation.Nullable;
 import androidx.annotation.VisibleForTesting;
+import app.judo.shaded.exoplayer2.source.ads.AdsMediaSource;
 import com.google.ads.interactivemedia.v3.api.AdDisplayContainer;
 import com.google.ads.interactivemedia.v3.api.AdError;
 import com.google.ads.interactivemedia.v3.api.AdError.AdErrorCode;
@@ -56,18 +57,18 @@ import com.google.ads.interactivemedia.v3.api.player.AdMediaInfo;
 import com.google.ads.interactivemedia.v3.api.player.ContentProgressProvider;
 import com.google.ads.interactivemedia.v3.api.player.VideoAdPlayer;
 import com.google.ads.interactivemedia.v3.api.player.VideoProgressUpdate;
-import com.google.android.exoplayer2.C;
-import com.google.android.exoplayer2.ExoPlaybackException;
-import com.google.android.exoplayer2.ExoPlayerLibraryInfo;
-import com.google.android.exoplayer2.Player;
-import com.google.android.exoplayer2.Timeline;
-import com.google.android.exoplayer2.source.ads.AdPlaybackState;
-import com.google.android.exoplayer2.source.ads.AdsMediaSource.AdLoadException;
-import com.google.android.exoplayer2.trackselection.TrackSelectionArray;
-import com.google.android.exoplayer2.upstream.DataSpec;
-import com.google.android.exoplayer2.util.Log;
-import com.google.android.exoplayer2.util.MimeTypes;
-import com.google.android.exoplayer2.util.Util;
+import app.judo.shaded.exoplayer2.C;
+import app.judo.shaded.exoplayer2.ExoPlaybackException;
+import app.judo.shaded.exoplayer2.ExoPlayerLibraryInfo;
+import app.judo.shaded.exoplayer2.Player;
+import app.judo.shaded.exoplayer2.Timeline;
+import app.judo.shaded.exoplayer2.source.ads.AdPlaybackState;
+import app.judo.shaded.exoplayer2.source.ads.AdsMediaSource.AdLoadException;
+import app.judo.shaded.exoplayer2.trackselection.TrackSelectionArray;
+import app.judo.shaded.exoplayer2.upstream.DataSpec;
+import app.judo.shaded.exoplayer2.util.Log;
+import app.judo.shaded.exoplayer2.util.MimeTypes;
+import app.judo.shaded.exoplayer2.util.Util;
 import com.google.common.collect.BiMap;
 import com.google.common.collect.HashBiMap;
 import com.google.common.collect.ImmutableList;
@@ -86,7 +87,7 @@ import java.util.Set;
 import org.checkerframework.checker.nullness.qual.MonotonicNonNull;
 
 /**
- * {@link com.google.android.exoplayer2.source.ads.AdsLoader} using the IMA SDK. All methods must be
+ * {@link app.judo.shaded.exoplayer2.source.ads.AdsLoader} using the IMA SDK. All methods must be
  * called on the main thread.
  *
  * <p>The player instance that will play the loaded ads must be set before playback using {@link
@@ -96,12 +97,12 @@ import org.checkerframework.checker.nullness.qual.MonotonicNonNull;
  * <p>The IMA SDK can report obstructions to the ad view for accurate viewability measurement. This
  * means that any overlay views that obstruct the ad overlay but are essential for playback need to
  * be registered via the {@link AdViewProvider} passed to the {@link
- * com.google.android.exoplayer2.source.ads.AdsMediaSource}. See the <a
+ * AdsMediaSource}. See the <a
  * href="https://developers.google.com/interactive-media-ads/docs/sdks/android/client-side/omsdk">
  * IMA SDK Open Measurement documentation</a> for more information.
  */
 public final class ImaAdsLoader
-    implements Player.EventListener, com.google.android.exoplayer2.source.ads.AdsLoader {
+    implements Player.EventListener, app.judo.shaded.exoplayer2.source.ads.AdsLoader {
 
   static {
     ExoPlayerLibraryInfo.registerModule("goog.exo.ima");
@@ -614,7 +615,7 @@ public final class ImaAdsLoader
    * AdDisplayContainer#registerFriendlyObstruction(FriendlyObstruction)} will be unregistered
    * automatically when the media source detaches from this instance. It is therefore necessary to
    * re-register views each time the ads loader is reused. Alternatively, provide overlay views via
-   * the {@link com.google.android.exoplayer2.source.ads.AdsLoader.AdViewProvider} when creating the
+   * the {@link app.judo.shaded.exoplayer2.source.ads.AdsLoader.AdViewProvider} when creating the
    * media source to benefit from automatic registration.
    */
   @Nullable
@@ -681,7 +682,7 @@ public final class ImaAdsLoader
     }
   }
 
-  // com.google.android.exoplayer2.source.ads.AdsLoader implementation.
+  // AdsLoader implementation.
 
   @Override
   public void setPlayer(@Nullable Player player) {

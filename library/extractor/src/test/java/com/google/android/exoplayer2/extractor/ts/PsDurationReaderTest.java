@@ -19,8 +19,9 @@ import static com.google.common.truth.Truth.assertThat;
 
 import androidx.test.core.app.ApplicationProvider;
 import androidx.test.ext.junit.runners.AndroidJUnit4;
-import com.google.android.exoplayer2.extractor.Extractor;
-import com.google.android.exoplayer2.extractor.PositionHolder;
+import app.judo.shaded.exoplayer2.extractor.Extractor;
+import app.judo.shaded.exoplayer2.extractor.PositionHolder;
+import app.judo.shaded.exoplayer2.extractor.ts.PsDurationReader;
 import com.google.android.exoplayer2.testutil.FakeExtractorInput;
 import com.google.android.exoplayer2.testutil.TestUtil;
 import java.io.IOException;

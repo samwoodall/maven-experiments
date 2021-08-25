@@ -15,20 +15,20 @@
  */
 package com.google.android.exoplayer2.testutil;
 
-import static com.google.android.exoplayer2.DefaultRenderersFactory.EXTENSION_RENDERER_MODE_OFF;
-import static com.google.android.exoplayer2.DefaultRenderersFactory.EXTENSION_RENDERER_MODE_ON;
-import static com.google.android.exoplayer2.DefaultRenderersFactory.EXTENSION_RENDERER_MODE_PREFER;
+import static app.judo.shaded.exoplayer2.DefaultRenderersFactory.EXTENSION_RENDERER_MODE_OFF;
+import static app.judo.shaded.exoplayer2.DefaultRenderersFactory.EXTENSION_RENDERER_MODE_ON;
+import static app.judo.shaded.exoplayer2.DefaultRenderersFactory.EXTENSION_RENDERER_MODE_PREFER;
 import static com.google.common.truth.Truth.assertThat;
 
 import android.os.Handler;
 import android.os.Looper;
 import androidx.test.core.app.ApplicationProvider;
-import com.google.android.exoplayer2.DefaultRenderersFactory;
-import com.google.android.exoplayer2.Renderer;
-import com.google.android.exoplayer2.audio.AudioRendererEventListener;
-import com.google.android.exoplayer2.metadata.Metadata;
-import com.google.android.exoplayer2.text.Cue;
-import com.google.android.exoplayer2.video.VideoRendererEventListener;
+import app.judo.shaded.exoplayer2.DefaultRenderersFactory;
+import app.judo.shaded.exoplayer2.Renderer;
+import app.judo.shaded.exoplayer2.audio.AudioRendererEventListener;
+import app.judo.shaded.exoplayer2.metadata.Metadata;
+import app.judo.shaded.exoplayer2.text.Cue;
+import app.judo.shaded.exoplayer2.video.VideoRendererEventListener;
 import java.util.List;
 
 /** Assertions for {@link DefaultRenderersFactory}. */

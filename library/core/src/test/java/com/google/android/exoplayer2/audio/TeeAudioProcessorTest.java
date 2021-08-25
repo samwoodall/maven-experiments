@@ -18,9 +18,10 @@ package com.google.android.exoplayer2.audio;
 import static org.mockito.Mockito.verify;
 
 import androidx.test.ext.junit.runners.AndroidJUnit4;
-import com.google.android.exoplayer2.C;
-import com.google.android.exoplayer2.audio.AudioProcessor.AudioFormat;
-import com.google.android.exoplayer2.audio.TeeAudioProcessor.AudioBufferSink;
+import app.judo.shaded.exoplayer2.audio.TeeAudioProcessor;
+import app.judo.shaded.exoplayer2.C;
+import app.judo.shaded.exoplayer2.audio.AudioProcessor.AudioFormat;
+import app.judo.shaded.exoplayer2.audio.TeeAudioProcessor.AudioBufferSink;
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;

@@ -16,9 +16,10 @@
 package com.google.android.exoplayer2.source;
 
 import androidx.test.ext.junit.runners.AndroidJUnit4;
-import com.google.android.exoplayer2.C;
-import com.google.android.exoplayer2.Player;
-import com.google.android.exoplayer2.Timeline;
+import app.judo.shaded.exoplayer2.source.LoopingMediaSource;
+import app.judo.shaded.exoplayer2.C;
+import app.judo.shaded.exoplayer2.Player;
+import app.judo.shaded.exoplayer2.Timeline;
 import com.google.android.exoplayer2.testutil.FakeMediaSource;
 import com.google.android.exoplayer2.testutil.FakeTimeline;
 import com.google.android.exoplayer2.testutil.FakeTimeline.TimelineWindowDefinition;

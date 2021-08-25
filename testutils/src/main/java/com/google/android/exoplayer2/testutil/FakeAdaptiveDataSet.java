@@ -16,14 +16,14 @@
 package com.google.android.exoplayer2.testutil;
 
 import android.net.Uri;
-import com.google.android.exoplayer2.C;
-import com.google.android.exoplayer2.Format;
-import com.google.android.exoplayer2.source.TrackGroup;
-import com.google.android.exoplayer2.source.chunk.BaseMediaChunkIterator;
-import com.google.android.exoplayer2.source.chunk.MediaChunkIterator;
+import app.judo.shaded.exoplayer2.C;
+import app.judo.shaded.exoplayer2.Format;
+import app.judo.shaded.exoplayer2.source.TrackGroup;
+import app.judo.shaded.exoplayer2.source.chunk.BaseMediaChunkIterator;
+import app.judo.shaded.exoplayer2.source.chunk.MediaChunkIterator;
 import com.google.android.exoplayer2.testutil.FakeDataSet.FakeData.Segment;
-import com.google.android.exoplayer2.upstream.DataSpec;
-import com.google.android.exoplayer2.util.Util;
+import app.judo.shaded.exoplayer2.upstream.DataSpec;
+import app.judo.shaded.exoplayer2.util.Util;
 import java.util.Random;
 
 /**

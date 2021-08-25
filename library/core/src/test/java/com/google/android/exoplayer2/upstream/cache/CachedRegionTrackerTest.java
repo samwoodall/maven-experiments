@@ -22,9 +22,14 @@ import static org.mockito.Mockito.when;
 
 import androidx.test.core.app.ApplicationProvider;
 import androidx.test.ext.junit.runners.AndroidJUnit4;
-import com.google.android.exoplayer2.extractor.ChunkIndex;
+import app.judo.shaded.exoplayer2.upstream.cache.Cache;
+import app.judo.shaded.exoplayer2.upstream.cache.CacheSpan;
+import app.judo.shaded.exoplayer2.upstream.cache.CachedContentIndex;
+import app.judo.shaded.exoplayer2.upstream.cache.CachedRegionTracker;
+import app.judo.shaded.exoplayer2.upstream.cache.SimpleCacheSpan;
+import app.judo.shaded.exoplayer2.extractor.ChunkIndex;
 import com.google.android.exoplayer2.testutil.TestUtil;
-import com.google.android.exoplayer2.util.Util;
+import app.judo.shaded.exoplayer2.util.Util;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;

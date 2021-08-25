@@ -19,9 +19,10 @@ import static com.google.common.truth.Truth.assertThat;
 
 import android.net.Uri;
 import androidx.test.ext.junit.runners.AndroidJUnit4;
-import com.google.android.exoplayer2.C;
-import com.google.android.exoplayer2.MediaItem;
-import com.google.android.exoplayer2.drm.DrmSessionManager;
+import app.judo.shaded.exoplayer2.source.MediaSourceDrmHelper;
+import app.judo.shaded.exoplayer2.C;
+import app.judo.shaded.exoplayer2.MediaItem;
+import app.judo.shaded.exoplayer2.drm.DrmSessionManager;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 

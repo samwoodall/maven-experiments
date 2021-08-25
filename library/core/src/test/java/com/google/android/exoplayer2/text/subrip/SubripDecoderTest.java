@@ -19,9 +19,10 @@ import static com.google.common.truth.Truth.assertThat;
 
 import androidx.test.core.app.ApplicationProvider;
 import androidx.test.ext.junit.runners.AndroidJUnit4;
+import app.judo.shaded.exoplayer2.text.subrip.SubripDecoder;
 import com.google.android.exoplayer2.testutil.TestUtil;
-import com.google.android.exoplayer2.text.Cue;
-import com.google.android.exoplayer2.text.Subtitle;
+import app.judo.shaded.exoplayer2.text.Cue;
+import app.judo.shaded.exoplayer2.text.Subtitle;
 import java.io.IOException;
 import org.junit.Test;
 import org.junit.runner.RunWith;

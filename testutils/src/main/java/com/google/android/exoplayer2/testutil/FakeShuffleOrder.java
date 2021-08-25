@@ -15,8 +15,8 @@
  */
 package com.google.android.exoplayer2.testutil;
 
-import com.google.android.exoplayer2.C;
-import com.google.android.exoplayer2.source.ShuffleOrder;
+import app.judo.shaded.exoplayer2.C;
+import app.judo.shaded.exoplayer2.source.ShuffleOrder;
 
 /**
  * Fake {@link ShuffleOrder} which returns a reverse order. This order is thus deterministic but

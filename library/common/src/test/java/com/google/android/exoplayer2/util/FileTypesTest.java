@@ -15,13 +15,15 @@
  */
 package com.google.android.exoplayer2.util;
 
-import static com.google.android.exoplayer2.util.FileTypes.HEADER_CONTENT_TYPE;
-import static com.google.android.exoplayer2.util.FileTypes.inferFileTypeFromMimeType;
-import static com.google.android.exoplayer2.util.FileTypes.inferFileTypeFromUri;
+import static app.judo.shaded.exoplayer2.util.FileTypes.HEADER_CONTENT_TYPE;
+import static app.judo.shaded.exoplayer2.util.FileTypes.inferFileTypeFromMimeType;
+import static app.judo.shaded.exoplayer2.util.FileTypes.inferFileTypeFromUri;
 import static com.google.common.truth.Truth.assertThat;
 
 import android.net.Uri;
 import androidx.test.ext.junit.runners.AndroidJUnit4;
+import app.judo.shaded.exoplayer2.util.FileTypes;
+import app.judo.shaded.exoplayer2.util.MimeTypes;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;

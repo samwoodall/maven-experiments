@@ -16,10 +16,10 @@
 package com.google.android.exoplayer2.ext.opus;
 
 import androidx.annotation.Nullable;
-import com.google.android.exoplayer2.ExoPlayerLibraryInfo;
-import com.google.android.exoplayer2.drm.ExoMediaCrypto;
-import com.google.android.exoplayer2.util.LibraryLoader;
-import com.google.android.exoplayer2.util.Util;
+import app.judo.shaded.exoplayer2.ExoPlayerLibraryInfo;
+import app.judo.shaded.exoplayer2.drm.ExoMediaCrypto;
+import app.judo.shaded.exoplayer2.util.LibraryLoader;
+import app.judo.shaded.exoplayer2.util.Util;
 
 /**
  * Configures and queries the underlying native library.

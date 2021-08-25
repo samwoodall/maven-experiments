@@ -16,16 +16,16 @@
 package com.google.android.exoplayer2.testutil;
 
 import androidx.annotation.Nullable;
-import com.google.android.exoplayer2.Timeline;
-import com.google.android.exoplayer2.Timeline.Period;
-import com.google.android.exoplayer2.drm.DrmSessionEventListener;
-import com.google.android.exoplayer2.drm.DrmSessionManager;
-import com.google.android.exoplayer2.source.MediaSource;
-import com.google.android.exoplayer2.source.MediaSourceEventListener;
-import com.google.android.exoplayer2.source.TrackGroupArray;
-import com.google.android.exoplayer2.upstream.Allocator;
-import com.google.android.exoplayer2.upstream.TransferListener;
-import com.google.android.exoplayer2.util.Util;
+import app.judo.shaded.exoplayer2.Timeline;
+import app.judo.shaded.exoplayer2.Timeline.Period;
+import app.judo.shaded.exoplayer2.drm.DrmSessionEventListener;
+import app.judo.shaded.exoplayer2.drm.DrmSessionManager;
+import app.judo.shaded.exoplayer2.source.MediaSource;
+import app.judo.shaded.exoplayer2.source.MediaSourceEventListener;
+import app.judo.shaded.exoplayer2.source.TrackGroupArray;
+import app.judo.shaded.exoplayer2.upstream.Allocator;
+import app.judo.shaded.exoplayer2.upstream.TransferListener;
+import app.judo.shaded.exoplayer2.util.Util;
 
 /**
  * Fake {@link MediaSource} that provides a given timeline. Creating the period returns a

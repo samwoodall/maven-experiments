@@ -15,15 +15,14 @@
  */
 package com.google.android.exoplayer2.demo;
 
-import static com.google.android.exoplayer2.util.Assertions.checkArgument;
-import static com.google.android.exoplayer2.util.Assertions.checkNotNull;
-import static com.google.android.exoplayer2.util.Assertions.checkState;
+import static app.judo.shaded.exoplayer2.util.Assertions.checkArgument;
+import static app.judo.shaded.exoplayer2.util.Assertions.checkNotNull;
+import static app.judo.shaded.exoplayer2.util.Assertions.checkState;
 
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
-import android.content.pm.ResolveInfo;
 import android.content.res.AssetManager;
 import android.net.Uri;
 import android.os.AsyncTask;
@@ -44,17 +43,17 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
-import com.google.android.exoplayer2.C;
-import com.google.android.exoplayer2.MediaItem;
-import com.google.android.exoplayer2.MediaMetadata;
-import com.google.android.exoplayer2.ParserException;
-import com.google.android.exoplayer2.RenderersFactory;
-import com.google.android.exoplayer2.offline.DownloadService;
-import com.google.android.exoplayer2.upstream.DataSource;
-import com.google.android.exoplayer2.upstream.DataSourceInputStream;
-import com.google.android.exoplayer2.upstream.DataSpec;
-import com.google.android.exoplayer2.util.Log;
-import com.google.android.exoplayer2.util.Util;
+import app.judo.shaded.exoplayer2.C;
+import app.judo.shaded.exoplayer2.MediaItem;
+import app.judo.shaded.exoplayer2.MediaMetadata;
+import app.judo.shaded.exoplayer2.ParserException;
+import app.judo.shaded.exoplayer2.RenderersFactory;
+import app.judo.shaded.exoplayer2.offline.DownloadService;
+import app.judo.shaded.exoplayer2.upstream.DataSource;
+import app.judo.shaded.exoplayer2.upstream.DataSourceInputStream;
+import app.judo.shaded.exoplayer2.upstream.DataSpec;
+import app.judo.shaded.exoplayer2.util.Log;
+import app.judo.shaded.exoplayer2.util.Util;
 import com.google.common.collect.ImmutableList;
 import java.io.IOException;
 import java.io.InputStream;

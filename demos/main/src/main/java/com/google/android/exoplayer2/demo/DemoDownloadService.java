@@ -21,13 +21,13 @@ import android.app.Notification;
 import android.content.Context;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import com.google.android.exoplayer2.offline.Download;
-import com.google.android.exoplayer2.offline.DownloadManager;
-import com.google.android.exoplayer2.offline.DownloadService;
-import com.google.android.exoplayer2.scheduler.PlatformScheduler;
-import com.google.android.exoplayer2.ui.DownloadNotificationHelper;
-import com.google.android.exoplayer2.util.NotificationUtil;
-import com.google.android.exoplayer2.util.Util;
+import app.judo.shaded.exoplayer2.offline.Download;
+import app.judo.shaded.exoplayer2.offline.DownloadManager;
+import app.judo.shaded.exoplayer2.offline.DownloadService;
+import app.judo.shaded.exoplayer2.scheduler.PlatformScheduler;
+import app.judo.shaded.exoplayer2.ui.DownloadNotificationHelper;
+import app.judo.shaded.exoplayer2.util.NotificationUtil;
+import app.judo.shaded.exoplayer2.util.Util;
 import java.util.List;
 
 /** A service for downloading media. */

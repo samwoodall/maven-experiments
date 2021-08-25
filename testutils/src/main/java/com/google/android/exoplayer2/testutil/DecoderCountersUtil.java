@@ -17,7 +17,7 @@ package com.google.android.exoplayer2.testutil;
 
 import static com.google.common.truth.Truth.assertWithMessage;
 
-import com.google.android.exoplayer2.decoder.DecoderCounters;
+import app.judo.shaded.exoplayer2.decoder.DecoderCounters;
 
 /**
  * Assertions for {@link DecoderCounters}.

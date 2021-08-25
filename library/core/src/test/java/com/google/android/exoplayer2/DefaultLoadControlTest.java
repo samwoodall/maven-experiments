@@ -18,10 +18,13 @@ package com.google.android.exoplayer2;
 import static com.google.common.truth.Truth.assertThat;
 
 import androidx.test.ext.junit.runners.AndroidJUnit4;
-import com.google.android.exoplayer2.DefaultLoadControl.Builder;
-import com.google.android.exoplayer2.source.TrackGroupArray;
-import com.google.android.exoplayer2.trackselection.TrackSelectionArray;
-import com.google.android.exoplayer2.upstream.DefaultAllocator;
+import app.judo.shaded.exoplayer2.C;
+import app.judo.shaded.exoplayer2.DefaultLoadControl;
+import app.judo.shaded.exoplayer2.DefaultLoadControl.Builder;
+import app.judo.shaded.exoplayer2.Renderer;
+import app.judo.shaded.exoplayer2.source.TrackGroupArray;
+import app.judo.shaded.exoplayer2.trackselection.TrackSelectionArray;
+import app.judo.shaded.exoplayer2.upstream.DefaultAllocator;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;

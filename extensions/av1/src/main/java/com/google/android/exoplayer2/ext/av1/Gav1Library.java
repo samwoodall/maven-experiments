@@ -15,8 +15,8 @@
  */
 package com.google.android.exoplayer2.ext.av1;
 
-import com.google.android.exoplayer2.ExoPlayerLibraryInfo;
-import com.google.android.exoplayer2.util.LibraryLoader;
+import app.judo.shaded.exoplayer2.ExoPlayerLibraryInfo;
+import app.judo.shaded.exoplayer2.util.LibraryLoader;
 
 /** Configures and queries the underlying native library. */
 public final class Gav1Library {

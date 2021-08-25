@@ -15,12 +15,13 @@
  */
 package com.google.android.exoplayer2.util;
 
-import static com.google.android.exoplayer2.util.UriUtil.removeQueryParameter;
-import static com.google.android.exoplayer2.util.UriUtil.resolve;
+import static app.judo.shaded.exoplayer2.util.UriUtil.removeQueryParameter;
+import static app.judo.shaded.exoplayer2.util.UriUtil.resolve;
 import static com.google.common.truth.Truth.assertThat;
 
 import android.net.Uri;
 import androidx.test.ext.junit.runners.AndroidJUnit4;
+import app.judo.shaded.exoplayer2.util.UriUtil;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 

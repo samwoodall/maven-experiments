@@ -16,6 +16,8 @@
 package com.google.android.exoplayer2.upstream.cache;
 
 import androidx.test.ext.junit.runners.AndroidJUnit4;
+import app.judo.shaded.exoplayer2.upstream.cache.Cache;
+import app.judo.shaded.exoplayer2.upstream.cache.LeastRecentlyUsedCacheEvictor;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;

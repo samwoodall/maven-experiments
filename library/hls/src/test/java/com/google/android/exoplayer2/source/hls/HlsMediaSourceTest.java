@@ -20,9 +20,10 @@ import static org.mockito.Mockito.mock;
 
 import androidx.annotation.Nullable;
 import androidx.test.ext.junit.runners.AndroidJUnit4;
-import com.google.android.exoplayer2.MediaItem;
-import com.google.android.exoplayer2.offline.StreamKey;
-import com.google.android.exoplayer2.upstream.DataSource;
+import app.judo.shaded.exoplayer2.source.hls.HlsMediaSource;
+import app.judo.shaded.exoplayer2.MediaItem;
+import app.judo.shaded.exoplayer2.offline.StreamKey;
+import app.judo.shaded.exoplayer2.upstream.DataSource;
 import java.util.Collections;
 import org.junit.Test;
 import org.junit.runner.RunWith;

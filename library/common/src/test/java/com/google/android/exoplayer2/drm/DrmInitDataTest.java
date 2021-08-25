@@ -15,16 +15,17 @@
  */
 package com.google.android.exoplayer2.drm;
 
-import static com.google.android.exoplayer2.C.PLAYREADY_UUID;
-import static com.google.android.exoplayer2.C.UUID_NIL;
-import static com.google.android.exoplayer2.C.WIDEVINE_UUID;
-import static com.google.android.exoplayer2.util.MimeTypes.VIDEO_MP4;
+import static app.judo.shaded.exoplayer2.C.PLAYREADY_UUID;
+import static app.judo.shaded.exoplayer2.C.UUID_NIL;
+import static app.judo.shaded.exoplayer2.C.WIDEVINE_UUID;
+import static app.judo.shaded.exoplayer2.util.MimeTypes.VIDEO_MP4;
 import static com.google.common.truth.Truth.assertThat;
 
 import android.os.Parcel;
 import androidx.test.ext.junit.runners.AndroidJUnit4;
-import com.google.android.exoplayer2.C;
-import com.google.android.exoplayer2.drm.DrmInitData.SchemeData;
+import app.judo.shaded.exoplayer2.C;
+import app.judo.shaded.exoplayer2.drm.DrmInitData;
+import app.judo.shaded.exoplayer2.drm.DrmInitData.SchemeData;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;

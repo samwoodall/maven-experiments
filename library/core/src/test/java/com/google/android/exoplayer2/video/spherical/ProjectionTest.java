@@ -20,7 +20,8 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.fail;
 
 import androidx.test.ext.junit.runners.AndroidJUnit4;
-import com.google.android.exoplayer2.C;
+import app.judo.shaded.exoplayer2.video.spherical.Projection;
+import app.judo.shaded.exoplayer2.C;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 

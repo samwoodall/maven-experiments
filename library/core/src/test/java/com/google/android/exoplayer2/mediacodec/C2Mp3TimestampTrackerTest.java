@@ -18,9 +18,10 @@ package com.google.android.exoplayer2.mediacodec;
 import static com.google.common.truth.Truth.assertThat;
 
 import androidx.test.ext.junit.runners.AndroidJUnit4;
-import com.google.android.exoplayer2.Format;
-import com.google.android.exoplayer2.decoder.DecoderInputBuffer;
-import com.google.android.exoplayer2.util.MimeTypes;
+import app.judo.shaded.exoplayer2.mediacodec.C2Mp3TimestampTracker;
+import app.judo.shaded.exoplayer2.Format;
+import app.judo.shaded.exoplayer2.decoder.DecoderInputBuffer;
+import app.judo.shaded.exoplayer2.util.MimeTypes;
 import java.nio.ByteBuffer;
 import org.junit.Before;
 import org.junit.Test;

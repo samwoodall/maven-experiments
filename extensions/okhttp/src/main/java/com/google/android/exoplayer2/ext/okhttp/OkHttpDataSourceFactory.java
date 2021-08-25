@@ -15,13 +15,13 @@
  */
 package com.google.android.exoplayer2.ext.okhttp;
 
-import static com.google.android.exoplayer2.ExoPlayerLibraryInfo.DEFAULT_USER_AGENT;
+import static app.judo.shaded.exoplayer2.ExoPlayerLibraryInfo.DEFAULT_USER_AGENT;
 
 import androidx.annotation.Nullable;
-import com.google.android.exoplayer2.upstream.HttpDataSource;
-import com.google.android.exoplayer2.upstream.HttpDataSource.BaseFactory;
-import com.google.android.exoplayer2.upstream.HttpDataSource.Factory;
-import com.google.android.exoplayer2.upstream.TransferListener;
+import app.judo.shaded.exoplayer2.upstream.HttpDataSource;
+import app.judo.shaded.exoplayer2.upstream.HttpDataSource.BaseFactory;
+import app.judo.shaded.exoplayer2.upstream.HttpDataSource.Factory;
+import app.judo.shaded.exoplayer2.upstream.TransferListener;
 import okhttp3.CacheControl;
 import okhttp3.Call;
 

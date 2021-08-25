@@ -24,6 +24,7 @@ import android.text.Spanned;
 import android.text.style.BackgroundColorSpan;
 import android.text.style.ForegroundColorSpan;
 import androidx.test.ext.junit.runners.AndroidJUnit4;
+import app.judo.shaded.exoplayer2.text.span.SpanUtil;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 

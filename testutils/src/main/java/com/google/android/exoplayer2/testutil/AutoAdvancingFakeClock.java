@@ -15,7 +15,7 @@
  */
 package com.google.android.exoplayer2.testutil;
 
-import com.google.android.exoplayer2.util.HandlerWrapper;
+import app.judo.shaded.exoplayer2.util.HandlerWrapper;
 import org.checkerframework.checker.nullness.qual.MonotonicNonNull;
 
 /**

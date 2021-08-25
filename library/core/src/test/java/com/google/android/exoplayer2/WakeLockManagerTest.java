@@ -21,6 +21,7 @@ import android.content.Context;
 import android.os.PowerManager.WakeLock;
 import androidx.test.core.app.ApplicationProvider;
 import androidx.test.ext.junit.runners.AndroidJUnit4;
+import app.judo.shaded.exoplayer2.WakeLockManager;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;

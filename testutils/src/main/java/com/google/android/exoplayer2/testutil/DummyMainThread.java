@@ -21,7 +21,7 @@ import static java.util.concurrent.TimeUnit.MILLISECONDS;
 import android.os.Handler;
 import android.os.HandlerThread;
 import android.os.Looper;
-import com.google.android.exoplayer2.util.Util;
+import app.judo.shaded.exoplayer2.util.Util;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.atomic.AtomicReference;
 

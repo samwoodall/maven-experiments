@@ -15,8 +15,8 @@
  */
 package com.google.android.exoplayer2.upstream.cache;
 
-import static com.google.android.exoplayer2.C.LENGTH_UNSET;
-import static com.google.android.exoplayer2.util.Util.toByteArray;
+import static app.judo.shaded.exoplayer2.C.LENGTH_UNSET;
+import static app.judo.shaded.exoplayer2.util.Util.toByteArray;
 import static com.google.common.truth.Truth.assertThat;
 import static org.junit.Assert.assertThrows;
 import static org.mockito.Mockito.doAnswer;
@@ -24,10 +24,18 @@ import static org.mockito.Mockito.doAnswer;
 import android.net.Uri;
 import androidx.test.core.app.ApplicationProvider;
 import androidx.test.ext.junit.runners.AndroidJUnit4;
-import com.google.android.exoplayer2.database.DatabaseProvider;
+import app.judo.shaded.exoplayer2.database.DatabaseProvider;
+import app.judo.shaded.exoplayer2.upstream.cache.CacheSpan;
+import app.judo.shaded.exoplayer2.upstream.cache.CachedContentIndex;
+import app.judo.shaded.exoplayer2.upstream.cache.ContentMetadata;
+import app.judo.shaded.exoplayer2.upstream.cache.ContentMetadataMutations;
+import app.judo.shaded.exoplayer2.upstream.cache.LeastRecentlyUsedCacheEvictor;
+import app.judo.shaded.exoplayer2.upstream.cache.NoOpCacheEvictor;
+import app.judo.shaded.exoplayer2.upstream.cache.SimpleCache;
+import app.judo.shaded.exoplayer2.upstream.cache.SimpleCacheSpan;
 import com.google.android.exoplayer2.testutil.TestUtil;
-import com.google.android.exoplayer2.upstream.cache.Cache.CacheException;
-import com.google.android.exoplayer2.util.Util;
+import app.judo.shaded.exoplayer2.upstream.cache.Cache.CacheException;
+import app.judo.shaded.exoplayer2.util.Util;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;

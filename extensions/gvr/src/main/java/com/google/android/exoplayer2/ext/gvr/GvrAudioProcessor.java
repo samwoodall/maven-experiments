@@ -16,10 +16,10 @@
 package com.google.android.exoplayer2.ext.gvr;
 
 import androidx.annotation.Nullable;
-import com.google.android.exoplayer2.C;
-import com.google.android.exoplayer2.ExoPlayerLibraryInfo;
-import com.google.android.exoplayer2.audio.AudioProcessor;
-import com.google.android.exoplayer2.util.Assertions;
+import app.judo.shaded.exoplayer2.C;
+import app.judo.shaded.exoplayer2.ExoPlayerLibraryInfo;
+import app.judo.shaded.exoplayer2.audio.AudioProcessor;
+import app.judo.shaded.exoplayer2.util.Assertions;
 import com.google.vr.sdk.audio.GvrAudioSurround;
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;

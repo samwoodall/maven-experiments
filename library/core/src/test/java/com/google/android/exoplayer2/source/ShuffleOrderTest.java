@@ -15,13 +15,14 @@
  */
 package com.google.android.exoplayer2.source;
 
-import static com.google.android.exoplayer2.C.INDEX_UNSET;
+import static app.judo.shaded.exoplayer2.C.INDEX_UNSET;
 import static com.google.common.truth.Truth.assertThat;
 
 import androidx.test.ext.junit.runners.AndroidJUnit4;
-import com.google.android.exoplayer2.C;
-import com.google.android.exoplayer2.source.ShuffleOrder.DefaultShuffleOrder;
-import com.google.android.exoplayer2.source.ShuffleOrder.UnshuffledShuffleOrder;
+import app.judo.shaded.exoplayer2.source.ShuffleOrder;
+import app.judo.shaded.exoplayer2.C;
+import app.judo.shaded.exoplayer2.source.ShuffleOrder.DefaultShuffleOrder;
+import app.judo.shaded.exoplayer2.source.ShuffleOrder.UnshuffledShuffleOrder;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 

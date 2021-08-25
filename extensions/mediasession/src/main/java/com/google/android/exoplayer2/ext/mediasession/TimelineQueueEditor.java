@@ -21,12 +21,12 @@ import android.support.v4.media.MediaDescriptionCompat;
 import android.support.v4.media.session.MediaControllerCompat;
 import android.support.v4.media.session.MediaSessionCompat;
 import androidx.annotation.Nullable;
-import com.google.android.exoplayer2.C;
-import com.google.android.exoplayer2.ControlDispatcher;
-import com.google.android.exoplayer2.Player;
-import com.google.android.exoplayer2.source.ConcatenatingMediaSource;
-import com.google.android.exoplayer2.source.MediaSource;
-import com.google.android.exoplayer2.util.Util;
+import app.judo.shaded.exoplayer2.C;
+import app.judo.shaded.exoplayer2.ControlDispatcher;
+import app.judo.shaded.exoplayer2.Player;
+import app.judo.shaded.exoplayer2.source.ConcatenatingMediaSource;
+import app.judo.shaded.exoplayer2.source.MediaSource;
+import app.judo.shaded.exoplayer2.util.Util;
 import java.util.List;
 
 /**

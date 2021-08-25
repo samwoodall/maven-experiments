@@ -47,12 +47,12 @@ import androidx.test.filters.SdkSuppress;
 import androidx.test.filters.SmallTest;
 import androidx.test.platform.app.InstrumentationRegistry;
 import androidx.test.rule.ActivityTestRule;
-import com.google.android.exoplayer2.ControlDispatcher;
-import com.google.android.exoplayer2.DefaultControlDispatcher;
-import com.google.android.exoplayer2.Player;
-import com.google.android.exoplayer2.SimpleExoPlayer;
+import app.judo.shaded.exoplayer2.ControlDispatcher;
+import app.judo.shaded.exoplayer2.DefaultControlDispatcher;
+import app.judo.shaded.exoplayer2.Player;
+import app.judo.shaded.exoplayer2.SimpleExoPlayer;
 import com.google.android.exoplayer2.ext.media2.test.R;
-import com.google.android.exoplayer2.upstream.RawResourceDataSource;
+import app.judo.shaded.exoplayer2.upstream.RawResourceDataSource;
 import com.google.common.util.concurrent.ListenableFuture;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -807,7 +807,7 @@ public class SessionPlayerConnectorTest {
     List<MediaItem> playlistToSessionPlayer = TestUtils.createPlaylist(2);
     List<MediaItem> playlistToExoPlayer = TestUtils.createPlaylist(4);
     DefaultMediaItemConverter converter = new DefaultMediaItemConverter();
-    List<com.google.android.exoplayer2.MediaItem> exoMediaItems = new ArrayList<>();
+    List<app.judo.shaded.exoplayer2.MediaItem> exoMediaItems = new ArrayList<>();
     for (MediaItem mediaItem : playlistToExoPlayer) {
       exoMediaItems.add(converter.convertToExoPlayerMediaItem(mediaItem));
     }
@@ -840,7 +840,7 @@ public class SessionPlayerConnectorTest {
     List<MediaItem> playlistToSessionPlayer = TestUtils.createPlaylist(2);
     List<MediaItem> playlistToExoPlayer = TestUtils.createPlaylist(4);
     DefaultMediaItemConverter converter = new DefaultMediaItemConverter();
-    List<com.google.android.exoplayer2.MediaItem> exoMediaItems = new ArrayList<>();
+    List<app.judo.shaded.exoplayer2.MediaItem> exoMediaItems = new ArrayList<>();
     for (MediaItem mediaItem : playlistToExoPlayer) {
       exoMediaItems.add(converter.convertToExoPlayerMediaItem(mediaItem));
     }
@@ -1261,7 +1261,7 @@ public class SessionPlayerConnectorTest {
   public void getPlaylist_returnsPlaylistInUnderlyingPlayer() {
     List<MediaItem> playlistToExoPlayer = TestUtils.createPlaylist(4);
     DefaultMediaItemConverter converter = new DefaultMediaItemConverter();
-    List<com.google.android.exoplayer2.MediaItem> exoMediaItems = new ArrayList<>();
+    List<app.judo.shaded.exoplayer2.MediaItem> exoMediaItems = new ArrayList<>();
     for (MediaItem mediaItem : playlistToExoPlayer) {
       exoMediaItems.add(converter.convertToExoPlayerMediaItem(mediaItem));
     }

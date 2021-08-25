@@ -19,9 +19,14 @@ import static com.google.common.truth.Truth.assertThat;
 
 import android.net.Uri;
 import androidx.test.ext.junit.runners.AndroidJUnit4;
-import com.google.android.exoplayer2.upstream.DummyDataSource;
-import com.google.android.exoplayer2.upstream.cache.Cache;
-import com.google.android.exoplayer2.upstream.cache.CacheDataSource;
+import app.judo.shaded.exoplayer2.offline.DefaultDownloaderFactory;
+import app.judo.shaded.exoplayer2.offline.DownloadRequest;
+import app.judo.shaded.exoplayer2.offline.Downloader;
+import app.judo.shaded.exoplayer2.offline.DownloaderFactory;
+import app.judo.shaded.exoplayer2.offline.ProgressiveDownloader;
+import app.judo.shaded.exoplayer2.upstream.DummyDataSource;
+import app.judo.shaded.exoplayer2.upstream.cache.Cache;
+import app.judo.shaded.exoplayer2.upstream.cache.CacheDataSource;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mockito;

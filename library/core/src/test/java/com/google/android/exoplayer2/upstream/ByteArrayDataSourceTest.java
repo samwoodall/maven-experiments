@@ -21,7 +21,9 @@ import static org.junit.Assert.fail;
 
 import android.net.Uri;
 import androidx.test.ext.junit.runners.AndroidJUnit4;
-import com.google.android.exoplayer2.C;
+import app.judo.shaded.exoplayer2.upstream.DataSpec;
+import app.judo.shaded.exoplayer2.upstream.ByteArrayDataSource;
+import app.judo.shaded.exoplayer2.C;
 import java.io.IOException;
 import org.junit.Test;
 import org.junit.runner.RunWith;

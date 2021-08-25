@@ -22,7 +22,11 @@ import static org.mockito.Mockito.verifyNoMoreInteractions;
 import static org.mockito.MockitoAnnotations.initMocks;
 
 import androidx.test.ext.junit.runners.AndroidJUnit4;
-import com.google.android.exoplayer2.DefaultMediaClock.PlaybackParametersListener;
+import app.judo.shaded.exoplayer2.C;
+import app.judo.shaded.exoplayer2.DefaultMediaClock;
+import app.judo.shaded.exoplayer2.DefaultMediaClock.PlaybackParametersListener;
+import app.judo.shaded.exoplayer2.ExoPlaybackException;
+import app.judo.shaded.exoplayer2.PlaybackParameters;
 import com.google.android.exoplayer2.testutil.FakeClock;
 import com.google.android.exoplayer2.testutil.FakeMediaClockRenderer;
 import org.junit.Before;

@@ -18,7 +18,8 @@ package com.google.android.exoplayer2.audio;
 import static com.google.common.truth.Truth.assertThat;
 
 import androidx.test.ext.junit.runners.AndroidJUnit4;
-import com.google.android.exoplayer2.C;
+import app.judo.shaded.exoplayer2.C;
+import app.judo.shaded.exoplayer2.audio.OpusUtil;
 import com.google.common.collect.ImmutableList;
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;

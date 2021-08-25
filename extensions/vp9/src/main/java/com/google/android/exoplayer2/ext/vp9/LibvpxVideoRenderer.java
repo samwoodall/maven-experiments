@@ -20,15 +20,15 @@ import static java.lang.Runtime.getRuntime;
 import android.os.Handler;
 import android.view.Surface;
 import androidx.annotation.Nullable;
-import com.google.android.exoplayer2.C;
-import com.google.android.exoplayer2.Format;
-import com.google.android.exoplayer2.RendererCapabilities;
-import com.google.android.exoplayer2.drm.ExoMediaCrypto;
-import com.google.android.exoplayer2.util.MimeTypes;
-import com.google.android.exoplayer2.util.TraceUtil;
-import com.google.android.exoplayer2.video.DecoderVideoRenderer;
-import com.google.android.exoplayer2.video.VideoDecoderOutputBuffer;
-import com.google.android.exoplayer2.video.VideoRendererEventListener;
+import app.judo.shaded.exoplayer2.C;
+import app.judo.shaded.exoplayer2.Format;
+import app.judo.shaded.exoplayer2.RendererCapabilities;
+import app.judo.shaded.exoplayer2.drm.ExoMediaCrypto;
+import app.judo.shaded.exoplayer2.util.MimeTypes;
+import app.judo.shaded.exoplayer2.util.TraceUtil;
+import app.judo.shaded.exoplayer2.video.DecoderVideoRenderer;
+import app.judo.shaded.exoplayer2.video.VideoDecoderOutputBuffer;
+import app.judo.shaded.exoplayer2.video.VideoRendererEventListener;
 
 /** Decodes and renders video using the native VP9 decoder. */
 public class LibvpxVideoRenderer extends DecoderVideoRenderer {

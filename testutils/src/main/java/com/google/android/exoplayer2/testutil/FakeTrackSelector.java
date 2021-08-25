@@ -16,14 +16,14 @@
 package com.google.android.exoplayer2.testutil;
 
 import androidx.test.core.app.ApplicationProvider;
-import com.google.android.exoplayer2.RendererCapabilities.AdaptiveSupport;
-import com.google.android.exoplayer2.RendererCapabilities.Capabilities;
-import com.google.android.exoplayer2.source.TrackGroup;
-import com.google.android.exoplayer2.source.TrackGroupArray;
-import com.google.android.exoplayer2.trackselection.DefaultTrackSelector;
-import com.google.android.exoplayer2.trackselection.MappingTrackSelector;
-import com.google.android.exoplayer2.trackselection.TrackSelection;
-import com.google.android.exoplayer2.upstream.BandwidthMeter;
+import app.judo.shaded.exoplayer2.RendererCapabilities.AdaptiveSupport;
+import app.judo.shaded.exoplayer2.RendererCapabilities.Capabilities;
+import app.judo.shaded.exoplayer2.source.TrackGroup;
+import app.judo.shaded.exoplayer2.source.TrackGroupArray;
+import app.judo.shaded.exoplayer2.trackselection.DefaultTrackSelector;
+import app.judo.shaded.exoplayer2.trackselection.MappingTrackSelector;
+import app.judo.shaded.exoplayer2.trackselection.TrackSelection;
+import app.judo.shaded.exoplayer2.upstream.BandwidthMeter;
 import java.util.ArrayList;
 import java.util.List;
 import org.checkerframework.checker.nullness.compatqual.NullableType;

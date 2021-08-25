@@ -18,9 +18,12 @@ package com.google.android.exoplayer2.metadata.emsg;
 import static com.google.common.truth.Truth.assertThat;
 
 import androidx.test.ext.junit.runners.AndroidJUnit4;
-import com.google.android.exoplayer2.metadata.Metadata;
-import com.google.android.exoplayer2.metadata.MetadataInputBuffer;
-import com.google.android.exoplayer2.util.Assertions;
+import app.judo.shaded.exoplayer2.metadata.Metadata;
+import app.judo.shaded.exoplayer2.metadata.MetadataInputBuffer;
+import app.judo.shaded.exoplayer2.metadata.emsg.EventMessage;
+import app.judo.shaded.exoplayer2.metadata.emsg.EventMessageDecoder;
+import app.judo.shaded.exoplayer2.metadata.emsg.EventMessageEncoder;
+import app.judo.shaded.exoplayer2.util.Assertions;
 import com.google.common.primitives.Bytes;
 import java.io.IOException;
 import java.nio.ByteBuffer;

@@ -22,6 +22,8 @@ import static org.junit.Assert.fail;
 import android.net.Uri;
 import android.os.Parcel;
 import androidx.test.ext.junit.runners.AndroidJUnit4;
+import app.judo.shaded.exoplayer2.offline.StreamKey;
+import app.judo.shaded.exoplayer2.offline.DownloadRequest;
 import java.util.ArrayList;
 import org.junit.Before;
 import org.junit.Test;

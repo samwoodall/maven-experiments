@@ -19,6 +19,10 @@ import static com.google.common.truth.Truth.assertThat;
 
 import android.os.Parcel;
 import androidx.test.ext.junit.runners.AndroidJUnit4;
+import app.judo.shaded.exoplayer2.metadata.id3.ChapterTocFrame;
+import app.judo.shaded.exoplayer2.metadata.id3.Id3Frame;
+import app.judo.shaded.exoplayer2.metadata.id3.TextInformationFrame;
+import app.judo.shaded.exoplayer2.metadata.id3.UrlLinkFrame;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 

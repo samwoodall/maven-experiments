@@ -21,10 +21,14 @@ import static org.junit.Assert.fail;
 
 import androidx.test.core.app.ApplicationProvider;
 import androidx.test.ext.junit.runners.AndroidJUnit4;
-import com.google.android.exoplayer2.C;
+import app.judo.shaded.exoplayer2.extractor.ogg.DefaultOggSeeker;
+import app.judo.shaded.exoplayer2.extractor.ogg.FlacReader;
+import app.judo.shaded.exoplayer2.extractor.ogg.OggPageHeader;
+import app.judo.shaded.exoplayer2.extractor.ogg.StreamReader;
+import app.judo.shaded.exoplayer2.C;
 import com.google.android.exoplayer2.testutil.FakeExtractorInput;
 import com.google.android.exoplayer2.testutil.TestUtil;
-import com.google.android.exoplayer2.util.ParsableByteArray;
+import app.judo.shaded.exoplayer2.util.ParsableByteArray;
 import java.io.EOFException;
 import java.io.IOException;
 import java.util.Random;

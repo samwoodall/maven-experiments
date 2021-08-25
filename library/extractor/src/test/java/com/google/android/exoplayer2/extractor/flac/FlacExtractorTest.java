@@ -15,6 +15,7 @@
  */
 package com.google.android.exoplayer2.extractor.flac;
 
+import app.judo.shaded.exoplayer2.extractor.flac.FlacExtractor;
 import com.google.android.exoplayer2.testutil.ExtractorAsserts;
 import com.google.android.exoplayer2.testutil.ExtractorAsserts.AssertionConfig;
 import java.util.List;

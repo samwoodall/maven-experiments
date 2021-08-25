@@ -19,7 +19,8 @@ import static com.google.common.truth.Truth.assertThat;
 
 import android.os.Parcel;
 import androidx.test.ext.junit.runners.AndroidJUnit4;
-import com.google.android.exoplayer2.source.hls.HlsTrackMetadataEntry.VariantInfo;
+import app.judo.shaded.exoplayer2.source.hls.HlsTrackMetadataEntry;
+import app.judo.shaded.exoplayer2.source.hls.HlsTrackMetadataEntry.VariantInfo;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 

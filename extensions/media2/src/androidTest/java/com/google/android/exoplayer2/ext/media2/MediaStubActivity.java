@@ -24,7 +24,7 @@ import android.view.SurfaceHolder;
 import android.view.SurfaceView;
 import android.view.WindowManager;
 import com.google.android.exoplayer2.ext.media2.test.R;
-import com.google.android.exoplayer2.util.Util;
+import app.judo.shaded.exoplayer2.util.Util;
 
 /** Stub activity to play media contents on. */
 public final class MediaStubActivity extends Activity {

@@ -16,7 +16,7 @@
 
 package com.google.android.exoplayer2;
 
-import static com.google.android.exoplayer2.MetadataRetriever.retrieveMetadata;
+import static app.judo.shaded.exoplayer2.MetadataRetriever.retrieveMetadata;
 import static com.google.common.truth.Truth.assertThat;
 import static org.junit.Assert.assertThrows;
 
@@ -25,8 +25,10 @@ import android.net.Uri;
 import android.os.SystemClock;
 import androidx.test.core.app.ApplicationProvider;
 import androidx.test.ext.junit.runners.AndroidJUnit4;
-import com.google.android.exoplayer2.source.TrackGroupArray;
-import com.google.android.exoplayer2.util.MimeTypes;
+import app.judo.shaded.exoplayer2.MediaItem;
+import app.judo.shaded.exoplayer2.MetadataRetriever;
+import app.judo.shaded.exoplayer2.source.TrackGroupArray;
+import app.judo.shaded.exoplayer2.util.MimeTypes;
 import com.google.common.util.concurrent.ListenableFuture;
 import java.util.concurrent.ExecutionException;
 import org.junit.Test;

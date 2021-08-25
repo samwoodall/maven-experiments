@@ -19,9 +19,14 @@ import static com.google.common.truth.Truth.assertThat;
 
 import android.net.Uri;
 import androidx.test.ext.junit.runners.AndroidJUnit4;
-import com.google.android.exoplayer2.Format;
-import com.google.android.exoplayer2.offline.StreamKey;
-import com.google.android.exoplayer2.source.dash.manifest.SegmentBase.SingleSegmentBase;
+import app.judo.shaded.exoplayer2.source.dash.manifest.AdaptationSet;
+import app.judo.shaded.exoplayer2.source.dash.manifest.DashManifest;
+import app.judo.shaded.exoplayer2.source.dash.manifest.Period;
+import app.judo.shaded.exoplayer2.source.dash.manifest.Representation;
+import app.judo.shaded.exoplayer2.source.dash.manifest.UtcTimingElement;
+import app.judo.shaded.exoplayer2.Format;
+import app.judo.shaded.exoplayer2.offline.StreamKey;
+import app.judo.shaded.exoplayer2.source.dash.manifest.SegmentBase.SingleSegmentBase;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;

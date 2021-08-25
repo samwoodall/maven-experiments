@@ -15,8 +15,8 @@
  */
 package com.google.android.exoplayer2.ext.ima;
 
-import com.google.android.exoplayer2.C;
-import com.google.android.exoplayer2.source.ads.AdPlaybackState;
+import app.judo.shaded.exoplayer2.C;
+import app.judo.shaded.exoplayer2.source.ads.AdPlaybackState;
 import java.util.Arrays;
 import java.util.List;
 

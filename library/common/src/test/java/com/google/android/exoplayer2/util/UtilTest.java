@@ -15,13 +15,13 @@
  */
 package com.google.android.exoplayer2.util;
 
-import static com.google.android.exoplayer2.util.Util.binarySearchCeil;
-import static com.google.android.exoplayer2.util.Util.binarySearchFloor;
-import static com.google.android.exoplayer2.util.Util.escapeFileName;
-import static com.google.android.exoplayer2.util.Util.getCodecsOfType;
-import static com.google.android.exoplayer2.util.Util.parseXsDateTime;
-import static com.google.android.exoplayer2.util.Util.parseXsDuration;
-import static com.google.android.exoplayer2.util.Util.unescapeFileName;
+import static app.judo.shaded.exoplayer2.util.Util.binarySearchCeil;
+import static app.judo.shaded.exoplayer2.util.Util.binarySearchFloor;
+import static app.judo.shaded.exoplayer2.util.Util.escapeFileName;
+import static app.judo.shaded.exoplayer2.util.Util.getCodecsOfType;
+import static app.judo.shaded.exoplayer2.util.Util.parseXsDateTime;
+import static app.judo.shaded.exoplayer2.util.Util.parseXsDuration;
+import static app.judo.shaded.exoplayer2.util.Util.unescapeFileName;
 import static com.google.common.truth.Truth.assertThat;
 
 import android.database.sqlite.SQLiteDatabase;
@@ -32,7 +32,11 @@ import android.text.Spanned;
 import android.text.style.StrikethroughSpan;
 import android.text.style.UnderlineSpan;
 import androidx.test.ext.junit.runners.AndroidJUnit4;
-import com.google.android.exoplayer2.C;
+import app.judo.shaded.exoplayer2.C;
+import app.judo.shaded.exoplayer2.util.Assertions;
+import app.judo.shaded.exoplayer2.util.LongArray;
+import app.judo.shaded.exoplayer2.util.ParsableByteArray;
+import app.judo.shaded.exoplayer2.util.Util;
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
 import java.util.ArrayList;

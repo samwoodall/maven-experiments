@@ -25,9 +25,10 @@ import androidx.annotation.Nullable;
 import androidx.media2.common.CallbackMediaItem;
 import androidx.media2.common.FileMediaItem;
 import androidx.media2.common.UriMediaItem;
-import com.google.android.exoplayer2.C;
-import com.google.android.exoplayer2.MediaItem;
-import com.google.android.exoplayer2.util.Assertions;
+import app.judo.shaded.exoplayer2.C;
+import app.judo.shaded.exoplayer2.MediaMetadata;
+import app.judo.shaded.exoplayer2.MediaItem;
+import app.judo.shaded.exoplayer2.util.Assertions;
 
 /**
  * Default implementation of {@link MediaItemConverter}.
@@ -86,7 +87,7 @@ public class DefaultMediaItemConverter implements MediaItemConverter {
         .setUri(uri)
         .setMediaId(mediaId)
         .setMediaMetadata(
-            new com.google.android.exoplayer2.MediaMetadata.Builder().setTitle(title).build())
+            new MediaMetadata.Builder().setTitle(title).build())
         .setTag(media2MediaItem)
         .setClipStartPositionMs(startPositionMs)
         .setClipEndPositionMs(endPositionMs)

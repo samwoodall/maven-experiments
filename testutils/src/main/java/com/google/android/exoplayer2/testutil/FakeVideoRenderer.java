@@ -18,13 +18,13 @@ package com.google.android.exoplayer2.testutil;
 
 import android.os.Handler;
 import android.os.SystemClock;
-import com.google.android.exoplayer2.C;
-import com.google.android.exoplayer2.ExoPlaybackException;
-import com.google.android.exoplayer2.Format;
-import com.google.android.exoplayer2.Renderer;
-import com.google.android.exoplayer2.decoder.DecoderCounters;
-import com.google.android.exoplayer2.util.Assertions;
-import com.google.android.exoplayer2.video.VideoRendererEventListener;
+import app.judo.shaded.exoplayer2.C;
+import app.judo.shaded.exoplayer2.ExoPlaybackException;
+import app.judo.shaded.exoplayer2.Format;
+import app.judo.shaded.exoplayer2.Renderer;
+import app.judo.shaded.exoplayer2.decoder.DecoderCounters;
+import app.judo.shaded.exoplayer2.util.Assertions;
+import app.judo.shaded.exoplayer2.video.VideoRendererEventListener;
 import org.checkerframework.checker.nullness.qual.MonotonicNonNull;
 
 /** A {@link FakeRenderer} that supports {@link C#TRACK_TYPE_VIDEO}. */

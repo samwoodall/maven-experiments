@@ -16,16 +16,16 @@
 package com.google.android.exoplayer2.ext.opus;
 
 import androidx.annotation.Nullable;
-import com.google.android.exoplayer2.C;
-import com.google.android.exoplayer2.audio.OpusUtil;
-import com.google.android.exoplayer2.decoder.CryptoInfo;
-import com.google.android.exoplayer2.decoder.DecoderInputBuffer;
-import com.google.android.exoplayer2.decoder.SimpleDecoder;
-import com.google.android.exoplayer2.decoder.SimpleOutputBuffer;
-import com.google.android.exoplayer2.drm.DecryptionException;
-import com.google.android.exoplayer2.drm.ExoMediaCrypto;
-import com.google.android.exoplayer2.util.Assertions;
-import com.google.android.exoplayer2.util.Util;
+import app.judo.shaded.exoplayer2.C;
+import app.judo.shaded.exoplayer2.audio.OpusUtil;
+import app.judo.shaded.exoplayer2.decoder.CryptoInfo;
+import app.judo.shaded.exoplayer2.decoder.DecoderInputBuffer;
+import app.judo.shaded.exoplayer2.decoder.SimpleDecoder;
+import app.judo.shaded.exoplayer2.decoder.SimpleOutputBuffer;
+import app.judo.shaded.exoplayer2.drm.DecryptionException;
+import app.judo.shaded.exoplayer2.drm.ExoMediaCrypto;
+import app.judo.shaded.exoplayer2.util.Assertions;
+import app.judo.shaded.exoplayer2.util.Util;
 import java.nio.ByteBuffer;
 import java.util.List;
 

@@ -15,16 +15,19 @@
  */
 package com.google.android.exoplayer2.metadata.scte35;
 
-import static com.google.android.exoplayer2.C.TIME_UNSET;
+import static app.judo.shaded.exoplayer2.C.TIME_UNSET;
 import static com.google.android.exoplayer2.testutil.TestUtil.createByteArray;
 import static com.google.android.exoplayer2.testutil.TestUtil.createMetadataInputBuffer;
 import static com.google.common.truth.Truth.assertThat;
 import static org.junit.Assert.assertThrows;
 
 import androidx.test.ext.junit.runners.AndroidJUnit4;
-import com.google.android.exoplayer2.metadata.Metadata;
-import com.google.android.exoplayer2.metadata.MetadataInputBuffer;
-import com.google.android.exoplayer2.util.TimestampAdjuster;
+import app.judo.shaded.exoplayer2.metadata.scte35.SpliceInfoDecoder;
+import app.judo.shaded.exoplayer2.metadata.scte35.SpliceInsertCommand;
+import app.judo.shaded.exoplayer2.metadata.scte35.TimeSignalCommand;
+import app.judo.shaded.exoplayer2.metadata.Metadata;
+import app.judo.shaded.exoplayer2.metadata.MetadataInputBuffer;
+import app.judo.shaded.exoplayer2.util.TimestampAdjuster;
 import java.nio.ByteBuffer;
 import java.util.List;
 import org.junit.Before;

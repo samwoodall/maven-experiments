@@ -19,9 +19,15 @@ import static com.google.common.truth.Truth.assertThat;
 import static org.junit.Assert.assertThrows;
 
 import androidx.test.ext.junit.runners.AndroidJUnit4;
-import com.google.android.exoplayer2.metadata.Metadata;
-import com.google.android.exoplayer2.metadata.MetadataInputBuffer;
-import com.google.android.exoplayer2.util.Assertions;
+import app.judo.shaded.exoplayer2.metadata.Metadata;
+import app.judo.shaded.exoplayer2.metadata.MetadataInputBuffer;
+import app.judo.shaded.exoplayer2.metadata.id3.ApicFrame;
+import app.judo.shaded.exoplayer2.metadata.id3.CommentFrame;
+import app.judo.shaded.exoplayer2.metadata.id3.Id3Decoder;
+import app.judo.shaded.exoplayer2.metadata.id3.PrivFrame;
+import app.judo.shaded.exoplayer2.metadata.id3.TextInformationFrame;
+import app.judo.shaded.exoplayer2.metadata.id3.UrlLinkFrame;
+import app.judo.shaded.exoplayer2.util.Assertions;
 import com.google.common.base.Charsets;
 import java.nio.ByteBuffer;
 import java.util.Arrays;

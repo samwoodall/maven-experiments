@@ -16,7 +16,7 @@
 
 package com.google.android.exoplayer2.playbacktests.gts;
 
-import static com.google.android.exoplayer2.C.WIDEVINE_UUID;
+import static app.judo.shaded.exoplayer2.C.WIDEVINE_UUID;
 
 import android.content.Context;
 import android.content.pm.PackageManager;

@@ -19,6 +19,9 @@ import static com.google.common.truth.Truth.assertThat;
 
 import android.database.sqlite.SQLiteDatabase;
 import androidx.test.ext.junit.runners.AndroidJUnit4;
+import app.judo.shaded.exoplayer2.database.DatabaseIOException;
+import app.judo.shaded.exoplayer2.database.DatabaseProvider;
+import app.judo.shaded.exoplayer2.database.VersionTable;
 import com.google.android.exoplayer2.testutil.TestUtil;
 import org.junit.Before;
 import org.junit.Test;

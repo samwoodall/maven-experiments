@@ -15,27 +15,34 @@
  */
 package com.google.android.exoplayer2.extractor.ts;
 
-import static com.google.android.exoplayer2.extractor.ts.DefaultTsPayloadReaderFactory.FLAG_DETECT_ACCESS_UNITS;
+import static app.judo.shaded.exoplayer2.extractor.ts.DefaultTsPayloadReaderFactory.FLAG_DETECT_ACCESS_UNITS;
 import static com.google.common.truth.Truth.assertThat;
 
 import android.util.SparseArray;
 import androidx.annotation.Nullable;
 import androidx.test.core.app.ApplicationProvider;
-import com.google.android.exoplayer2.C;
-import com.google.android.exoplayer2.Format;
-import com.google.android.exoplayer2.extractor.Extractor;
-import com.google.android.exoplayer2.extractor.ExtractorOutput;
-import com.google.android.exoplayer2.extractor.PositionHolder;
-import com.google.android.exoplayer2.extractor.TrackOutput;
-import com.google.android.exoplayer2.extractor.ts.TsPayloadReader.EsInfo;
-import com.google.android.exoplayer2.extractor.ts.TsPayloadReader.TrackIdGenerator;
+import app.judo.shaded.exoplayer2.extractor.ts.DefaultTsPayloadReaderFactory;
+import app.judo.shaded.exoplayer2.extractor.ts.ElementaryStreamReader;
+import app.judo.shaded.exoplayer2.extractor.ts.PesReader;
+import app.judo.shaded.exoplayer2.extractor.ts.SectionPayloadReader;
+import app.judo.shaded.exoplayer2.extractor.ts.SectionReader;
+import app.judo.shaded.exoplayer2.extractor.ts.TsExtractor;
+import app.judo.shaded.exoplayer2.extractor.ts.TsPayloadReader;
+import app.judo.shaded.exoplayer2.C;
+import app.judo.shaded.exoplayer2.Format;
+import app.judo.shaded.exoplayer2.extractor.Extractor;
+import app.judo.shaded.exoplayer2.extractor.ExtractorOutput;
+import app.judo.shaded.exoplayer2.extractor.PositionHolder;
+import app.judo.shaded.exoplayer2.extractor.TrackOutput;
+import app.judo.shaded.exoplayer2.extractor.ts.TsPayloadReader.EsInfo;
+import app.judo.shaded.exoplayer2.extractor.ts.TsPayloadReader.TrackIdGenerator;
 import com.google.android.exoplayer2.testutil.ExtractorAsserts;
 import com.google.android.exoplayer2.testutil.FakeExtractorInput;
 import com.google.android.exoplayer2.testutil.FakeExtractorOutput;
 import com.google.android.exoplayer2.testutil.FakeTrackOutput;
 import com.google.android.exoplayer2.testutil.TestUtil;
-import com.google.android.exoplayer2.util.ParsableByteArray;
-import com.google.android.exoplayer2.util.TimestampAdjuster;
+import app.judo.shaded.exoplayer2.util.ParsableByteArray;
+import app.judo.shaded.exoplayer2.util.TimestampAdjuster;
 import java.util.List;
 import org.junit.Test;
 import org.junit.runner.RunWith;

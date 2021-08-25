@@ -16,10 +16,10 @@
 package com.google.android.exoplayer2.testutil;
 
 import androidx.annotation.Nullable;
-import com.google.android.exoplayer2.C;
-import com.google.android.exoplayer2.Format;
-import com.google.android.exoplayer2.audio.AudioSink;
-import com.google.android.exoplayer2.audio.ForwardingAudioSink;
+import app.judo.shaded.exoplayer2.C;
+import app.judo.shaded.exoplayer2.Format;
+import app.judo.shaded.exoplayer2.audio.AudioSink;
+import app.judo.shaded.exoplayer2.audio.ForwardingAudioSink;
 import java.nio.ByteBuffer;
 import java.util.ArrayList;
 import java.util.Arrays;

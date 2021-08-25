@@ -15,10 +15,10 @@
  */
 package com.google.android.exoplayer2.audio;
 
-import static com.google.android.exoplayer2.RendererCapabilities.ADAPTIVE_NOT_SEAMLESS;
-import static com.google.android.exoplayer2.RendererCapabilities.FORMAT_HANDLED;
-import static com.google.android.exoplayer2.RendererCapabilities.TUNNELING_NOT_SUPPORTED;
-import static com.google.android.exoplayer2.RendererCapabilities.TUNNELING_SUPPORTED;
+import static app.judo.shaded.exoplayer2.RendererCapabilities.ADAPTIVE_NOT_SEAMLESS;
+import static app.judo.shaded.exoplayer2.RendererCapabilities.FORMAT_HANDLED;
+import static app.judo.shaded.exoplayer2.RendererCapabilities.TUNNELING_NOT_SUPPORTED;
+import static app.judo.shaded.exoplayer2.RendererCapabilities.TUNNELING_SUPPORTED;
 import static com.google.android.exoplayer2.testutil.FakeSampleStream.FakeSampleStreamItem.END_OF_STREAM_ITEM;
 import static com.google.common.truth.Truth.assertThat;
 import static org.mockito.Mockito.times;
@@ -27,18 +27,20 @@ import static org.mockito.Mockito.when;
 
 import androidx.annotation.Nullable;
 import androidx.test.ext.junit.runners.AndroidJUnit4;
-import com.google.android.exoplayer2.C;
-import com.google.android.exoplayer2.Format;
-import com.google.android.exoplayer2.RendererConfiguration;
-import com.google.android.exoplayer2.decoder.DecoderException;
-import com.google.android.exoplayer2.decoder.DecoderInputBuffer;
-import com.google.android.exoplayer2.decoder.SimpleDecoder;
-import com.google.android.exoplayer2.decoder.SimpleOutputBuffer;
-import com.google.android.exoplayer2.drm.DrmSessionEventListener;
-import com.google.android.exoplayer2.drm.DrmSessionManager;
-import com.google.android.exoplayer2.drm.ExoMediaCrypto;
+import app.judo.shaded.exoplayer2.audio.AudioSink;
+import app.judo.shaded.exoplayer2.audio.DecoderAudioRenderer;
+import app.judo.shaded.exoplayer2.C;
+import app.judo.shaded.exoplayer2.Format;
+import app.judo.shaded.exoplayer2.RendererConfiguration;
+import app.judo.shaded.exoplayer2.decoder.DecoderException;
+import app.judo.shaded.exoplayer2.decoder.DecoderInputBuffer;
+import app.judo.shaded.exoplayer2.decoder.SimpleDecoder;
+import app.judo.shaded.exoplayer2.decoder.SimpleOutputBuffer;
+import app.judo.shaded.exoplayer2.drm.DrmSessionEventListener;
+import app.judo.shaded.exoplayer2.drm.DrmSessionManager;
+import app.judo.shaded.exoplayer2.drm.ExoMediaCrypto;
 import com.google.android.exoplayer2.testutil.FakeSampleStream;
-import com.google.android.exoplayer2.util.MimeTypes;
+import app.judo.shaded.exoplayer2.util.MimeTypes;
 import com.google.common.collect.ImmutableList;
 import org.junit.Before;
 import org.junit.Test;

@@ -19,6 +19,8 @@ import static com.google.common.truth.Truth.assertThat;
 
 import androidx.test.core.app.ApplicationProvider;
 import androidx.test.ext.junit.runners.AndroidJUnit4;
+import app.judo.shaded.exoplayer2.util.Util;
+import app.judo.shaded.exoplayer2.util.AtomicFile;
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;

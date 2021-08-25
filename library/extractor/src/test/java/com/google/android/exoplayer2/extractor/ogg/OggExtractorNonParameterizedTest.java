@@ -19,6 +19,7 @@ import static com.google.android.exoplayer2.testutil.TestUtil.getByteArray;
 
 import androidx.test.core.app.ApplicationProvider;
 import androidx.test.ext.junit.runners.AndroidJUnit4;
+import app.judo.shaded.exoplayer2.extractor.ogg.OggExtractor;
 import com.google.android.exoplayer2.testutil.ExtractorAsserts;
 import com.google.android.exoplayer2.testutil.FakeExtractorInput;
 import java.io.IOException;

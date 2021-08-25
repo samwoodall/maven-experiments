@@ -18,6 +18,7 @@ package com.google.android.exoplayer2.upstream;
 import static com.google.common.truth.Truth.assertThat;
 
 import androidx.test.ext.junit.runners.AndroidJUnit4;
+import app.judo.shaded.exoplayer2.upstream.DataSourceException;
 import java.io.IOException;
 import org.junit.Test;
 import org.junit.runner.RunWith;

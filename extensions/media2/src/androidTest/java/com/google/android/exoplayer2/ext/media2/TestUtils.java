@@ -25,7 +25,7 @@ import androidx.media2.common.SessionPlayer;
 import androidx.media2.common.SessionPlayer.PlayerResult;
 import androidx.media2.common.UriMediaItem;
 import com.google.android.exoplayer2.ext.media2.test.R;
-import com.google.android.exoplayer2.upstream.RawResourceDataSource;
+import app.judo.shaded.exoplayer2.upstream.RawResourceDataSource;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.Future;

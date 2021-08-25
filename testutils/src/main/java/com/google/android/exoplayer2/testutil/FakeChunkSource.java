@@ -17,22 +17,22 @@ package com.google.android.exoplayer2.testutil;
 
 import android.net.Uri;
 import androidx.annotation.Nullable;
-import com.google.android.exoplayer2.C;
-import com.google.android.exoplayer2.Format;
-import com.google.android.exoplayer2.SeekParameters;
-import com.google.android.exoplayer2.source.chunk.Chunk;
-import com.google.android.exoplayer2.source.chunk.ChunkHolder;
-import com.google.android.exoplayer2.source.chunk.ChunkSource;
-import com.google.android.exoplayer2.source.chunk.MediaChunk;
-import com.google.android.exoplayer2.source.chunk.MediaChunkIterator;
-import com.google.android.exoplayer2.source.chunk.SingleSampleMediaChunk;
+import app.judo.shaded.exoplayer2.C;
+import app.judo.shaded.exoplayer2.Format;
+import app.judo.shaded.exoplayer2.SeekParameters;
+import app.judo.shaded.exoplayer2.source.chunk.Chunk;
+import app.judo.shaded.exoplayer2.source.chunk.ChunkHolder;
+import app.judo.shaded.exoplayer2.source.chunk.ChunkSource;
+import app.judo.shaded.exoplayer2.source.chunk.MediaChunk;
+import app.judo.shaded.exoplayer2.source.chunk.MediaChunkIterator;
+import app.judo.shaded.exoplayer2.source.chunk.SingleSampleMediaChunk;
 import com.google.android.exoplayer2.testutil.FakeDataSet.FakeData.Segment;
-import com.google.android.exoplayer2.trackselection.TrackSelection;
-import com.google.android.exoplayer2.upstream.DataSource;
-import com.google.android.exoplayer2.upstream.DataSpec;
-import com.google.android.exoplayer2.upstream.TransferListener;
-import com.google.android.exoplayer2.util.Assertions;
-import com.google.android.exoplayer2.util.MimeTypes;
+import app.judo.shaded.exoplayer2.trackselection.TrackSelection;
+import app.judo.shaded.exoplayer2.upstream.DataSource;
+import app.judo.shaded.exoplayer2.upstream.DataSpec;
+import app.judo.shaded.exoplayer2.upstream.TransferListener;
+import app.judo.shaded.exoplayer2.util.Assertions;
+import app.judo.shaded.exoplayer2.util.MimeTypes;
 import java.util.List;
 
 /**

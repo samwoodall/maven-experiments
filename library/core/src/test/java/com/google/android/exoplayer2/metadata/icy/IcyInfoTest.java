@@ -20,6 +20,7 @@ import static java.nio.charset.StandardCharsets.UTF_8;
 
 import android.os.Parcel;
 import androidx.test.ext.junit.runners.AndroidJUnit4;
+import app.judo.shaded.exoplayer2.metadata.icy.IcyInfo;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 

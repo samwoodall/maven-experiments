@@ -15,17 +15,18 @@
  */
 package com.google.android.exoplayer2.extractor.ts;
 
-import static com.google.android.exoplayer2.extractor.ts.TsPayloadReader.FLAG_DATA_ALIGNMENT_INDICATOR;
+import static app.judo.shaded.exoplayer2.extractor.ts.TsPayloadReader.FLAG_DATA_ALIGNMENT_INDICATOR;
 import static java.lang.Math.min;
 
 import androidx.test.ext.junit.runners.AndroidJUnit4;
-import com.google.android.exoplayer2.C;
-import com.google.android.exoplayer2.ParserException;
-import com.google.android.exoplayer2.extractor.ts.TsPayloadReader.TrackIdGenerator;
+import app.judo.shaded.exoplayer2.extractor.ts.AdtsReader;
+import app.judo.shaded.exoplayer2.C;
+import app.judo.shaded.exoplayer2.ParserException;
+import app.judo.shaded.exoplayer2.extractor.ts.TsPayloadReader.TrackIdGenerator;
 import com.google.android.exoplayer2.testutil.FakeExtractorOutput;
 import com.google.android.exoplayer2.testutil.FakeTrackOutput;
 import com.google.android.exoplayer2.testutil.TestUtil;
-import com.google.android.exoplayer2.util.ParsableByteArray;
+import app.judo.shaded.exoplayer2.util.ParsableByteArray;
 import com.google.common.primitives.Bytes;
 import java.util.Arrays;
 import org.junit.Before;

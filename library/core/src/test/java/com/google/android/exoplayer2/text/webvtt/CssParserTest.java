@@ -15,12 +15,14 @@
  */
 package com.google.android.exoplayer2.text.webvtt;
 
-import static com.google.android.exoplayer2.text.webvtt.CssParser.parseNextToken;
+import static app.judo.shaded.exoplayer2.text.webvtt.CssParser.parseNextToken;
 import static com.google.common.truth.Truth.assertThat;
 
 import androidx.test.ext.junit.runners.AndroidJUnit4;
-import com.google.android.exoplayer2.util.ParsableByteArray;
-import com.google.android.exoplayer2.util.Util;
+import app.judo.shaded.exoplayer2.text.webvtt.CssParser;
+import app.judo.shaded.exoplayer2.text.webvtt.WebvttCssStyle;
+import app.judo.shaded.exoplayer2.util.ParsableByteArray;
+import app.judo.shaded.exoplayer2.util.Util;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.HashSet;

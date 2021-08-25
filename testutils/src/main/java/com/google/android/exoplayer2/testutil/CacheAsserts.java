@@ -20,14 +20,14 @@ import static com.google.common.truth.Truth.assertWithMessage;
 
 import android.net.Uri;
 import com.google.android.exoplayer2.testutil.FakeDataSet.FakeData;
-import com.google.android.exoplayer2.upstream.DataSource;
-import com.google.android.exoplayer2.upstream.DataSourceInputStream;
-import com.google.android.exoplayer2.upstream.DataSpec;
-import com.google.android.exoplayer2.upstream.DummyDataSource;
-import com.google.android.exoplayer2.upstream.cache.Cache;
-import com.google.android.exoplayer2.upstream.cache.CacheDataSource;
-import com.google.android.exoplayer2.util.Assertions;
-import com.google.android.exoplayer2.util.Util;
+import app.judo.shaded.exoplayer2.upstream.DataSource;
+import app.judo.shaded.exoplayer2.upstream.DataSourceInputStream;
+import app.judo.shaded.exoplayer2.upstream.DataSpec;
+import app.judo.shaded.exoplayer2.upstream.DummyDataSource;
+import app.judo.shaded.exoplayer2.upstream.cache.Cache;
+import app.judo.shaded.exoplayer2.upstream.cache.CacheDataSource;
+import app.judo.shaded.exoplayer2.util.Assertions;
+import app.judo.shaded.exoplayer2.util.Util;
 import java.io.IOException;
 import java.util.ArrayList;
 

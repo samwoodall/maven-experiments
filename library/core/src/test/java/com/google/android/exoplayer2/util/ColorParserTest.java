@@ -20,11 +20,12 @@ import static android.graphics.Color.RED;
 import static android.graphics.Color.WHITE;
 import static android.graphics.Color.argb;
 import static android.graphics.Color.parseColor;
-import static com.google.android.exoplayer2.util.ColorParser.parseTtmlColor;
+import static app.judo.shaded.exoplayer2.util.ColorParser.parseTtmlColor;
 import static com.google.common.truth.Truth.assertThat;
 
 import android.graphics.Color;
 import androidx.test.ext.junit.runners.AndroidJUnit4;
+import app.judo.shaded.exoplayer2.util.ColorParser;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 

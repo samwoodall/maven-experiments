@@ -24,8 +24,10 @@ import static java.nio.charset.StandardCharsets.UTF_8;
 import static org.junit.Assert.assertThrows;
 
 import androidx.test.ext.junit.runners.AndroidJUnit4;
-import com.google.android.exoplayer2.metadata.Metadata;
-import com.google.android.exoplayer2.metadata.MetadataInputBuffer;
+import app.judo.shaded.exoplayer2.metadata.icy.IcyDecoder;
+import app.judo.shaded.exoplayer2.metadata.icy.IcyInfo;
+import app.judo.shaded.exoplayer2.metadata.Metadata;
+import app.judo.shaded.exoplayer2.metadata.MetadataInputBuffer;
 import com.google.common.primitives.Bytes;
 import org.junit.Test;
 import org.junit.runner.RunWith;

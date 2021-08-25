@@ -18,6 +18,9 @@ package com.google.android.exoplayer2.util;
 import static com.google.common.truth.Truth.assertThat;
 
 import androidx.test.ext.junit.runners.AndroidJUnit4;
+import app.judo.shaded.exoplayer2.util.Assertions;
+import app.judo.shaded.exoplayer2.util.NalUnitUtil;
+import app.judo.shaded.exoplayer2.util.Util;
 import java.nio.ByteBuffer;
 import java.util.Arrays;
 import org.junit.Test;

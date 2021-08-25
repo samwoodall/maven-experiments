@@ -17,16 +17,16 @@ package com.google.android.exoplayer2.ext.vp9;
 
 import android.view.Surface;
 import androidx.annotation.Nullable;
-import com.google.android.exoplayer2.C;
-import com.google.android.exoplayer2.decoder.CryptoInfo;
-import com.google.android.exoplayer2.decoder.DecoderInputBuffer;
-import com.google.android.exoplayer2.decoder.SimpleDecoder;
-import com.google.android.exoplayer2.drm.DecryptionException;
-import com.google.android.exoplayer2.drm.ExoMediaCrypto;
-import com.google.android.exoplayer2.util.Assertions;
-import com.google.android.exoplayer2.util.Util;
-import com.google.android.exoplayer2.video.VideoDecoderInputBuffer;
-import com.google.android.exoplayer2.video.VideoDecoderOutputBuffer;
+import app.judo.shaded.exoplayer2.C;
+import app.judo.shaded.exoplayer2.decoder.CryptoInfo;
+import app.judo.shaded.exoplayer2.decoder.DecoderInputBuffer;
+import app.judo.shaded.exoplayer2.decoder.SimpleDecoder;
+import app.judo.shaded.exoplayer2.drm.DecryptionException;
+import app.judo.shaded.exoplayer2.drm.ExoMediaCrypto;
+import app.judo.shaded.exoplayer2.util.Assertions;
+import app.judo.shaded.exoplayer2.util.Util;
+import app.judo.shaded.exoplayer2.video.VideoDecoderInputBuffer;
+import app.judo.shaded.exoplayer2.video.VideoDecoderOutputBuffer;
 import java.nio.ByteBuffer;
 
 /** Vpx decoder. */

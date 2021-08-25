@@ -21,6 +21,9 @@ import static java.util.concurrent.TimeUnit.SECONDS;
 import static org.junit.Assert.assertThrows;
 
 import androidx.test.ext.junit.runners.AndroidJUnit4;
+import app.judo.shaded.exoplayer2.upstream.DataSpec;
+import app.judo.shaded.exoplayer2.upstream.HttpDataSource;
+import app.judo.shaded.exoplayer2.upstream.DefaultHttpDataSource;
 import com.google.android.exoplayer2.testutil.TestUtil;
 import java.util.HashMap;
 import java.util.Map;

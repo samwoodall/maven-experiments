@@ -17,7 +17,7 @@ package com.google.android.exoplayer2.ext.cast;
 
 import android.util.SparseArray;
 import androidx.annotation.Nullable;
-import com.google.android.exoplayer2.C;
+import app.judo.shaded.exoplayer2.C;
 import com.google.android.gms.cast.MediaInfo;
 import com.google.android.gms.cast.MediaQueueItem;
 import com.google.android.gms.cast.MediaStatus;

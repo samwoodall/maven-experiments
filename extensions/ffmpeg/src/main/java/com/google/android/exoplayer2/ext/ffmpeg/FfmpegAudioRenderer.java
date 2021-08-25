@@ -15,25 +15,25 @@
  */
 package com.google.android.exoplayer2.ext.ffmpeg;
 
-import static com.google.android.exoplayer2.audio.AudioSink.SINK_FORMAT_SUPPORTED_DIRECTLY;
-import static com.google.android.exoplayer2.audio.AudioSink.SINK_FORMAT_SUPPORTED_WITH_TRANSCODING;
-import static com.google.android.exoplayer2.audio.AudioSink.SINK_FORMAT_UNSUPPORTED;
+import static app.judo.shaded.exoplayer2.audio.AudioSink.SINK_FORMAT_SUPPORTED_DIRECTLY;
+import static app.judo.shaded.exoplayer2.audio.AudioSink.SINK_FORMAT_SUPPORTED_WITH_TRANSCODING;
+import static app.judo.shaded.exoplayer2.audio.AudioSink.SINK_FORMAT_UNSUPPORTED;
 
 import android.os.Handler;
 import androidx.annotation.Nullable;
-import com.google.android.exoplayer2.C;
-import com.google.android.exoplayer2.Format;
-import com.google.android.exoplayer2.audio.AudioProcessor;
-import com.google.android.exoplayer2.audio.AudioRendererEventListener;
-import com.google.android.exoplayer2.audio.AudioSink;
-import com.google.android.exoplayer2.audio.AudioSink.SinkFormatSupport;
-import com.google.android.exoplayer2.audio.DecoderAudioRenderer;
-import com.google.android.exoplayer2.audio.DefaultAudioSink;
-import com.google.android.exoplayer2.drm.ExoMediaCrypto;
-import com.google.android.exoplayer2.util.Assertions;
-import com.google.android.exoplayer2.util.MimeTypes;
-import com.google.android.exoplayer2.util.TraceUtil;
-import com.google.android.exoplayer2.util.Util;
+import app.judo.shaded.exoplayer2.C;
+import app.judo.shaded.exoplayer2.Format;
+import app.judo.shaded.exoplayer2.audio.AudioProcessor;
+import app.judo.shaded.exoplayer2.audio.AudioRendererEventListener;
+import app.judo.shaded.exoplayer2.audio.AudioSink;
+import app.judo.shaded.exoplayer2.audio.AudioSink.SinkFormatSupport;
+import app.judo.shaded.exoplayer2.audio.DecoderAudioRenderer;
+import app.judo.shaded.exoplayer2.audio.DefaultAudioSink;
+import app.judo.shaded.exoplayer2.drm.ExoMediaCrypto;
+import app.judo.shaded.exoplayer2.util.Assertions;
+import app.judo.shaded.exoplayer2.util.MimeTypes;
+import app.judo.shaded.exoplayer2.util.TraceUtil;
+import app.judo.shaded.exoplayer2.util.Util;
 
 /** Decodes and renders audio using FFmpeg. */
 public final class FfmpegAudioRenderer extends DecoderAudioRenderer<FfmpegAudioDecoder> {

@@ -18,6 +18,7 @@ package com.google.android.exoplayer2.ext.jobdispatcher;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import app.judo.shaded.exoplayer2.scheduler.PlatformScheduler;
 import com.firebase.jobdispatcher.Constraint;
 import com.firebase.jobdispatcher.FirebaseJobDispatcher;
 import com.firebase.jobdispatcher.GooglePlayDriver;
@@ -25,11 +26,11 @@ import com.firebase.jobdispatcher.Job;
 import com.firebase.jobdispatcher.JobParameters;
 import com.firebase.jobdispatcher.JobService;
 import com.firebase.jobdispatcher.Lifetime;
-import com.google.android.exoplayer2.scheduler.Requirements;
-import com.google.android.exoplayer2.scheduler.Scheduler;
-import com.google.android.exoplayer2.util.Assertions;
-import com.google.android.exoplayer2.util.Log;
-import com.google.android.exoplayer2.util.Util;
+import app.judo.shaded.exoplayer2.scheduler.Requirements;
+import app.judo.shaded.exoplayer2.scheduler.Scheduler;
+import app.judo.shaded.exoplayer2.util.Assertions;
+import app.judo.shaded.exoplayer2.util.Log;
+import app.judo.shaded.exoplayer2.util.Util;
 
 /**
  * A {@link Scheduler} that uses {@link FirebaseJobDispatcher}. To use this scheduler, you must add
@@ -55,7 +56,7 @@ import com.google.android.exoplayer2.util.Util;
  * @see <a
  *     href="https://developers.google.com/android/reference/com/google/android/gms/common/GoogleApiAvailability#isGooglePlayServicesAvailable(android.content.Context)">GoogleApiAvailability</a>
  * @deprecated Use com.google.android.exoplayer2.ext.workmanager.WorkManagerScheduler or {@link
- *     com.google.android.exoplayer2.scheduler.PlatformScheduler}.
+ *     PlatformScheduler}.
  */
 @Deprecated
 public final class JobDispatcherScheduler implements Scheduler {

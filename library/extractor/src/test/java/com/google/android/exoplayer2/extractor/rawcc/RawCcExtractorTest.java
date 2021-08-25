@@ -15,9 +15,10 @@
  */
 package com.google.android.exoplayer2.extractor.rawcc;
 
-import com.google.android.exoplayer2.Format;
+import app.judo.shaded.exoplayer2.extractor.rawcc.RawCcExtractor;
+import app.judo.shaded.exoplayer2.Format;
 import com.google.android.exoplayer2.testutil.ExtractorAsserts;
-import com.google.android.exoplayer2.util.MimeTypes;
+import app.judo.shaded.exoplayer2.util.MimeTypes;
 import java.util.List;
 import org.junit.Test;
 import org.junit.runner.RunWith;

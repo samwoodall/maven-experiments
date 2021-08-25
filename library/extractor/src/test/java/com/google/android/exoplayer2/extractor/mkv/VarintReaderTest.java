@@ -15,14 +15,15 @@
  */
 package com.google.android.exoplayer2.extractor.mkv;
 
-import static com.google.android.exoplayer2.C.RESULT_END_OF_INPUT;
-import static com.google.android.exoplayer2.C.RESULT_MAX_LENGTH_EXCEEDED;
+import static app.judo.shaded.exoplayer2.C.RESULT_END_OF_INPUT;
+import static app.judo.shaded.exoplayer2.C.RESULT_MAX_LENGTH_EXCEEDED;
 import static com.google.common.truth.Truth.assertThat;
 import static org.junit.Assert.fail;
 
 import androidx.test.ext.junit.runners.AndroidJUnit4;
-import com.google.android.exoplayer2.C;
-import com.google.android.exoplayer2.extractor.ExtractorInput;
+import app.judo.shaded.exoplayer2.extractor.mkv.VarintReader;
+import app.judo.shaded.exoplayer2.C;
+import app.judo.shaded.exoplayer2.extractor.ExtractorInput;
 import com.google.android.exoplayer2.testutil.FakeExtractorInput;
 import com.google.android.exoplayer2.testutil.FakeExtractorInput.SimulatedIOException;
 import java.io.EOFException;

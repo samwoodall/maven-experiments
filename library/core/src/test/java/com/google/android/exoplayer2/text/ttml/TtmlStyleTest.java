@@ -16,11 +16,11 @@
 package com.google.android.exoplayer2.text.ttml;
 
 import static android.graphics.Color.BLACK;
-import static com.google.android.exoplayer2.text.ttml.TtmlStyle.STYLE_BOLD;
-import static com.google.android.exoplayer2.text.ttml.TtmlStyle.STYLE_BOLD_ITALIC;
-import static com.google.android.exoplayer2.text.ttml.TtmlStyle.STYLE_ITALIC;
-import static com.google.android.exoplayer2.text.ttml.TtmlStyle.STYLE_NORMAL;
-import static com.google.android.exoplayer2.text.ttml.TtmlStyle.UNSPECIFIED;
+import static app.judo.shaded.exoplayer2.text.ttml.TtmlStyle.STYLE_BOLD;
+import static app.judo.shaded.exoplayer2.text.ttml.TtmlStyle.STYLE_BOLD_ITALIC;
+import static app.judo.shaded.exoplayer2.text.ttml.TtmlStyle.STYLE_ITALIC;
+import static app.judo.shaded.exoplayer2.text.ttml.TtmlStyle.STYLE_NORMAL;
+import static app.judo.shaded.exoplayer2.text.ttml.TtmlStyle.UNSPECIFIED;
 import static com.google.common.truth.Truth.assertThat;
 import static com.google.common.truth.Truth.assertWithMessage;
 
@@ -28,7 +28,8 @@ import android.graphics.Color;
 import android.text.Layout;
 import androidx.annotation.ColorInt;
 import androidx.test.ext.junit.runners.AndroidJUnit4;
-import com.google.android.exoplayer2.text.span.RubySpan;
+import app.judo.shaded.exoplayer2.text.span.RubySpan;
+import app.judo.shaded.exoplayer2.text.ttml.TtmlStyle;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 

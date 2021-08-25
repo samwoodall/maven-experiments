@@ -15,10 +15,11 @@
  */
 package com.google.android.exoplayer2.extractor.mp4;
 
-import com.google.android.exoplayer2.Format;
+import app.judo.shaded.exoplayer2.extractor.mp4.FragmentedMp4Extractor;
+import app.judo.shaded.exoplayer2.Format;
 import com.google.android.exoplayer2.testutil.ExtractorAsserts;
 import com.google.android.exoplayer2.testutil.ExtractorAsserts.ExtractorFactory;
-import com.google.android.exoplayer2.util.MimeTypes;
+import app.judo.shaded.exoplayer2.util.MimeTypes;
 import com.google.common.collect.ImmutableList;
 import java.util.Collections;
 import java.util.List;

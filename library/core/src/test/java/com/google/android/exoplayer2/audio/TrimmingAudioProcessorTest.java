@@ -18,8 +18,9 @@ package com.google.android.exoplayer2.audio;
 import static com.google.common.truth.Truth.assertThat;
 
 import androidx.test.ext.junit.runners.AndroidJUnit4;
-import com.google.android.exoplayer2.C;
-import com.google.android.exoplayer2.audio.AudioProcessor.AudioFormat;
+import app.judo.shaded.exoplayer2.audio.TrimmingAudioProcessor;
+import app.judo.shaded.exoplayer2.C;
+import app.judo.shaded.exoplayer2.audio.AudioProcessor.AudioFormat;
 import java.nio.ByteBuffer;
 import org.junit.After;
 import org.junit.Before;

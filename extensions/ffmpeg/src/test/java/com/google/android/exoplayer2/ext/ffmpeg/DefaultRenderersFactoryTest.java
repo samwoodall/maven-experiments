@@ -16,7 +16,7 @@
 package com.google.android.exoplayer2.ext.ffmpeg;
 
 import androidx.test.ext.junit.runners.AndroidJUnit4;
-import com.google.android.exoplayer2.C;
+import app.judo.shaded.exoplayer2.C;
 import com.google.android.exoplayer2.testutil.DefaultRenderersFactoryAsserts;
 import org.junit.Test;
 import org.junit.runner.RunWith;

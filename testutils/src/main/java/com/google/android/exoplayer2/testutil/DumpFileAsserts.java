@@ -19,7 +19,7 @@ import static com.google.common.truth.Truth.assertWithMessage;
 
 import android.content.Context;
 import androidx.annotation.IntDef;
-import com.google.android.exoplayer2.util.Assertions;
+import app.judo.shaded.exoplayer2.util.Assertions;
 import com.google.common.base.StandardSystemProperty;
 import java.io.File;
 import java.io.FileNotFoundException;

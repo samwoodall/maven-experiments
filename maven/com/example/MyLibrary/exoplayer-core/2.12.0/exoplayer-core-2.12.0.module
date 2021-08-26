@@ -1,0 +1,142 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.example.MyLibrary",
+    "module": "exoplayer-core",
+    "version": "2.12.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "6.1.1",
+      "buildId": "inpslanhi5fcpfaaoyufquwrh4"
+    }
+  },
+  "variants": [
+    {
+      "name": "debugApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "com.example.MyLibrary",
+          "module": "exoplayer-common",
+          "version": {
+            "requires": "2.12.0"
+          }
+        },
+        {
+          "group": "com.example.MyLibrary",
+          "module": "exoplayer-extractor",
+          "version": {
+            "requires": "2.12.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "exoplayer-core-2.12.0.aar",
+          "url": "exoplayer-core-2.12.0.aar",
+          "size": 1632839,
+          "sha512": "fdb08286bfde26bac4edc15a0cfec211bc699d3696e60f0ca3eecd6211fc667f3fb8a0ee58ba46de6c0958b0f28ab52914e542e1311d7e279d08b20667726f57",
+          "sha256": "ef9682693771ab7388f58bd67bb2fd5b2688d4c71bf0545725602f03e45d9cc4",
+          "sha1": "6d326da8bb5652e0dff836ccbfc89b581178405b",
+          "md5": "f1a714499ec64238ba91a4c7b85d35ac"
+        }
+      ]
+    },
+    {
+      "name": "debugRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "org.jacoco",
+          "module": "org.jacoco.agent",
+          "version": {
+            "requires": "0.7.9"
+          },
+          "thirdPartyCompatibility": {
+            "artifactSelector": {
+              "name": "org.jacoco.agent",
+              "type": "jar",
+              "extension": "jar",
+              "classifier": "runtime"
+            }
+          }
+        },
+        {
+          "group": "androidx.annotation",
+          "module": "annotation",
+          "version": {
+            "requires": "1.1.0"
+          }
+        },
+        {
+          "group": "com.google.guava",
+          "module": "guava",
+          "version": {
+            "requires": "27.1-android"
+          },
+          "excludes": [
+            {
+              "group": "com.google.j2objc",
+              "module": "j2objc-annotations"
+            },
+            {
+              "group": "org.checkerframework",
+              "module": "checker-compat-qual"
+            },
+            {
+              "group": "com.google.code.findbugs",
+              "module": "jsr305"
+            },
+            {
+              "group": "org.codehaus.mojo",
+              "module": "animal-sniffer-annotations"
+            },
+            {
+              "group": "com.google.errorprone",
+              "module": "error_prone_annotations"
+            }
+          ]
+        },
+        {
+          "group": "com.example.MyLibrary",
+          "module": "exoplayer-common",
+          "version": {
+            "requires": "2.12.0"
+          }
+        },
+        {
+          "group": "com.example.MyLibrary",
+          "module": "exoplayer-extractor",
+          "version": {
+            "requires": "2.12.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "exoplayer-core-2.12.0.aar",
+          "url": "exoplayer-core-2.12.0.aar",
+          "size": 1632839,
+          "sha512": "fdb08286bfde26bac4edc15a0cfec211bc699d3696e60f0ca3eecd6211fc667f3fb8a0ee58ba46de6c0958b0f28ab52914e542e1311d7e279d08b20667726f57",
+          "sha256": "ef9682693771ab7388f58bd67bb2fd5b2688d4c71bf0545725602f03e45d9cc4",
+          "sha1": "6d326da8bb5652e0dff836ccbfc89b581178405b",
+          "md5": "f1a714499ec64238ba91a4c7b85d35ac"
+        }
+      ]
+    }
+  ]
+}

@@ -96,7 +96,7 @@ afterEvaluate {
                 }
                 repositories {
                     maven {
-                        url = uri(layout.projectDirectory.dir("maven"))
+                        url = uri(layout.projectDirectory.dir("../../maven"))
                     }
                 }
             }

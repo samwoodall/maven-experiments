@@ -364,7 +364,7 @@ public class StyledPlayerView extends FrameLayout implements AdsLoader.AdViewPro
 
     boolean shutterColorSet = false;
     int shutterColor = 0;
-    int playerLayoutId = R.layout.exo_styled_player_view;
+    int playerLayoutId = R.layout.judo_exo_styled_player_view;
     boolean useArtwork = true;
     int defaultArtworkId = 0;
     boolean useController = true;
@@ -378,34 +378,34 @@ public class StyledPlayerView extends FrameLayout implements AdsLoader.AdViewPro
     useSensorRotation = true;
     if (attrs != null) {
       TypedArray a =
-          context.getTheme().obtainStyledAttributes(attrs, R.styleable.StyledPlayerView, 0, 0);
+          context.getTheme().obtainStyledAttributes(attrs, R.styleable.JudoStyledPlayerView, 0, 0);
       try {
-        shutterColorSet = a.hasValue(R.styleable.StyledPlayerView_shutter_background_color);
+        shutterColorSet = a.hasValue(R.styleable.JudoStyledPlayerView_judo_shutter_background_color);
         shutterColor =
-            a.getColor(R.styleable.StyledPlayerView_shutter_background_color, shutterColor);
+            a.getColor(R.styleable.JudoStyledPlayerView_judo_shutter_background_color, shutterColor);
         playerLayoutId =
-            a.getResourceId(R.styleable.StyledPlayerView_player_layout_id, playerLayoutId);
-        useArtwork = a.getBoolean(R.styleable.StyledPlayerView_use_artwork, useArtwork);
+            a.getResourceId(R.styleable.JudoStyledPlayerView_judo_player_layout_id, playerLayoutId);
+        useArtwork = a.getBoolean(R.styleable.JudoStyledPlayerView_judo_use_artwork, useArtwork);
         defaultArtworkId =
-            a.getResourceId(R.styleable.StyledPlayerView_default_artwork, defaultArtworkId);
-        useController = a.getBoolean(R.styleable.StyledPlayerView_use_controller, useController);
-        surfaceType = a.getInt(R.styleable.StyledPlayerView_surface_type, surfaceType);
-        resizeMode = a.getInt(R.styleable.StyledPlayerView_resize_mode, resizeMode);
+            a.getResourceId(R.styleable.JudoStyledPlayerView_judo_default_artwork, defaultArtworkId);
+        useController = a.getBoolean(R.styleable.JudoStyledPlayerView_judo_use_controller, useController);
+        surfaceType = a.getInt(R.styleable.JudoStyledPlayerView_judo_surface_type, surfaceType);
+        resizeMode = a.getInt(R.styleable.JudoStyledPlayerView_judo_resize_mode, resizeMode);
         controllerShowTimeoutMs =
-            a.getInt(R.styleable.StyledPlayerView_show_timeout, controllerShowTimeoutMs);
+            a.getInt(R.styleable.JudoStyledPlayerView_judo_show_timeout, controllerShowTimeoutMs);
         controllerHideOnTouch =
-            a.getBoolean(R.styleable.StyledPlayerView_hide_on_touch, controllerHideOnTouch);
+            a.getBoolean(R.styleable.JudoStyledPlayerView_judo_hide_on_touch, controllerHideOnTouch);
         controllerAutoShow =
-            a.getBoolean(R.styleable.StyledPlayerView_auto_show, controllerAutoShow);
-        showBuffering = a.getInteger(R.styleable.StyledPlayerView_show_buffering, showBuffering);
+            a.getBoolean(R.styleable.JudoStyledPlayerView_judo_auto_show, controllerAutoShow);
+        showBuffering = a.getInteger(R.styleable.JudoStyledPlayerView_judo_show_buffering, showBuffering);
         keepContentOnPlayerReset =
             a.getBoolean(
-                R.styleable.StyledPlayerView_keep_content_on_player_reset,
+                R.styleable.JudoStyledPlayerView_judo_keep_content_on_player_reset,
                 keepContentOnPlayerReset);
         controllerHideDuringAds =
-            a.getBoolean(R.styleable.StyledPlayerView_hide_during_ads, controllerHideDuringAds);
+            a.getBoolean(R.styleable.JudoStyledPlayerView_judo_hide_during_ads, controllerHideDuringAds);
         useSensorRotation =
-            a.getBoolean(R.styleable.StyledPlayerView_use_sensor_rotation, useSensorRotation);
+            a.getBoolean(R.styleable.JudoStyledPlayerView_judo_use_sensor_rotation, useSensorRotation);
       } finally {
         a.recycle();
       }
@@ -415,13 +415,13 @@ public class StyledPlayerView extends FrameLayout implements AdsLoader.AdViewPro
     setDescendantFocusability(FOCUS_AFTER_DESCENDANTS);
 
     // Content frame.
-    contentFrame = findViewById(R.id.exo_content_frame);
+    contentFrame = findViewById(R.id.judo_exo_content_frame);
     if (contentFrame != null) {
       setResizeModeRaw(contentFrame, resizeMode);
     }
 
     // Shutter view.
-    shutterView = findViewById(R.id.exo_shutter);
+    shutterView = findViewById(R.id.judo_exo_shutter);
     if (shutterView != null && shutterColorSet) {
       shutterView.setBackgroundColor(shutterColor);
     }
@@ -455,48 +455,48 @@ public class StyledPlayerView extends FrameLayout implements AdsLoader.AdViewPro
     }
 
     // Ad overlay frame layout.
-    adOverlayFrameLayout = findViewById(R.id.exo_ad_overlay);
+    adOverlayFrameLayout = findViewById(R.id.judo_exo_ad_overlay);
 
     // Overlay frame layout.
-    overlayFrameLayout = findViewById(R.id.exo_overlay);
+    overlayFrameLayout = findViewById(R.id.judo_exo_overlay);
 
     // Artwork view.
-    artworkView = findViewById(R.id.exo_artwork);
+    artworkView = findViewById(R.id.judo_exo_artwork);
     this.useArtwork = useArtwork && artworkView != null;
     if (defaultArtworkId != 0) {
       defaultArtwork = ContextCompat.getDrawable(getContext(), defaultArtworkId);
     }
 
     // Subtitle view.
-    subtitleView = findViewById(R.id.exo_subtitles);
+    subtitleView = findViewById(R.id.judo_exo_subtitles);
     if (subtitleView != null) {
       subtitleView.setUserDefaultStyle();
       subtitleView.setUserDefaultTextSize();
     }
 
     // Buffering view.
-    bufferingView = findViewById(R.id.exo_buffering);
+    bufferingView = findViewById(R.id.judo_exo_buffering);
     if (bufferingView != null) {
       bufferingView.setVisibility(View.GONE);
     }
     this.showBuffering = showBuffering;
 
     // Error message view.
-    errorMessageView = findViewById(R.id.exo_error_message);
+    errorMessageView = findViewById(R.id.judo_exo_error_message);
     if (errorMessageView != null) {
       errorMessageView.setVisibility(View.GONE);
     }
 
     // Playback control view.
-    StyledPlayerControlView customController = findViewById(R.id.exo_controller);
-    View controllerPlaceholder = findViewById(R.id.exo_controller_placeholder);
+    StyledPlayerControlView customController = findViewById(R.id.judo_exo_controller);
+    View controllerPlaceholder = findViewById(R.id.judo_exo_controller_placeholder);
     if (customController != null) {
       this.controller = customController;
     } else if (controllerPlaceholder != null) {
       // Propagate attrs as playbackAttrs so that PlayerControlView's custom attributes are
       // transferred, but standard attributes (e.g. background) are not.
       this.controller = new StyledPlayerControlView(context, null, 0, attrs);
-      controller.setId(R.id.exo_controller);
+      controller.setId(R.id.judo_exo_controller);
       controller.setLayoutParams(controllerPlaceholder.getLayoutParams());
       ViewGroup parent = ((ViewGroup) controllerPlaceholder.getParent());
       int controllerIndex = parent.indexOfChild(controllerPlaceholder);
@@ -1482,11 +1482,11 @@ public class StyledPlayerView extends FrameLayout implements AdsLoader.AdViewPro
     } else if (controller.isFullyVisible()) {
       setContentDescription(
           /* contentDescription= */ controllerHideOnTouch
-              ? getResources().getString(R.string.exo_controls_hide)
+              ? getResources().getString(R.string.judo_exo_controls_hide)
               : null);
     } else {
       setContentDescription(
-          /* contentDescription= */ getResources().getString(R.string.exo_controls_show));
+          /* contentDescription= */ getResources().getString(R.string.judo_exo_controls_show));
     }
   }
 
@@ -1500,13 +1500,13 @@ public class StyledPlayerView extends FrameLayout implements AdsLoader.AdViewPro
 
   @RequiresApi(23)
   private static void configureEditModeLogoV23(Resources resources, ImageView logo) {
-    logo.setImageDrawable(resources.getDrawable(R.drawable.exo_edit_mode_logo, null));
-    logo.setBackgroundColor(resources.getColor(R.color.exo_edit_mode_background_color, null));
+    logo.setImageDrawable(resources.getDrawable(R.drawable.judo_exo_edit_mode_logo, null));
+    logo.setBackgroundColor(resources.getColor(R.color.judo_exo_edit_mode_background_color, null));
   }
 
   private static void configureEditModeLogo(Resources resources, ImageView logo) {
-    logo.setImageDrawable(resources.getDrawable(R.drawable.exo_edit_mode_logo));
-    logo.setBackgroundColor(resources.getColor(R.color.exo_edit_mode_background_color));
+    logo.setImageDrawable(resources.getDrawable(R.drawable.judo_exo_edit_mode_logo));
+    logo.setBackgroundColor(resources.getColor(R.color.judo_exo_edit_mode_background_color));
   }
 
   @SuppressWarnings("ResourceType")

@@ -623,7 +623,7 @@ public class PlayerNotificationManager {
     colorized = true;
     useChronometer = true;
     color = Color.TRANSPARENT;
-    smallIconResourceId = R.drawable.exo_notification_small_icon;
+    smallIconResourceId = R.drawable.judo_exo_notification_small_icon;
     defaults = 0;
     priority = NotificationCompat.PRIORITY_LOW;
     badgeIconType = NotificationCompat.BADGE_ICON_SMALL;
@@ -1263,44 +1263,44 @@ public class PlayerNotificationManager {
     actions.put(
         ACTION_PLAY,
         new NotificationCompat.Action(
-            R.drawable.exo_notification_play,
-            context.getString(R.string.exo_controls_play_description),
+            R.drawable.judo_exo_notification_play,
+            context.getString(R.string.judo_exo_controls_play_description),
             createBroadcastIntent(ACTION_PLAY, context, instanceId)));
     actions.put(
         ACTION_PAUSE,
         new NotificationCompat.Action(
-            R.drawable.exo_notification_pause,
-            context.getString(R.string.exo_controls_pause_description),
+            R.drawable.judo_exo_notification_pause,
+            context.getString(R.string.judo_exo_controls_pause_description),
             createBroadcastIntent(ACTION_PAUSE, context, instanceId)));
     actions.put(
         ACTION_STOP,
         new NotificationCompat.Action(
-            R.drawable.exo_notification_stop,
-            context.getString(R.string.exo_controls_stop_description),
+            R.drawable.judo_exo_notification_stop,
+            context.getString(R.string.judo_exo_controls_stop_description),
             createBroadcastIntent(ACTION_STOP, context, instanceId)));
     actions.put(
         ACTION_REWIND,
         new NotificationCompat.Action(
-            R.drawable.exo_notification_rewind,
-            context.getString(R.string.exo_controls_rewind_description),
+            R.drawable.judo_exo_notification_rewind,
+            context.getString(R.string.judo_exo_controls_rewind_description),
             createBroadcastIntent(ACTION_REWIND, context, instanceId)));
     actions.put(
         ACTION_FAST_FORWARD,
         new NotificationCompat.Action(
-            R.drawable.exo_notification_fastforward,
-            context.getString(R.string.exo_controls_fastforward_description),
+            R.drawable.judo_exo_notification_fastforward,
+            context.getString(R.string.judo_exo_controls_fastforward_description),
             createBroadcastIntent(ACTION_FAST_FORWARD, context, instanceId)));
     actions.put(
         ACTION_PREVIOUS,
         new NotificationCompat.Action(
-            R.drawable.exo_notification_previous,
-            context.getString(R.string.exo_controls_previous_description),
+            R.drawable.judo_exo_notification_previous,
+            context.getString(R.string.judo_exo_controls_previous_description),
             createBroadcastIntent(ACTION_PREVIOUS, context, instanceId)));
     actions.put(
         ACTION_NEXT,
         new NotificationCompat.Action(
-            R.drawable.exo_notification_next,
-            context.getString(R.string.exo_controls_next_description),
+            R.drawable.judo_exo_notification_next,
+            context.getString(R.string.judo_exo_controls_next_description),
             createBroadcastIntent(ACTION_NEXT, context, instanceId)));
     return actions;
   }

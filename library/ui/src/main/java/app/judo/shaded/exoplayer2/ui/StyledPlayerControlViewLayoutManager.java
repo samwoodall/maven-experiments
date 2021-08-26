@@ -181,7 +181,7 @@ import java.util.List;
 
     // Relating to Bottom Bar Left View
     timeView = v.findViewById(R.id.exo_time);
-    View timeBar = v.findViewById(R.id.exo_progress);
+    View timeBar = v.findViewById(R.id.judo_exo_progress);
 
     // Relating to Bottom Bar Right View
     basicControls = v.findViewById(R.id.exo_basic_controls);
@@ -198,8 +198,8 @@ import java.util.List;
     this.timeBar = timeBar;
 
     Resources resources = v.getResources();
-    float progressBarHeight = resources.getDimension(R.dimen.exo_custom_progress_thumb_size);
-    float bottomBarHeight = resources.getDimension(R.dimen.exo_bottom_bar_height);
+    float progressBarHeight = resources.getDimension(R.dimen.judo_exo_custom_progress_thumb_size);
+    float bottomBarHeight = resources.getDimension(R.dimen.judo_exo_bottom_bar_height);
 
     ValueAnimator fadeOutAnimator = ValueAnimator.ofFloat(1.0f, 0.0f);
     fadeOutAnimator.setInterpolator(new LinearInterpolator());
@@ -614,7 +614,7 @@ import java.util.List;
       minimalControls.setVisibility(isMinimalMode ? View.VISIBLE : View.INVISIBLE);
     }
 
-    View fullScreenButton = playerControlView.findViewById(R.id.exo_fullscreen);
+    View fullScreenButton = playerControlView.findViewById(R.id.judo_exo_fullscreen);
     if (fullScreenButton != null) {
       ViewGroup parent = (ViewGroup) fullScreenButton.getParent();
       parent.removeView(fullScreenButton);
@@ -634,7 +634,7 @@ import java.util.List;
       int timeBarMarginBottom =
           playerControlView
               .getResources()
-              .getDimensionPixelSize(R.dimen.exo_custom_progress_margin_bottom);
+              .getDimensionPixelSize(R.dimen.judo_exo_custom_progress_margin_bottom);
       timeBarParams.bottomMargin = (isMinimalMode ? 0 : timeBarMarginBottom);
       timeBar.setLayoutParams(timeBarParams);
       if (timeBar instanceof DefaultTimeBar
@@ -656,11 +656,11 @@ import java.util.List;
   private boolean shouldHideInMinimalMode(View button) {
     int id = button.getId();
     return (id == R.id.exo_bottom_bar
-        || id == R.id.exo_prev
-        || id == R.id.exo_next
-        || id == R.id.exo_rew
+        || id == R.id.judo_exo_prev
+        || id == R.id.judo_exo_next
+        || id == R.id.judo_exo_rew
         || id == R.id.exo_rew_with_amount
-        || id == R.id.exo_ffwd
+        || id == R.id.judo_exo_ffwd
         || id == R.id.exo_ffwd_with_amount);
   }
 

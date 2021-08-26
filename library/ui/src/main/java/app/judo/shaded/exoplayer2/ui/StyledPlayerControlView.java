@@ -468,7 +468,7 @@ public class StyledPlayerControlView extends FrameLayout {
       int defStyleAttr,
       @Nullable AttributeSet playbackAttrs) {
     super(context, attrs, defStyleAttr);
-    int controllerLayoutId = R.layout.exo_styled_player_control_view;
+    int controllerLayoutId = R.layout.judo_exo_styled_player_control_view;
     rewindMs = DefaultControlDispatcher.DEFAULT_REWIND_MS;
     fastForwardMs = DefaultControlDispatcher.DEFAULT_FAST_FORWARD_MS;
     showTimeoutMs = DEFAULT_SHOW_TIMEOUT_MS;
@@ -487,41 +487,41 @@ public class StyledPlayerControlView extends FrameLayout {
       TypedArray a =
           context
               .getTheme()
-              .obtainStyledAttributes(playbackAttrs, R.styleable.StyledPlayerControlView, 0, 0);
+              .obtainStyledAttributes(playbackAttrs, R.styleable.JudoStyledPlayerControlView, 0, 0);
       try {
-        rewindMs = a.getInt(R.styleable.StyledPlayerControlView_rewind_increment, (int) rewindMs);
+        rewindMs = a.getInt(R.styleable.JudoStyledPlayerControlView_judo_rewind_increment, (int) rewindMs);
         fastForwardMs =
             a.getInt(
-                R.styleable.StyledPlayerControlView_fastforward_increment, (int) fastForwardMs);
+                R.styleable.JudoStyledPlayerControlView_judo_fastforward_increment, (int) fastForwardMs);
         controllerLayoutId =
             a.getResourceId(
-                R.styleable.StyledPlayerControlView_controller_layout_id, controllerLayoutId);
-        showTimeoutMs = a.getInt(R.styleable.StyledPlayerControlView_show_timeout, showTimeoutMs);
+                R.styleable.JudoStyledPlayerControlView_judo_controller_layout_id, controllerLayoutId);
+        showTimeoutMs = a.getInt(R.styleable.JudoStyledPlayerControlView_judo_show_timeout, showTimeoutMs);
         repeatToggleModes = getRepeatToggleModes(a, repeatToggleModes);
         showRewindButton =
-            a.getBoolean(R.styleable.StyledPlayerControlView_show_rewind_button, showRewindButton);
+            a.getBoolean(R.styleable.JudoStyledPlayerControlView_judo_show_rewind_button, showRewindButton);
         showFastForwardButton =
             a.getBoolean(
-                R.styleable.StyledPlayerControlView_show_fastforward_button, showFastForwardButton);
+                R.styleable.JudoStyledPlayerControlView_judo_show_fastforward_button, showFastForwardButton);
         showPreviousButton =
             a.getBoolean(
-                R.styleable.StyledPlayerControlView_show_previous_button, showPreviousButton);
+                R.styleable.JudoStyledPlayerControlView_judo_show_previous_button, showPreviousButton);
         showNextButton =
-            a.getBoolean(R.styleable.StyledPlayerControlView_show_next_button, showNextButton);
+            a.getBoolean(R.styleable.JudoStyledPlayerControlView_judo_show_next_button, showNextButton);
         showShuffleButton =
             a.getBoolean(
-                R.styleable.StyledPlayerControlView_show_shuffle_button, showShuffleButton);
+                R.styleable.JudoStyledPlayerControlView_judo_show_shuffle_button, showShuffleButton);
         showSubtitleButton =
             a.getBoolean(
-                R.styleable.StyledPlayerControlView_show_subtitle_button, showSubtitleButton);
+                R.styleable.JudoStyledPlayerControlView_judo_show_subtitle_button, showSubtitleButton);
         showVrButton =
-            a.getBoolean(R.styleable.StyledPlayerControlView_show_vr_button, showVrButton);
+            a.getBoolean(R.styleable.JudoStyledPlayerControlView_judo_show_vr_button, showVrButton);
         setTimeBarMinUpdateInterval(
             a.getInt(
-                R.styleable.StyledPlayerControlView_time_bar_min_update_interval,
+                R.styleable.JudoStyledPlayerControlView_judo_time_bar_min_update_interval,
                 timeBarMinUpdateIntervalMs));
         animationEnabled =
-            a.getBoolean(R.styleable.StyledPlayerControlView_animation_enabled, animationEnabled);
+            a.getBoolean(R.styleable.JudoStyledPlayerControlView_judo_animation_enabled, animationEnabled);
       } finally {
         a.recycle();
       }
@@ -545,15 +545,15 @@ public class StyledPlayerControlView extends FrameLayout {
     setDescendantFocusability(FOCUS_AFTER_DESCENDANTS);
 
     // Relating to Bottom Bar Left View
-    durationView = findViewById(R.id.exo_duration);
-    positionView = findViewById(R.id.exo_position);
+    durationView = findViewById(R.id.judo_exo_duration);
+    positionView = findViewById(R.id.judo_exo_position);
 
     // Relating to Bottom Bar Right View
-    subtitleButton = findViewById(R.id.exo_subtitle);
+    subtitleButton = findViewById(R.id.judo_exo_subtitle);
     if (subtitleButton != null) {
       subtitleButton.setOnClickListener(componentListener);
     }
-    fullScreenButton = findViewById(R.id.exo_fullscreen);
+    fullScreenButton = findViewById(R.id.judo_exo_fullscreen);
     if (fullScreenButton != null) {
       fullScreenButton.setVisibility(GONE);
       fullScreenButton.setOnClickListener(this::onFullScreenButtonClicked);
@@ -563,15 +563,15 @@ public class StyledPlayerControlView extends FrameLayout {
       settingsButton.setOnClickListener(componentListener);
     }
 
-    TimeBar customTimeBar = findViewById(R.id.exo_progress);
-    View timeBarPlaceholder = findViewById(R.id.exo_progress_placeholder);
+    TimeBar customTimeBar = findViewById(R.id.judo_exo_progress);
+    View timeBarPlaceholder = findViewById(R.id.judo_exo_progress_placeholder);
     if (customTimeBar != null) {
       timeBar = customTimeBar;
     } else if (timeBarPlaceholder != null) {
       // Propagate attrs as timebarAttrs so that DefaultTimeBar's custom attributes are transferred,
       // but standard attributes (e.g. background) are not.
       DefaultTimeBar defaultTimeBar = new DefaultTimeBar(context, null, 0, playbackAttrs);
-      defaultTimeBar.setId(R.id.exo_progress);
+      defaultTimeBar.setId(R.id.judo_exo_progress);
       defaultTimeBar.setLayoutParams(timeBarPlaceholder.getLayoutParams());
       ViewGroup parent = ((ViewGroup) timeBarPlaceholder.getParent());
       int timeBarIndex = parent.indexOfChild(timeBarPlaceholder);
@@ -585,20 +585,20 @@ public class StyledPlayerControlView extends FrameLayout {
     if (timeBar != null) {
       timeBar.addListener(componentListener);
     }
-    playPauseButton = findViewById(R.id.exo_play_pause);
+    playPauseButton = findViewById(R.id.judo_exo_play_pause);
     if (playPauseButton != null) {
       playPauseButton.setOnClickListener(componentListener);
     }
-    previousButton = findViewById(R.id.exo_prev);
+    previousButton = findViewById(R.id.judo_exo_prev);
     if (previousButton != null) {
       previousButton.setOnClickListener(componentListener);
     }
-    nextButton = findViewById(R.id.exo_next);
+    nextButton = findViewById(R.id.judo_exo_next);
     if (nextButton != null) {
       nextButton.setOnClickListener(componentListener);
     }
-    Typeface typeface = ResourcesCompat.getFont(context, R.font.roboto_medium_numbers);
-    View rewButton = findViewById(R.id.exo_rew);
+    Typeface typeface = ResourcesCompat.getFont(context, R.font.judo_roboto_medium_numbers);
+    View rewButton = findViewById(R.id.judo_exo_rew);
     rewindButtonTextView = rewButton == null ? findViewById(R.id.exo_rew_with_amount) : null;
     if (rewindButtonTextView != null) {
       rewindButtonTextView.setTypeface(typeface);
@@ -607,7 +607,7 @@ public class StyledPlayerControlView extends FrameLayout {
     if (rewindButton != null) {
       rewindButton.setOnClickListener(componentListener);
     }
-    View ffwdButton = findViewById(R.id.exo_ffwd);
+    View ffwdButton = findViewById(R.id.judo_exo_ffwd);
     fastForwardButtonTextView = ffwdButton == null ? findViewById(R.id.exo_ffwd_with_amount) : null;
     if (fastForwardButtonTextView != null) {
       fastForwardButtonTextView.setTypeface(typeface);
@@ -616,11 +616,11 @@ public class StyledPlayerControlView extends FrameLayout {
     if (fastForwardButton != null) {
       fastForwardButton.setOnClickListener(componentListener);
     }
-    repeatToggleButton = findViewById(R.id.exo_repeat_toggle);
+    repeatToggleButton = findViewById(R.id.judo_exo_repeat_toggle);
     if (repeatToggleButton != null) {
       repeatToggleButton.setOnClickListener(componentListener);
     }
-    shuffleButton = findViewById(R.id.exo_shuffle);
+    shuffleButton = findViewById(R.id.judo_exo_shuffle);
     if (shuffleButton != null) {
       shuffleButton.setOnClickListener(componentListener);
     }
@@ -628,11 +628,11 @@ public class StyledPlayerControlView extends FrameLayout {
     resources = context.getResources();
 
     buttonAlphaEnabled =
-        (float) resources.getInteger(R.integer.exo_media_button_opacity_percentage_enabled) / 100;
+        (float) resources.getInteger(R.integer.judo_exo_media_button_opacity_percentage_enabled) / 100;
     buttonAlphaDisabled =
-        (float) resources.getInteger(R.integer.exo_media_button_opacity_percentage_disabled) / 100;
+        (float) resources.getInteger(R.integer.judo_exo_media_button_opacity_percentage_disabled) / 100;
 
-    vrButton = findViewById(R.id.exo_vr);
+    vrButton = findViewById(R.id.judo_exo_vr);
     if (vrButton != null) {
       setShowVrButton(showVrButton);
       updateButton(/* enabled= */ false, vrButton);
@@ -642,31 +642,31 @@ public class StyledPlayerControlView extends FrameLayout {
     String[] settingTexts = new String[2];
     Drawable[] settingIcons = new Drawable[2];
     settingTexts[SETTINGS_PLAYBACK_SPEED_POSITION] =
-        resources.getString(R.string.exo_controls_playback_speed);
+        resources.getString(R.string.judo_exo_controls_playback_speed);
     settingIcons[SETTINGS_PLAYBACK_SPEED_POSITION] =
-        resources.getDrawable(R.drawable.exo_styled_controls_speed);
+        resources.getDrawable(R.drawable.judo_exo_styled_controls_speed);
     settingTexts[SETTINGS_AUDIO_TRACK_SELECTION_POSITION] =
-        resources.getString(R.string.exo_track_selection_title_audio);
+        resources.getString(R.string.judo_exo_track_selection_title_audio);
     settingIcons[SETTINGS_AUDIO_TRACK_SELECTION_POSITION] =
-        resources.getDrawable(R.drawable.exo_styled_controls_audiotrack);
+        resources.getDrawable(R.drawable.judo_exo_styled_controls_audiotrack);
     settingsAdapter = new SettingsAdapter(settingTexts, settingIcons);
 
     playbackSpeedTextList =
-        new ArrayList<>(Arrays.asList(resources.getStringArray(R.array.exo_playback_speeds)));
+        new ArrayList<>(Arrays.asList(resources.getStringArray(R.array.judo_exo_playback_speeds)));
     playbackSpeedMultBy100List = new ArrayList<>();
-    int[] speeds = resources.getIntArray(R.array.exo_speed_multiplied_by_100);
+    int[] speeds = resources.getIntArray(R.array.judo_exo_speed_multiplied_by_100);
     for (int speed : speeds) {
       playbackSpeedMultBy100List.add(speed);
     }
     selectedPlaybackSpeedIndex = playbackSpeedMultBy100List.indexOf(100);
     customPlaybackSpeedIndex = UNDEFINED_POSITION;
-    settingsWindowMargin = resources.getDimensionPixelSize(R.dimen.exo_settings_offset);
+    settingsWindowMargin = resources.getDimensionPixelSize(R.dimen.judo_exo_settings_offset);
 
     subSettingsAdapter = new SubSettingsAdapter();
     subSettingsAdapter.setCheckPosition(UNDEFINED_POSITION);
     settingsView =
         (RecyclerView)
-            LayoutInflater.from(context).inflate(R.layout.exo_styled_settings_list, null);
+            LayoutInflater.from(context).inflate(R.layout.judo_exo_styled_settings_list, null);
     settingsView.setAdapter(settingsAdapter);
     settingsView.setLayoutManager(new LinearLayoutManager(getContext()));
     settingsWindow =
@@ -675,36 +675,36 @@ public class StyledPlayerControlView extends FrameLayout {
     needToHideBars = true;
 
     trackNameProvider = new DefaultTrackNameProvider(getResources());
-    subtitleOnButtonDrawable = resources.getDrawable(R.drawable.exo_styled_controls_subtitle_on);
-    subtitleOffButtonDrawable = resources.getDrawable(R.drawable.exo_styled_controls_subtitle_off);
+    subtitleOnButtonDrawable = resources.getDrawable(R.drawable.judo_exo_styled_controls_subtitle_on);
+    subtitleOffButtonDrawable = resources.getDrawable(R.drawable.judo_exo_styled_controls_subtitle_off);
     subtitleOnContentDescription =
-        resources.getString(R.string.exo_controls_cc_enabled_description);
+        resources.getString(R.string.judo_exo_controls_cc_enabled_description);
     subtitleOffContentDescription =
-        resources.getString(R.string.exo_controls_cc_disabled_description);
+        resources.getString(R.string.judo_exo_controls_cc_disabled_description);
     textTrackSelectionAdapter = new TextTrackSelectionAdapter();
     audioTrackSelectionAdapter = new AudioTrackSelectionAdapter();
 
-    fullScreenExitDrawable = resources.getDrawable(R.drawable.exo_styled_controls_fullscreen_exit);
+    fullScreenExitDrawable = resources.getDrawable(R.drawable.judo_exo_styled_controls_fullscreen_exit);
     fullScreenEnterDrawable =
-        resources.getDrawable(R.drawable.exo_styled_controls_fullscreen_enter);
-    repeatOffButtonDrawable = resources.getDrawable(R.drawable.exo_styled_controls_repeat_off);
-    repeatOneButtonDrawable = resources.getDrawable(R.drawable.exo_styled_controls_repeat_one);
-    repeatAllButtonDrawable = resources.getDrawable(R.drawable.exo_styled_controls_repeat_all);
-    shuffleOnButtonDrawable = resources.getDrawable(R.drawable.exo_styled_controls_shuffle_on);
-    shuffleOffButtonDrawable = resources.getDrawable(R.drawable.exo_styled_controls_shuffle_off);
+        resources.getDrawable(R.drawable.judo_exo_styled_controls_fullscreen_enter);
+    repeatOffButtonDrawable = resources.getDrawable(R.drawable.judo_exo_styled_controls_repeat_off);
+    repeatOneButtonDrawable = resources.getDrawable(R.drawable.judo_exo_styled_controls_repeat_one);
+    repeatAllButtonDrawable = resources.getDrawable(R.drawable.judo_exo_styled_controls_repeat_all);
+    shuffleOnButtonDrawable = resources.getDrawable(R.drawable.judo_exo_styled_controls_shuffle_on);
+    shuffleOffButtonDrawable = resources.getDrawable(R.drawable.judo_exo_styled_controls_shuffle_off);
     fullScreenExitContentDescription =
-        resources.getString(R.string.exo_controls_fullscreen_exit_description);
+        resources.getString(R.string.judo_exo_controls_fullscreen_exit_description);
     fullScreenEnterContentDescription =
-        resources.getString(R.string.exo_controls_fullscreen_enter_description);
+        resources.getString(R.string.judo_exo_controls_fullscreen_enter_description);
     repeatOffButtonContentDescription =
-        resources.getString(R.string.exo_controls_repeat_off_description);
+        resources.getString(R.string.judo_exo_controls_repeat_off_description);
     repeatOneButtonContentDescription =
-        resources.getString(R.string.exo_controls_repeat_one_description);
+        resources.getString(R.string.judo_exo_controls_repeat_one_description);
     repeatAllButtonContentDescription =
-        resources.getString(R.string.exo_controls_repeat_all_description);
-    shuffleOnContentDescription = resources.getString(R.string.exo_controls_shuffle_on_description);
+        resources.getString(R.string.judo_exo_controls_repeat_all_description);
+    shuffleOnContentDescription = resources.getString(R.string.judo_exo_controls_shuffle_on_description);
     shuffleOffContentDescription =
-        resources.getString(R.string.exo_controls_shuffle_off_description);
+        resources.getString(R.string.judo_exo_controls_shuffle_off_description);
 
     // TODO(insun) : Make showing bottomBar configurable. (ex. show_bottom_bar attribute).
     ViewGroup bottomBar = findViewById(R.id.exo_bottom_bar);
@@ -724,7 +724,7 @@ public class StyledPlayerControlView extends FrameLayout {
   @SuppressWarnings("ResourceType")
   private static @RepeatModeUtil.RepeatToggleModes int getRepeatToggleModes(
       TypedArray a, @RepeatModeUtil.RepeatToggleModes int repeatToggleModes) {
-    return a.getInt(R.styleable.StyledPlayerControlView_repeat_toggle_modes, repeatToggleModes);
+    return a.getInt(R.styleable.JudoStyledPlayerControlView_judo_repeat_toggle_modes, repeatToggleModes);
   }
 
   /**
@@ -1103,14 +1103,14 @@ public class StyledPlayerControlView extends FrameLayout {
     if (playPauseButton != null) {
       if (shouldShowPauseButton()) {
         ((ImageView) playPauseButton)
-            .setImageDrawable(resources.getDrawable(R.drawable.exo_styled_controls_pause));
+            .setImageDrawable(resources.getDrawable(R.drawable.judo_exo_styled_controls_pause));
         playPauseButton.setContentDescription(
-            resources.getString(R.string.exo_controls_pause_description));
+            resources.getString(R.string.judo_exo_controls_pause_description));
       } else {
         ((ImageView) playPauseButton)
-            .setImageDrawable(resources.getDrawable(R.drawable.exo_styled_controls_play));
+            .setImageDrawable(resources.getDrawable(R.drawable.judo_exo_styled_controls_play));
         playPauseButton.setContentDescription(
-            resources.getString(R.string.exo_controls_play_description));
+            resources.getString(R.string.judo_exo_controls_play_description));
       }
     }
   }
@@ -1165,7 +1165,7 @@ public class StyledPlayerControlView extends FrameLayout {
     }
     if (rewindButton != null) {
       rewindButton.setContentDescription(
-          resources.getString(R.string.exo_controls_rewind_by_amount_description, rewindSec));
+          resources.getString(R.string.judo_exo_controls_rewind_by_amount_description, rewindSec));
     }
   }
 
@@ -1180,7 +1180,7 @@ public class StyledPlayerControlView extends FrameLayout {
     if (fastForwardButton != null) {
       fastForwardButton.setContentDescription(
           resources.getString(
-              R.string.exo_controls_fastforward_by_amount_description, fastForwardSec));
+              R.string.judo_exo_controls_fastforward_by_amount_description, fastForwardSec));
     }
   }
 
@@ -1441,7 +1441,7 @@ public class StyledPlayerControlView extends FrameLayout {
       indexForCurrentSpeed =
           -Collections.binarySearch(playbackSpeedMultBy100List, currentSpeedMultBy100) - 1;
       String customSpeedText =
-          resources.getString(R.string.exo_controls_custom_playback_speed, speed);
+          resources.getString(R.string.judo_exo_controls_custom_playback_speed, speed);
       playbackSpeedMultBy100List.add(indexForCurrentSpeed, currentSpeedMultBy100);
       playbackSpeedTextList.add(indexForCurrentSpeed, customSpeedText);
       customPlaybackSpeedIndex = indexForCurrentSpeed;
@@ -1874,7 +1874,7 @@ public class StyledPlayerControlView extends FrameLayout {
     @Override
     public SettingViewHolder onCreateViewHolder(ViewGroup viewGroup, int viewType) {
       View v =
-          LayoutInflater.from(getContext()).inflate(R.layout.exo_styled_settings_list_item, null);
+          LayoutInflater.from(getContext()).inflate(R.layout.judo_exo_styled_settings_list_item, null);
       return new SettingViewHolder(v);
     }
 
@@ -1933,7 +1933,7 @@ public class StyledPlayerControlView extends FrameLayout {
     public SubSettingViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
       View v =
           LayoutInflater.from(getContext())
-              .inflate(R.layout.exo_styled_sub_settings_list_item, null);
+              .inflate(R.layout.judo_exo_styled_sub_settings_list_item, null);
       return new SubSettingViewHolder(v);
     }
 
@@ -2015,7 +2015,7 @@ public class StyledPlayerControlView extends FrameLayout {
     @Override
     public void onBindViewHolderAtZeroPosition(TrackSelectionViewHolder holder) {
       // CC options include "Off" at the first position, which disables text rendering.
-      holder.textView.setText(R.string.exo_track_selection_none);
+      holder.textView.setText(R.string.judo_exo_track_selection_none);
       boolean isTrackSelectionOff = true;
       for (int i = 0; i < tracks.size(); i++) {
         if (tracks.get(i).selected) {
@@ -2061,7 +2061,7 @@ public class StyledPlayerControlView extends FrameLayout {
     @Override
     public void onBindViewHolderAtZeroPosition(TrackSelectionViewHolder holder) {
       // Audio track selection option includes "Auto" at the top.
-      holder.textView.setText(R.string.exo_track_selection_auto);
+      holder.textView.setText(R.string.judo_exo_track_selection_auto);
       // hasSelectionOverride is true means there is an explicit track selection, not "Auto".
       boolean hasSelectionOverride = false;
       DefaultTrackSelector.Parameters parameters = checkNotNull(trackSelector).getParameters();
@@ -2086,7 +2086,7 @@ public class StyledPlayerControlView extends FrameLayout {
             }
             settingsAdapter.setSubTextAtPosition(
                 SETTINGS_AUDIO_TRACK_SELECTION_POSITION,
-                getResources().getString(R.string.exo_track_selection_auto));
+                getResources().getString(R.string.judo_exo_track_selection_auto));
             settingsWindow.dismiss();
           });
     }
@@ -2115,13 +2115,13 @@ public class StyledPlayerControlView extends FrameLayout {
       if (trackInfos.isEmpty()) {
         settingsAdapter.setSubTextAtPosition(
             SETTINGS_AUDIO_TRACK_SELECTION_POSITION,
-            getResources().getString(R.string.exo_track_selection_none));
+            getResources().getString(R.string.judo_exo_track_selection_none));
         // TODO(insun) : Make the audio item in main settings (settingsAdapater)
         //  to be non-clickable.
       } else if (!hasSelectionOverride) {
         settingsAdapter.setSubTextAtPosition(
             SETTINGS_AUDIO_TRACK_SELECTION_POSITION,
-            getResources().getString(R.string.exo_track_selection_auto));
+            getResources().getString(R.string.judo_exo_track_selection_auto));
       } else {
         for (int i = 0; i < trackInfos.size(); i++) {
           TrackInfo track = trackInfos.get(i);
@@ -2157,7 +2157,7 @@ public class StyledPlayerControlView extends FrameLayout {
     public TrackSelectionViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
       View v =
           LayoutInflater.from(getContext())
-              .inflate(R.layout.exo_styled_sub_settings_list_item, null);
+              .inflate(R.layout.judo_exo_styled_sub_settings_list_item, null);
       return new TrackSelectionViewHolder(v);
     }
 

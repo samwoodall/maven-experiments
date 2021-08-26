@@ -262,38 +262,38 @@ public class DefaultTimeBar extends View implements TimeBar {
     int defaultScrubberDraggedSize = dpToPx(density, DEFAULT_SCRUBBER_DRAGGED_SIZE_DP);
     if (timebarAttrs != null) {
       TypedArray a =
-          context.getTheme().obtainStyledAttributes(timebarAttrs, R.styleable.DefaultTimeBar, 0, 0);
+          context.getTheme().obtainStyledAttributes(timebarAttrs, R.styleable.JudoDefaultTimeBar, 0, 0);
       try {
-        scrubberDrawable = a.getDrawable(R.styleable.DefaultTimeBar_scrubber_drawable);
+        scrubberDrawable = a.getDrawable(R.styleable.JudoDefaultTimeBar_judo_scrubber_drawable);
         if (scrubberDrawable != null) {
           setDrawableLayoutDirection(scrubberDrawable);
           defaultTouchTargetHeight =
               Math.max(scrubberDrawable.getMinimumHeight(), defaultTouchTargetHeight);
         }
-        barHeight = a.getDimensionPixelSize(R.styleable.DefaultTimeBar_bar_height,
+        barHeight = a.getDimensionPixelSize(R.styleable.JudoDefaultTimeBar_judo_bar_height,
             defaultBarHeight);
-        touchTargetHeight = a.getDimensionPixelSize(R.styleable.DefaultTimeBar_touch_target_height,
+        touchTargetHeight = a.getDimensionPixelSize(R.styleable.JudoDefaultTimeBar_judo_touch_target_height,
             defaultTouchTargetHeight);
-        adMarkerWidth = a.getDimensionPixelSize(R.styleable.DefaultTimeBar_ad_marker_width,
+        adMarkerWidth = a.getDimensionPixelSize(R.styleable.JudoDefaultTimeBar_judo_ad_marker_width,
             defaultAdMarkerWidth);
         scrubberEnabledSize = a.getDimensionPixelSize(
-            R.styleable.DefaultTimeBar_scrubber_enabled_size, defaultScrubberEnabledSize);
+            R.styleable.JudoDefaultTimeBar_judo_scrubber_enabled_size, defaultScrubberEnabledSize);
         scrubberDisabledSize = a.getDimensionPixelSize(
-            R.styleable.DefaultTimeBar_scrubber_disabled_size, defaultScrubberDisabledSize);
+            R.styleable.JudoDefaultTimeBar_judo_scrubber_disabled_size, defaultScrubberDisabledSize);
         scrubberDraggedSize = a.getDimensionPixelSize(
-            R.styleable.DefaultTimeBar_scrubber_dragged_size, defaultScrubberDraggedSize);
-        int playedColor = a.getInt(R.styleable.DefaultTimeBar_played_color, DEFAULT_PLAYED_COLOR);
+            R.styleable.JudoDefaultTimeBar_judo_scrubber_dragged_size, defaultScrubberDraggedSize);
+        int playedColor = a.getInt(R.styleable.JudoDefaultTimeBar_judo_played_color, DEFAULT_PLAYED_COLOR);
         int scrubberColor =
-            a.getInt(R.styleable.DefaultTimeBar_scrubber_color, DEFAULT_SCRUBBER_COLOR);
+            a.getInt(R.styleable.JudoDefaultTimeBar_judo_scrubber_color, DEFAULT_SCRUBBER_COLOR);
         int bufferedColor =
-            a.getInt(R.styleable.DefaultTimeBar_buffered_color, DEFAULT_BUFFERED_COLOR);
+            a.getInt(R.styleable.JudoDefaultTimeBar_judo_buffered_color, DEFAULT_BUFFERED_COLOR);
         int unplayedColor =
-            a.getInt(R.styleable.DefaultTimeBar_unplayed_color, DEFAULT_UNPLAYED_COLOR);
-        int adMarkerColor = a.getInt(R.styleable.DefaultTimeBar_ad_marker_color,
+            a.getInt(R.styleable.JudoDefaultTimeBar_judo_unplayed_color, DEFAULT_UNPLAYED_COLOR);
+        int adMarkerColor = a.getInt(R.styleable.JudoDefaultTimeBar_judo_ad_marker_color,
             DEFAULT_AD_MARKER_COLOR);
         int playedAdMarkerColor =
             a.getInt(
-                R.styleable.DefaultTimeBar_played_ad_marker_color, DEFAULT_PLAYED_AD_MARKER_COLOR);
+                R.styleable.JudoDefaultTimeBar_judo_played_ad_marker_color, DEFAULT_PLAYED_AD_MARKER_COLOR);
         playedPaint.setColor(playedColor);
         scrubberPaint.setColor(scrubberColor);
         bufferedPaint.setColor(bufferedColor);

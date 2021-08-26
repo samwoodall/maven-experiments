@@ -329,7 +329,7 @@ public class DownloadTracker {
       }
       trackSelectionDialog =
           TrackSelectionDialog.createForMappedTrackInfoAndParameters(
-              /* titleId= */ R.string.exo_download_description,
+              /* titleId= */ R.string.judo_exo_download_description,
               mappedTrackInfo,
               trackSelectorParameters,
               /* allowAdaptiveSelections =*/ false,

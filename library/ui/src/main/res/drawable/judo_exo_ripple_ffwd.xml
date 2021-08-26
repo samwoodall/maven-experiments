@@ -19,11 +19,11 @@
     <layer-list>
       <item>
       <shape>
-        <solid android:color="@color/exo_gray_ripple"/>
+        <solid android:color="@color/judo_exo_gray_ripple"/>
       </shape>
       </item>
-      <item android:drawable="@drawable/exo_styled_controls_fastforward"/>
+      <item android:drawable="@drawable/judo_exo_styled_controls_fastforward"/>
     </layer-list>
   </item>
-  <item android:drawable="@drawable/exo_styled_controls_fastforward" />
+  <item android:drawable="@drawable/judo_exo_styled_controls_fastforward" />
 </selector>

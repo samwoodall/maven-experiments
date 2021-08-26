@@ -91,7 +91,47 @@ afterEvaluate {
                 groupId = 'com.example.MyLibrary'
                 artifactId = releaseArtifact
                 version = releaseVersion
+                pom {
+                    url.set("https://github.com/samwoodall/maven-experiements")
+                }
+                repositories {
+                    maven {
+                        url = uri(layout.projectDirectory.dir("maven"))
+                    }
+                }
             }
         }
     }
 }
+
+//afterEvaluate {
+//    publishing {
+//        publications {
+//            create<MavenPublication>("debug") {
+//                from(components["debug"])
+//
+//                groupId = 'com.example.MyLibrary'
+//                artifactId = releaseArtifact
+//                version = releaseVersion
+//
+//                pom {
+//                    name.set("Judo Shaded Exoplayer")
+//                    description.set("The Shaded Exoplayer SDK for Judo")
+//                    url.set("https://github.com/samwoodall/maven-experiements")
+////                    licenses {
+////                        license {
+////                            name.set("Judo License")
+////                            url.set("https://github.com/judoapp/judo-android/blob/master/LICENSE")
+////                        }
+////                    }
+//                }
+//            }
+//        }
+//
+//        repositories {
+//            maven {
+//                url = uri(layout.projectDirectory.dir("maven"))
+//            }
+//        }
+//    }
+//}

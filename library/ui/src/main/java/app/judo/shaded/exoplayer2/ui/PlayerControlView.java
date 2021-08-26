@@ -361,7 +361,7 @@ public class PlayerControlView extends FrameLayout {
       int defStyleAttr,
       @Nullable AttributeSet playbackAttrs) {
     super(context, attrs, defStyleAttr);
-    int controllerLayoutId = R.layout.exo_player_control_view;
+    int controllerLayoutId = R.layout.judo_exo_player_control_view;
     showTimeoutMs = DEFAULT_SHOW_TIMEOUT_MS;
     repeatToggleModes = DEFAULT_REPEAT_TOGGLE_MODES;
     timeBarMinUpdateIntervalMs = DEFAULT_TIME_BAR_MIN_UPDATE_INTERVAL_MS;
@@ -377,29 +377,29 @@ public class PlayerControlView extends FrameLayout {
       TypedArray a =
           context
               .getTheme()
-              .obtainStyledAttributes(playbackAttrs, R.styleable.PlayerControlView, 0, 0);
+              .obtainStyledAttributes(playbackAttrs, R.styleable.JudoPlayerControlView, 0, 0);
       try {
-        rewindMs = a.getInt(R.styleable.PlayerControlView_rewind_increment, rewindMs);
+        rewindMs = a.getInt(R.styleable.JudoPlayerControlView_judo_rewind_increment, rewindMs);
         fastForwardMs =
-            a.getInt(R.styleable.PlayerControlView_fastforward_increment, fastForwardMs);
-        showTimeoutMs = a.getInt(R.styleable.PlayerControlView_show_timeout, showTimeoutMs);
+            a.getInt(R.styleable.JudoPlayerControlView_judo_fastforward_increment, fastForwardMs);
+        showTimeoutMs = a.getInt(R.styleable.JudoPlayerControlView_judo_show_timeout, showTimeoutMs);
         controllerLayoutId =
-            a.getResourceId(R.styleable.PlayerControlView_controller_layout_id, controllerLayoutId);
+            a.getResourceId(R.styleable.JudoPlayerControlView_judo_controller_layout_id, controllerLayoutId);
         repeatToggleModes = getRepeatToggleModes(a, repeatToggleModes);
         showRewindButton =
-            a.getBoolean(R.styleable.PlayerControlView_show_rewind_button, showRewindButton);
+            a.getBoolean(R.styleable.JudoPlayerControlView_judo_show_rewind_button, showRewindButton);
         showFastForwardButton =
             a.getBoolean(
-                R.styleable.PlayerControlView_show_fastforward_button, showFastForwardButton);
+                R.styleable.JudoPlayerControlView_judo_show_fastforward_button, showFastForwardButton);
         showPreviousButton =
-            a.getBoolean(R.styleable.PlayerControlView_show_previous_button, showPreviousButton);
+            a.getBoolean(R.styleable.JudoPlayerControlView_judo_show_previous_button, showPreviousButton);
         showNextButton =
-            a.getBoolean(R.styleable.PlayerControlView_show_next_button, showNextButton);
+            a.getBoolean(R.styleable.JudoPlayerControlView_judo_show_next_button, showNextButton);
         showShuffleButton =
-            a.getBoolean(R.styleable.PlayerControlView_show_shuffle_button, showShuffleButton);
+            a.getBoolean(R.styleable.JudoPlayerControlView_judo_show_shuffle_button, showShuffleButton);
         setTimeBarMinUpdateInterval(
             a.getInt(
-                R.styleable.PlayerControlView_time_bar_min_update_interval,
+                R.styleable.JudoPlayerControlView_judo_time_bar_min_update_interval,
                 timeBarMinUpdateIntervalMs));
       } finally {
         a.recycle();
@@ -423,15 +423,15 @@ public class PlayerControlView extends FrameLayout {
     LayoutInflater.from(context).inflate(controllerLayoutId, /* root= */ this);
     setDescendantFocusability(FOCUS_AFTER_DESCENDANTS);
 
-    TimeBar customTimeBar = findViewById(R.id.exo_progress);
-    View timeBarPlaceholder = findViewById(R.id.exo_progress_placeholder);
+    TimeBar customTimeBar = findViewById(R.id.judo_exo_progress);
+    View timeBarPlaceholder = findViewById(R.id.judo_exo_progress_placeholder);
     if (customTimeBar != null) {
       timeBar = customTimeBar;
     } else if (timeBarPlaceholder != null) {
       // Propagate attrs as timebarAttrs so that DefaultTimeBar's custom attributes are transferred,
       // but standard attributes (e.g. background) are not.
       DefaultTimeBar defaultTimeBar = new DefaultTimeBar(context, null, 0, playbackAttrs);
-      defaultTimeBar.setId(R.id.exo_progress);
+      defaultTimeBar.setId(R.id.judo_exo_progress);
       defaultTimeBar.setLayoutParams(timeBarPlaceholder.getLayoutParams());
       ViewGroup parent = ((ViewGroup) timeBarPlaceholder.getParent());
       int timeBarIndex = parent.indexOfChild(timeBarPlaceholder);
@@ -441,75 +441,75 @@ public class PlayerControlView extends FrameLayout {
     } else {
       timeBar = null;
     }
-    durationView = findViewById(R.id.exo_duration);
-    positionView = findViewById(R.id.exo_position);
+    durationView = findViewById(R.id.judo_exo_duration);
+    positionView = findViewById(R.id.judo_exo_position);
 
     if (timeBar != null) {
       timeBar.addListener(componentListener);
     }
-    playButton = findViewById(R.id.exo_play);
+    playButton = findViewById(R.id.judo_exo_play);
     if (playButton != null) {
       playButton.setOnClickListener(componentListener);
     }
-    pauseButton = findViewById(R.id.exo_pause);
+    pauseButton = findViewById(R.id.judo_exo_pause);
     if (pauseButton != null) {
       pauseButton.setOnClickListener(componentListener);
     }
-    previousButton = findViewById(R.id.exo_prev);
+    previousButton = findViewById(R.id.judo_exo_prev);
     if (previousButton != null) {
       previousButton.setOnClickListener(componentListener);
     }
-    nextButton = findViewById(R.id.exo_next);
+    nextButton = findViewById(R.id.judo_exo_next);
     if (nextButton != null) {
       nextButton.setOnClickListener(componentListener);
     }
-    rewindButton = findViewById(R.id.exo_rew);
+    rewindButton = findViewById(R.id.judo_exo_rew);
     if (rewindButton != null) {
       rewindButton.setOnClickListener(componentListener);
     }
-    fastForwardButton = findViewById(R.id.exo_ffwd);
+    fastForwardButton = findViewById(R.id.judo_exo_ffwd);
     if (fastForwardButton != null) {
       fastForwardButton.setOnClickListener(componentListener);
     }
-    repeatToggleButton = findViewById(R.id.exo_repeat_toggle);
+    repeatToggleButton = findViewById(R.id.judo_exo_repeat_toggle);
     if (repeatToggleButton != null) {
       repeatToggleButton.setOnClickListener(componentListener);
     }
-    shuffleButton = findViewById(R.id.exo_shuffle);
+    shuffleButton = findViewById(R.id.judo_exo_shuffle);
     if (shuffleButton != null) {
       shuffleButton.setOnClickListener(componentListener);
     }
-    vrButton = findViewById(R.id.exo_vr);
+    vrButton = findViewById(R.id.judo_exo_vr);
     setShowVrButton(false);
     updateButton(false, false, vrButton);
 
     Resources resources = context.getResources();
 
     buttonAlphaEnabled =
-        (float) resources.getInteger(R.integer.exo_media_button_opacity_percentage_enabled) / 100;
+        (float) resources.getInteger(R.integer.judo_exo_media_button_opacity_percentage_enabled) / 100;
     buttonAlphaDisabled =
-        (float) resources.getInteger(R.integer.exo_media_button_opacity_percentage_disabled) / 100;
+        (float) resources.getInteger(R.integer.judo_exo_media_button_opacity_percentage_disabled) / 100;
 
-    repeatOffButtonDrawable = resources.getDrawable(R.drawable.exo_controls_repeat_off);
-    repeatOneButtonDrawable = resources.getDrawable(R.drawable.exo_controls_repeat_one);
-    repeatAllButtonDrawable = resources.getDrawable(R.drawable.exo_controls_repeat_all);
-    shuffleOnButtonDrawable = resources.getDrawable(R.drawable.exo_controls_shuffle_on);
-    shuffleOffButtonDrawable = resources.getDrawable(R.drawable.exo_controls_shuffle_off);
+    repeatOffButtonDrawable = resources.getDrawable(R.drawable.judo_exo_controls_repeat_off);
+    repeatOneButtonDrawable = resources.getDrawable(R.drawable.judo_exo_controls_repeat_one);
+    repeatAllButtonDrawable = resources.getDrawable(R.drawable.judo_exo_controls_repeat_all);
+    shuffleOnButtonDrawable = resources.getDrawable(R.drawable.judo_exo_controls_shuffle_on);
+    shuffleOffButtonDrawable = resources.getDrawable(R.drawable.judo_exo_controls_shuffle_off);
     repeatOffButtonContentDescription =
-        resources.getString(R.string.exo_controls_repeat_off_description);
+        resources.getString(R.string.judo_exo_controls_repeat_off_description);
     repeatOneButtonContentDescription =
-        resources.getString(R.string.exo_controls_repeat_one_description);
+        resources.getString(R.string.judo_exo_controls_repeat_one_description);
     repeatAllButtonContentDescription =
-        resources.getString(R.string.exo_controls_repeat_all_description);
-    shuffleOnContentDescription = resources.getString(R.string.exo_controls_shuffle_on_description);
+        resources.getString(R.string.judo_exo_controls_repeat_all_description);
+    shuffleOnContentDescription = resources.getString(R.string.judo_exo_controls_shuffle_on_description);
     shuffleOffContentDescription =
-        resources.getString(R.string.exo_controls_shuffle_off_description);
+        resources.getString(R.string.judo_exo_controls_shuffle_off_description);
   }
 
   @SuppressWarnings("ResourceType")
   private static @RepeatModeUtil.RepeatToggleModes int getRepeatToggleModes(
       TypedArray a, @RepeatModeUtil.RepeatToggleModes int repeatToggleModes) {
-    return a.getInt(R.styleable.PlayerControlView_repeat_toggle_modes, repeatToggleModes);
+    return a.getInt(R.styleable.JudoPlayerControlView_judo_repeat_toggle_modes, repeatToggleModes);
   }
 
   /**

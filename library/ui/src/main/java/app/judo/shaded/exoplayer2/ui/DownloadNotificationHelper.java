@@ -86,8 +86,8 @@ public final class DownloadNotificationHelper {
 
     int titleStringId =
         haveDownloadTasks
-            ? R.string.exo_download_downloading
-            : (haveRemoveTasks ? R.string.exo_download_removing : NULL_STRING_ID);
+            ? R.string.judo_exo_download_downloading
+            : (haveRemoveTasks ? R.string.judo_exo_download_removing : NULL_STRING_ID);
     int progress = 0;
     boolean indeterminate = true;
     if (haveDownloadTasks) {
@@ -121,7 +121,7 @@ public final class DownloadNotificationHelper {
       @DrawableRes int smallIcon,
       @Nullable PendingIntent contentIntent,
       @Nullable String message) {
-    int titleStringId = R.string.exo_download_completed;
+    int titleStringId = R.string.judo_exo_download_completed;
     return buildEndStateNotification(context, smallIcon, contentIntent, message, titleStringId);
   }
 
@@ -139,7 +139,7 @@ public final class DownloadNotificationHelper {
       @DrawableRes int smallIcon,
       @Nullable PendingIntent contentIntent,
       @Nullable String message) {
-    @StringRes int titleStringId = R.string.exo_download_failed;
+    @StringRes int titleStringId = R.string.judo_exo_download_failed;
     return buildEndStateNotification(context, smallIcon, contentIntent, message, titleStringId);
   }
 

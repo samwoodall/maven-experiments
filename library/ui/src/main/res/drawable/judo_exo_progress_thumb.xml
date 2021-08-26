@@ -20,7 +20,7 @@
        android:level="10000">
     <shape android:shape="oval" >
         <solid android:color="#ffffff" />
-        <size android:height="@dimen/exo_custom_progress_thumb_size"
-              android:width="@dimen/exo_custom_progress_thumb_size" />
+        <size android:height="@dimen/judo_exo_custom_progress_thumb_size"
+              android:width="@dimen/judo_exo_custom_progress_thumb_size" />
     </shape>
 </scale>

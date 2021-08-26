@@ -1,0 +1,142 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.example.MyLibrary",
+    "module": "exoplayer-ui",
+    "version": "2.12.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "6.1.1",
+      "buildId": "ewybgqkifjhfhkfnglrznvmpji"
+    }
+  },
+  "variants": [
+    {
+      "name": "debugApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.media",
+          "module": "media",
+          "version": {
+            "requires": "1.0.1"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "exoplayer-ui-2.12.0.aar",
+          "url": "exoplayer-ui-2.12.0.aar",
+          "size": 508635,
+          "sha512": "a138069bf192636ae38b4dea9794d11788857f93cf6986d0b057aa561bfdb3ef5313a034c0d2403ddb4e09b00919ba30c3fd3be333d98a4e3644e09663cc8e92",
+          "sha256": "07d166e9dde1909ac3d21f97e65c9af863e37a4951f79d141874830666312e88",
+          "sha1": "b383e2c213e469b0b6a415f62e53b89331b50872",
+          "md5": "41eeb7f312c6c011b2bec564b12d08ac"
+        }
+      ]
+    },
+    {
+      "name": "debugRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "org.jacoco",
+          "module": "org.jacoco.agent",
+          "version": {
+            "requires": "0.7.9"
+          },
+          "thirdPartyCompatibility": {
+            "artifactSelector": {
+              "name": "org.jacoco.agent",
+              "type": "jar",
+              "extension": "jar",
+              "classifier": "runtime"
+            }
+          }
+        },
+        {
+          "group": "com.example.MyLibrary",
+          "module": "exoplayer-core",
+          "version": {
+            "requires": "2.12.0"
+          }
+        },
+        {
+          "group": "androidx.annotation",
+          "module": "annotation",
+          "version": {
+            "requires": "1.1.0"
+          }
+        },
+        {
+          "group": "androidx.recyclerview",
+          "module": "recyclerview",
+          "version": {
+            "requires": "1.1.0"
+          }
+        },
+        {
+          "group": "com.google.guava",
+          "module": "guava",
+          "version": {
+            "requires": "27.1-android"
+          },
+          "excludes": [
+            {
+              "group": "com.google.j2objc",
+              "module": "j2objc-annotations"
+            },
+            {
+              "group": "org.checkerframework",
+              "module": "checker-compat-qual"
+            },
+            {
+              "group": "com.google.code.findbugs",
+              "module": "jsr305"
+            },
+            {
+              "group": "org.codehaus.mojo",
+              "module": "animal-sniffer-annotations"
+            },
+            {
+              "group": "com.google.errorprone",
+              "module": "error_prone_annotations"
+            }
+          ]
+        },
+        {
+          "group": "androidx.media",
+          "module": "media",
+          "version": {
+            "requires": "1.0.1"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "exoplayer-ui-2.12.0.aar",
+          "url": "exoplayer-ui-2.12.0.aar",
+          "size": 508635,
+          "sha512": "a138069bf192636ae38b4dea9794d11788857f93cf6986d0b057aa561bfdb3ef5313a034c0d2403ddb4e09b00919ba30c3fd3be333d98a4e3644e09663cc8e92",
+          "sha256": "07d166e9dde1909ac3d21f97e65c9af863e37a4951f79d141874830666312e88",
+          "sha1": "b383e2c213e469b0b6a415f62e53b89331b50872",
+          "md5": "41eeb7f312c6c011b2bec564b12d08ac"
+        }
+      ]
+    }
+  ]
+}
